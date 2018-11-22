@@ -62,15 +62,6 @@ pipeline {
         echo "psiExitCode: ${psiExitCode}"
         echo "Pipeline result: ${currentBuild.result}"
         echo "Pipeline currentResult: ${currentBuild.currentResult}"
-        // webpagetest
-        sh 'npm run webpagetest:ci'
-        step([
-          $class: 'JUnitResultArchiver',
-          testResults: 'performance**.xml',
-          checkHealthScaleFactor: 0.2
-        ])
-        // lighthouse
-        sh 'npm run lighthouse:ci'
       }
       post {
         always {
