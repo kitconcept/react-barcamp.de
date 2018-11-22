@@ -9,7 +9,8 @@ body {
   background-color: #ff0000;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+   
 }
 .container {
   background-color: #0000ff;
