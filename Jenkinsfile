@@ -43,7 +43,7 @@ pipeline {
     // Performance Tests
     stage('Performance Tests') {
       agent {
-        label 'master'
+        label 'node'
       }
       when {
         branch 'master'
