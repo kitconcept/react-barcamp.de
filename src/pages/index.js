@@ -4,8 +4,6 @@ import Layout from '../components/layout'
 import 'bootstrap/dist/css/bootstrap.css'
 const IndexPage = () => (
   <Layout>
-    <body>
-
       <div class="above-the-fold">
         <div class="container">
           <h1>React Barcamp</h1>
@@ -172,7 +170,6 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-    </body>
   </Layout>
 )
 
