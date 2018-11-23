@@ -97,7 +97,6 @@ const IndexPage = () => (
               <li class="list-group-item">15:30 - Final Session</li>
               <li class="list-group-item">16:00 - End</li>
             </ul>
->>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
       </div>
@@ -117,100 +116,71 @@ const IndexPage = () => (
       <div class="row">
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-<<<<<<< HEAD
+
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
-=======
-            <div class="card-body" />
->>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-<<<<<<< HEAD
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
-=======
-            <div class="card-body" />
->>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-<<<<<<< HEAD
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
-=======
-            <div class="card-body" />
->>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-<<<<<<< HEAD
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
-=======
-            <div class="card-body" />
->>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
+
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-<<<<<<< HEAD
+
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
-=======
-            <div class="card-body" />
->>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-<<<<<<< HEAD
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
-=======
-            <div class="card-body" />
->>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-<<<<<<< HEAD
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
-=======
-            <div class="card-body" />
->>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-<<<<<<< HEAD
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
-=======
-            <div class="card-body" />
->>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
       </div>
