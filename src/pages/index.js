@@ -74,7 +74,6 @@ const IndexPage = () => (
                 <li class="list-group-item">14:00 - Lightning Talks</li>
                 <li class="list-group-item">18:00 - Final Session</li>
                 <li class="list-group-item">19:00 - End</li>
-
               </ul>
             </ul>
           </div>
