@@ -66,6 +66,10 @@ body {
   border-radius: 0;
   background-color: transparent;
   margin-top: 1em;
+  text-align: center;
+}
+.sponsors a {
+  color: #ffffff;
 }
 .location {
   background-color: #008000;
