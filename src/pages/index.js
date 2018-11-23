@@ -64,38 +64,38 @@ const IndexPage = () => (
         <div class="col col-12 col-sm-6">
           <div class="card table">
             <ul class="list-group list-group-flush">
-            <div class="card-header">
-                            <h3 class="schedule-heading">Saturday</h3>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">09:00 - Arrival</li>
-                            <li class="list-group-item">09:30 - Welcome and Session Planning</li>
-                            <li class="list-group-item">13:00 - Lunch</li>
-                            <li class="list-group-item">14:00 - Lightning Talks</li>
-                            <li class="list-group-item">18:00 - Final Session</li>
-                            <li class="list-group-item">19:00 - End</li>
+              <div class="card-header">
+                <h3 class="schedule-heading">Saturday</h3>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">09:00 - Arrival</li>
+                <li class="list-group-item">09:30 - Welcome and Session Planning</li>
+                <li class="list-group-item">13:00 - Lunch</li>
+                <li class="list-group-item">14:00 - Lightning Talks</li>
+                <li class="list-group-item">18:00 - Final Session</li>
+                <li class="list-group-item">19:00 - End</li>
 
-                        </ul>
+              </ul>
             </ul>
           </div>
         </div>
         <div class="col col-12 col-sm-6">
           <div class="card table">
-          <div class="card-header">
-                            <h3 class="schedule-heading">Sunday</h3>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">09:00 -  Arrival</li>
-                            <li class="list-group-item">10:00 - Session Planning</li>
-                            <li class="list-group-item">12:45 - Lunch</li>
-                            <li class="list-group-item">14:30 - Lightning Talks</li>
-                            <li class="list-group-item">15:30 - Final Session</li>
-                            <li class="list-group-item">16:00 - End</li>
-                        </ul>
+            <div class="card-header">
+              <h3 class="schedule-heading">Sunday</h3>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">09:00 -  Arrival</li>
+              <li class="list-group-item">10:00 - Session Planning</li>
+              <li class="list-group-item">12:45 - Lunch</li>
+              <li class="list-group-item">14:30 - Lightning Talks</li>
+              <li class="list-group-item">15:30 - Final Session</li>
+              <li class="list-group-item">16:00 - End</li>
+            </ul>
           </div>
         </div>
       </div>
-      <p>Further planning here: <a class="link"href="https://barcamptools.eu/react-barcamp-cologne-2019/events">Barcamptools Schedule</a><br/> </p>
+      <p>Further planning here: <a class="link" href="https://barcamptools.eu/react-barcamp-cologne-2019/events">Barcamptools Schedule</a><br /> </p>
     </div>
     <div class="container sponsors">
       <h1>Sponsors</h1>
