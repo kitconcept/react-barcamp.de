@@ -33,21 +33,13 @@ body {
   border-radius: 0;
   border-color: #ffffff;
   color: #ffffff;
-  margin: 1em;;
+  margin: 3px, solid;
 }
-.location {
-  background-color: #008000;
-  margin-top:3em;
-  padding-right:0;
-  padding-left:0;
+.about {
+  background-color: #004876;
 }
-.footer {
-  background-color: #ffff00;
-}
-
-
 .about .info-text {
-  background-color: #66ff33;
+  background-color: transparent;
   padding:1em;
   margin-top:1em;
   margin-bottom: 1em;
@@ -71,10 +63,20 @@ height:100%;
   background-color: #66ff33;
   margin-top:1em;
 }
+.location {
+  background-color: #008000;
+  margin-top:3em;
+  padding-right:0;
+  padding-left:0;
+}
+
 .map{
   background-color: #660033;
   height: 20em;
   width:100%;
+}
+.footer {
+  background-color: #ffff00;
 }
 .footer-text {
   background-color: #66ff33;

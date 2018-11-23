@@ -12,7 +12,6 @@ const IndexPage = () => (
         </div>
       </div>
       <div class="container about">
-        <h1>About</h1>
         <div class="row">
           <div class="col col-12 col-sm-6">
             <div class="info-text">
