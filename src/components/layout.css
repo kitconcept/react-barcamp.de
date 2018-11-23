@@ -54,10 +54,33 @@ body {
   width: 100%;
   height: 100%;
 }
+.schedule {
+  background-color:#004876;
+  text-align: center;
+}
+.schedule .row .col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .schedule .table {
-  background-color: #66ff33;
-  height: 50vh;
-  width: 100%;
+  width: 80%;
+  margin:1em;
+  border-radius: 0;
+  background-color: #004876;
+  border-color: #ffffff;
+  padding:1em;
+}
+.schedule .table .card-header{
+  border-color:#ffffff;
+}
+.schedule .table .list-group-item {
+  background-color: #004876;
+  border-color: #ffffff;
+  text-align: left;
+}
+.schedule .link{
+  color: #000000;
 }
 .sponsors {
   background-color: #004876;

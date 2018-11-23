@@ -66,94 +66,151 @@ const IndexPage = () => (
       <h1>Schedule</h1>
       <div class="row ">
         <div class="col col-12 col-sm-6">
-          <div class="table">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sit
-              eligendi ea porro cupiditate ex excepturi, at, doloremque
-              accusamus quia ut repellat dicta, ab ipsum numquam! Quibusdam
-              natus nihil minima.
-            </p>
+          <div class="card table">
+            <ul class="list-group list-group-flush">
+              <div class="card-header">
+                <h3 class="schedule-heading">Saturday</h3>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">09:00 - Arrival</li>
+                <li class="list-group-item">
+                  09:30 - Welcome and Session Planning
+                </li>
+                <li class="list-group-item">13:00 - Lunch</li>
+                <li class="list-group-item">14:00 - Lightning Talks</li>
+                <li class="list-group-item">18:00 - Final Session</li>
+                <li class="list-group-item">19:00 - End</li>
+              </ul>
+            </ul>
           </div>
         </div>
         <div class="col col-12 col-sm-6">
-          <div class="table">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
-              vel quas natus doloribus, veritatis architecto id excepturi
-              exercitationem ad corrupti vitae veniam minima accusamus ducimus
-              voluptates nisi enim ex deleniti.
-            </p>
+          <div class="card table">
+            <div class="card-header">
+              <h3 class="schedule-heading">Sunday</h3>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">09:00 - Arrival</li>
+              <li class="list-group-item">10:00 - Session Planning</li>
+              <li class="list-group-item">12:45 - Lunch</li>
+              <li class="list-group-item">14:30 - Lightning Talks</li>
+              <li class="list-group-item">15:30 - Final Session</li>
+              <li class="list-group-item">16:00 - End</li>
+            </ul>
+>>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
       </div>
+      <p>
+        Further planning here:{' '}
+        <a
+          class="link"
+          href="https://barcamptools.eu/react-barcamp-cologne-2019/events"
+        >
+          Barcamptools Schedule
+        </a>
+        <br />{' '}
+      </p>
     </div>
     <div class="container sponsors">
       <h1>Sponsors</h1>
       <div class="row">
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
+<<<<<<< HEAD
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
+=======
+            <div class="card-body" />
+>>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
+<<<<<<< HEAD
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
+=======
+            <div class="card-body" />
+>>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
+<<<<<<< HEAD
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
+=======
+            <div class="card-body" />
+>>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
+<<<<<<< HEAD
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
+=======
+            <div class="card-body" />
+>>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
+<<<<<<< HEAD
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
+=======
+            <div class="card-body" />
+>>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
+<<<<<<< HEAD
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
+=======
+            <div class="card-body" />
+>>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
+<<<<<<< HEAD
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
+=======
+            <div class="card-body" />
+>>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
+<<<<<<< HEAD
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
+=======
+            <div class="card-body" />
+>>>>>>> 63b9a95c4a4a12f45bd0a925df21beed236a4068
           </div>
         </div>
       </div>
