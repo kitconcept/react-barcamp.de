@@ -8,7 +8,7 @@ const IndexPage = () => (
         <div class="container">
           <h1>React Barcamp 2019</h1>
           <h3>26th and 27th January 2019 in Cologne</h3>
-          <a href="https://barcamptools.eu/react-barcamp-cologne-2019/" class="btn btn-outline-secondary" role="button" aria-pressed="true">Join Now</a>
+          <a href="https://barcamptools.eu/react-barcamp-cologne-2019/" class="btn btn-lg btn-outline-secondary" role="button" aria-pressed="true">Join Now</a>
         </div>
       </div>
       <div class="container about">
