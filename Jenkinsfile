@@ -25,6 +25,19 @@ pipeline {
       }
     }
 
+    // Static Code Analysis
+    stage('Static Code Analysis') {
+      agent {
+        label 'node'
+      }
+      steps {
+        deleteDir()
+        checkout scm
+        sh 'npm install'
+        sh 'npm run format:ci'
+      }
+    }
+
     // Deploy
     stage('Deploy') {
       agent {

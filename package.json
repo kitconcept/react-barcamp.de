@@ -26,6 +26,7 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
+    "format:ci": "prettier --list-different \"src/**/*.js\"",
     "psi": "psi react-barcamp.de --threshold 99 ; true",
     "lighthouse:ci": "node_modules/lighthouse/lighthouse-cli/index.js --output-path=./lighthouse-report.html --quiet --chrome-flags='--headless' https://react-barcamp.de",
     "test": "echo \"Error: no test specified\" && exit 1"
