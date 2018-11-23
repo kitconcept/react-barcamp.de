@@ -27,9 +27,11 @@
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "psi": "psi react-barcamp.de --threshold 99 ; true",
+    "lighthouse:ci": "node_modules/lighthouse/lighthouse-cli/index.js --output-path=./lighthouse-report.html --quiet --chrome-flags='--headless' https://react-barcamp.de",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "lighthouse": "^4.0.0-alpha.2-3.2.1",
     "prettier": "^1.14.2",
     "psi": "^3.1.0"
   },
