@@ -2,6 +2,8 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import 'bootstrap/dist/css/bootstrap.css'
+import BarcampSession from '../images/BarcampSession.jpg'
+import ReactIcon from '../images/react-icon.png'
 const IndexPage = () => (
   <Layout>
       <div class="above-the-fold">
@@ -30,14 +32,14 @@ const IndexPage = () => (
           </div>
           <div class="col col-6 d-none d-sm-block">
             <div class="image">
-              <img class="info-picture" src="react-icon.png" alt="placeholder" />
+              <img class="info-picture" src={BarcampSession} alt="placeholder" />
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col col-6 d-none d-sm-block">
             <div class="image">
-              <img class="info-picture" src="react-icon.png" alt="placeholder" />
+              <img class="info-picture" src={ReactIcon} alt="placeholder" />
             </div>
           </div>
           <div class="col col-12 col-sm-6">
