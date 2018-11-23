@@ -84,13 +84,18 @@ body {
 }
 .sponsors {
   background-color: #004876;
+  text-align: center;
 }
 .sponsors .card {
   border-radius: 0;
+  border-color:#ffffff;
+  margin-top:1em;
+  margin-bottom: 1em; 
   background-color: transparent;
   margin-top: 1em;
   text-align: center;
 }
+
 .sponsors a {
   color: #ffffff;
 }

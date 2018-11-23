@@ -116,7 +116,6 @@ const IndexPage = () => (
       <div class="row">
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
@@ -145,14 +144,12 @@ const IndexPage = () => (
             <div class="card-body">
               <a href="#">Sponsor Name</a>
             </div>
-
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-
             <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
             <div class="card-body">
               <a href="#">Sponsor Name</a>
