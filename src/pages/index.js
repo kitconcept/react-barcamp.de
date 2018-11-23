@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import 'bootstrap/dist/css/bootstrap.css'
 import BarcampSession from '../images/BarcampSession.jpg'
-import ReactIcon from '../images/react-icon.png'
+import Programmer from '../images/programmer.jpg'
 const IndexPage = () => (
   <Layout>
       <div class="above-the-fold">
@@ -39,7 +39,7 @@ const IndexPage = () => (
         <div class="row">
           <div class="col col-6 d-none d-sm-block">
             <div class="image">
-              <img class="info-picture" src={ReactIcon} alt="placeholder" />
+              <img class="info-picture" src={Programmer} alt="placeholder" />
             </div>
           </div>
           <div class="col col-12 col-sm-6">

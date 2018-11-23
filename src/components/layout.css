@@ -47,6 +47,8 @@ body {
 }
 .about .image {
   padding:1em;
+  margin-top:1em;
+  margin-bottom: 1em;
   width:80%;
   }
 .about .info-picture {
