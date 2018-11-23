@@ -42,42 +42,53 @@ pipeline {
 
     // Performance Tests
     stage('Performance Tests') {
-      agent {
-        label 'node'
-      }
-      when {
-        branch 'master'
-      }
-      steps {
-        deleteDir()
-        checkout scm
-        sh 'npm install'
-        // psi
-        script {
-          psiExitCode = sh(
-            script: 'yarn run psi',
-            returnStdout: true
-          )
-        }
-        echo "psiExitCode: ${psiExitCode}"
-        echo "Pipeline result: ${currentBuild.result}"
-        echo "Pipeline currentResult: ${currentBuild.currentResult}"
-      }
-      post {
-        always {
-          publishHTML (target: [
-            allowMissing: false,
-            alwaysLinkToLastBuild: false,
-            keepAll: true,
-            reportDir: '.',
-            reportFiles: 'lighthouse-report.html',
-            reportName: "Lighthouse"
-          ])
-          script {
-            currentBuild.getPreviousBuild().getResult().toString()
-            currentBuild.result = 'SUCCESS'
+      parallel {
+        stage('Page Speed Insights') {
+          agent {
+            label 'node'
+          }
+          when {
+            branch 'master'
+          }
+          steps {
+            deleteDir()
+            checkout scm
+            sh 'npm install'
+            script {
+              psiExitCode = sh(
+                script: 'yarn run psi',
+                returnStdout: true
+              )
+            }
+            echo "psiExitCode: ${psiExitCode}"
             echo "Pipeline result: ${currentBuild.result}"
             echo "Pipeline currentResult: ${currentBuild.currentResult}"
+          }
+        }
+        stage('Lighthouse') {
+          agent {
+            label 'node'
+          }
+          when {
+            branch 'master'
+          }
+          steps {
+            deleteDir()
+            checkout scm
+            sh 'npm install'
+            sh 'npm run lighthouse:ci'
+          }
+          post {
+            always {
+              publishHTML (target: [
+                allowMissing: false,
+                alwaysLinkToLastBuild: false,
+                keepAll: true,
+                reportDir: '.',
+                reportFiles: 'lighthouse-report.html',
+                reportName: "Lighthouse"
+              ])
+            }
           }
         }
       }
