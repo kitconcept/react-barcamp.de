@@ -15,7 +15,7 @@ const IndexPage = () => (
           role="button"
           aria-pressed="true"
         >
-          Join Now
+          Register now
         </a>
       </div>
     </div>

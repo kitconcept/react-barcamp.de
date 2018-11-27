@@ -23,7 +23,7 @@
 .above-the-fold .container {
   position: absolute;
   top: 0;
-  text-align: center;
+  text-align: left;
   background-color: transparent;
 }
 .above-the-fold .container h1 {
@@ -34,6 +34,7 @@
   border-color: #ffffff;
   color: #ffffff;
   margin: 3px, solid;
+  margin-top: 1em;
 }
 .about {
   background-color: #004876;
