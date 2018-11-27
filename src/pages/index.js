@@ -3,12 +3,7 @@ import Layout from '../components/layout'
 import BarcampSession from '../images/BarcampSession.jpg'
 import Programmer from '../images/programmer.jpg'
 import Reacticon from '../images/react-icon-sm.png'
-import {
-  Map,
-  InfoWindow,
-  Marker,
-  GoogleApiWrapper,
-} from '../../node_modules/google-map-react'
+
 const IndexPage = () => (
   <Layout>
     <div class="above-the-fold">
@@ -203,14 +198,14 @@ const IndexPage = () => (
       </div>
     </div>
     <div class="container registernow">
-    <a
-          href="https://barcamptools.eu/react-barcamp-cologne-2019/"
-          class="btn btn-lg btn-outline-secondary"
-          role="button"
-          aria-pressed="true"
-        >
-          Register now
-        </a>
+      <a
+        href="https://barcamptools.eu/react-barcamp-cologne-2019/"
+        class="btn btn-lg btn-outline-secondary"
+        role="button"
+        aria-pressed="true"
+      >
+        Register now
+      </a>
     </div>
     <div class="container-fluid location">
       <div class="map" id="map">
