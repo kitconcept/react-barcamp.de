@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Layout from '../components/layout'
 import BarcampSession from '../images/BarcampSession.jpg'
 import Programmer from '../images/programmer.jpg'

@@ -1,7 +1,8 @@
-body {
-  background-image: url(grid.jpg);
+.body {
+  /*background-image: url(grid.jpg);
   background-repeat: repeat-y;
-  background-position: center;
+  background-position: center;*/
+  background-color: #004876;
 }
 .above-the-fold {
   width: 100%;
