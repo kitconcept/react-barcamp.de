@@ -62,6 +62,10 @@ body {
   background-color: #004876;
   text-align: center;
 }
+.schedule h1{
+  margin-top:2em;
+  margin-bottom: 1em;
+}
 .schedule .row .col {
   display: flex;
   align-items: center;
@@ -93,6 +97,10 @@ body {
 .sponsors {
   background-color: #004876;
   text-align: center;
+}
+.sponsors h1{
+  margin-top:2em;
+  margin-bottom: 1em;
 }
 .sponsors .card {
   border-radius: 0;
