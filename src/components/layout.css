@@ -133,7 +133,7 @@ body {
   width: 100%;
 }
 .footer {
-  background-color: #00000065;
+  background-color: rgb(0, 0, 0, 0.4);
 }
 .footer-text {
   margin-top: 1em;
