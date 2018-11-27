@@ -224,7 +224,7 @@ const IndexPage = () => (
             <div class="footer-text orga-by">
               <p>
                 Organized by{' '}
-                <a href="https://kitconcept.com/">Kitconcept GmbH</a>
+                <a href="https://kitconcept.com/">kitconcept GmbH</a>
               </p>
             </div>
           </div>
