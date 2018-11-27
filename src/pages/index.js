@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Layout from '../components/layout'
-import 'bootstrap/dist/css/bootstrap.css'
 import BarcampSession from '../images/BarcampSession.jpg'
 import Programmer from '../images/programmer.jpg'
 import Reacticon from '../images/react-icon-sm.png'
