@@ -202,6 +202,16 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    <div class="container registernow">
+    <a
+          href="https://barcamptools.eu/react-barcamp-cologne-2019/"
+          class="btn btn-lg btn-outline-secondary"
+          role="button"
+          aria-pressed="true"
+        >
+          Register now
+        </a>
+    </div>
     <div class="container-fluid location">
       <div class="map" id="map">
         <iframe

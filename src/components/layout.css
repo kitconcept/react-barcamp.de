@@ -33,7 +33,7 @@ body {
 .above-the-fold .container a {
   color: #ffffff;
 }
-.above-the-fold .container .btn-outline-secondary {
+.above-the-fold .container .btn-outline-secondary, .registernow .btn-outline-secondary{
   border-radius: 0;
   border-color: #ffffff;
   color: #ffffff;
@@ -115,6 +115,9 @@ body {
 
 .sponsors a {
   color: #ffffff;
+}
+.registernow{
+  text-align: center;
 }
 .location {
   /*background-color: #1d721a;*/
