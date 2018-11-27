@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import 'bootstrap/dist/css/bootstrap.css'
 import BarcampSession from '../images/BarcampSession.jpg'
 import Programmer from '../images/programmer.jpg'
+import Reacticon from '../images/react-icon-sm.png'
 const IndexPage = () => (
   <Layout>
     <div class="above-the-fold">
@@ -115,44 +116,68 @@ const IndexPage = () => (
       <div class="row">
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-            <div class="card-body" />
+            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+            <div class="card-body">
+              <a href="#">Sponsor Name</a>
+            </div>
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-            <div class="card-body" />
+            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+            <div class="card-body">
+              <a href="#">Sponsor Name</a>
+            </div>
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-            <div class="card-body" />
+            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+            <div class="card-body">
+              <a href="#">Sponsor Name</a>
+            </div>
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-            <div class="card-body" />
+            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+            <div class="card-body">
+              <a href="#">Sponsor Name</a>
+            </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-            <div class="card-body" />
+            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+            <div class="card-body">
+              <a href="#">Sponsor Name</a>
+            </div>
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-            <div class="card-body" />
+            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+            <div class="card-body">
+              <a href="#">Sponsor Name</a>
+            </div>
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-            <div class="card-body" />
+            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+            <div class="card-body">
+              <a href="#">Sponsor Name</a>
+            </div>
           </div>
         </div>
         <div class="col col-12 col-sm-6 col-md-3">
           <div class="card">
-            <div class="card-body" />
+            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+            <div class="card-body">
+              <a href="#">Sponsor Name</a>
+            </div>
           </div>
         </div>
       </div>

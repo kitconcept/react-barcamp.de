@@ -8,11 +8,10 @@ body {
   height: 100vh;
   background-image: url(../images/DomCologne3.png);
   background-repeat: no-repeat;
-  background-position-x:90%;
+  background-position-x: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-   
 }
 .container {
   background-color: #0000ff;
@@ -22,12 +21,12 @@ body {
 }
 .above-the-fold .container {
   position: absolute;
-  top:0;
+  top: 0;
   text-align: center;
   background-color: transparent;
 }
-.above-the-fold .container h1{
-  font-size:7em;
+.above-the-fold .container h1 {
+  font-size: 7em;
 }
 .above-the-fold .container .btn-outline-secondary {
   border-radius: 0;
@@ -40,20 +39,20 @@ body {
 }
 .about .info-text {
   background-color: transparent;
-  padding:1em;
-  margin-top:1em;
+  padding: 1em;
+  margin-top: 1em;
   margin-bottom: 1em;
-  width:100%;
+  width: 100%;
 }
 .about .image {
-  padding:1em;
-  margin-top:1em;
+  padding: 1em;
+  margin-top: 1em;
   margin-bottom: 1em;
-  width:80%;
-  }
+  width: 80%;
+}
 .about .info-picture {
-width: 100%;
-height:100%;
+  width: 100%;
+  height: 100%;
 }
 .schedule {
   background-color:#004876;
@@ -83,21 +82,34 @@ height:100%;
 .schedule .link{
   color: #000000;
 }
+.sponsors {
+  background-color: #004876;
+  text-align: center;
+}
 .sponsors .card {
-  background-color: #66ff33;
+  border-radius: 0;
+  border-color:#ffffff;
   margin-top:1em;
+  margin-bottom: 1em; 
+  background-color: transparent;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.sponsors a {
+  color: #ffffff;
 }
 .location {
   background-color: #008000;
-  margin-top:3em;
-  padding-right:0;
-  padding-left:0;
+  margin-top: 3em;
+  padding-right: 0;
+  padding-left: 0;
 }
 
-.map{
+.map {
   background-color: #660033;
   height: 20em;
-  width:100%;
+  width: 100%;
 }
 .footer {
   background-color: #ffff00;
