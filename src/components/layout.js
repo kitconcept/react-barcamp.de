@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import 'bootstrap/dist/css/bootstrap.css'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -26,7 +27,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <div>{children}</div>
+        <body class="body">{children}</body>
       </>
     )}
   />

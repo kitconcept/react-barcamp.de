@@ -1,7 +1,8 @@
-body {
-  background-image: url(grid.jpg);
+.body {
+  /*background-image: url(grid.jpg);
   background-repeat: repeat-y;
-  background-position: center;
+  background-position: center;*/
+  background-color: #004876;
 }
 .above-the-fold {
   width: 100%;
@@ -14,7 +15,7 @@ body {
   align-items: center;
 }
 .container {
-  background-color: #0000ff;
+  /*background-color: #0000ff;*/
   margin-top: 3em;
   margin-bottom: 3em;
   color: #ffffff;
@@ -22,17 +23,21 @@ body {
 .above-the-fold .container {
   position: absolute;
   top: 0;
-  text-align: center;
+  text-align: left;
   background-color: transparent;
 }
 .above-the-fold .container h1 {
   font-size: 7em;
+}
+.above-the-fold .container a {
+  color: #ffffff;
 }
 .above-the-fold .container .btn-outline-secondary {
   border-radius: 0;
   border-color: #ffffff;
   color: #ffffff;
   margin: 3px, solid;
+  margin-top: 1em;
 }
 .about {
   background-color: #004876;
@@ -48,39 +53,42 @@ body {
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  width: 80%;
 }
 .about .info-picture {
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 .schedule {
-  background-color:#004876;
+  background-color: #004876;
   text-align: center;
 }
-.schedule .row .col{
+.schedule .row .col {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .schedule .table {
   width: 80%;
-  margin:1em;
+  margin: 1em;
   border-radius: 0;
   background-color: #004876;
   border-color: #ffffff;
-  padding:1em;
+  padding: 1em;
 }
-.schedule .table .card-header{
-  border-color:#ffffff;
+.schedule .heading {
+  font-size: 1.5em;
+  color: #ffffff;
+}
+.schedule .table .card-header {
+  border-color: #ffffff;
 }
 .schedule .table .list-group-item {
   background-color: #004876;
   border-color: #ffffff;
   text-align: left;
 }
-.schedule .link{
-  color: #000000;
+.schedule .link {
+  color: #ffffff;
 }
 .sponsors {
   background-color: #004876;
@@ -88,9 +96,9 @@ body {
 }
 .sponsors .card {
   border-radius: 0;
-  border-color:#ffffff;
-  margin-top:1em;
-  margin-bottom: 1em; 
+  border-color: #ffffff;
+  margin-top: 1em;
+  margin-bottom: 1em;
   background-color: transparent;
   margin-top: 1em;
   text-align: center;
@@ -100,20 +108,26 @@ body {
   color: #ffffff;
 }
 .location {
-  background-color: #008000;
+  /*background-color: #1d721a;*/
   margin-top: 3em;
   padding-right: 0;
   padding-left: 0;
+  height: 70vh;
 }
-
 .map {
-  background-color: #660033;
-  height: 20em;
+  height: 100%;
   width: 100%;
 }
 .footer {
-  background-color: #ffff00;
+  background-color: #002841;
 }
 .footer-text {
-  background-color: #66ff33;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.footer-text a {
+  color: #ffffff;
+}
+.orga-by {
+  text-align: right;
 }
