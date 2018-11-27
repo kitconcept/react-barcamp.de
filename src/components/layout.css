@@ -2,7 +2,7 @@ body {
   /*background-image: url(grid.jpg);
   background-repeat: repeat-y;
   background-position: center;*/
-  background-color: #004876;
+  background-color: #123244;
 }
 .above-the-fold {
   width: 100%;
@@ -40,7 +40,7 @@ body {
   margin: 3em;
 }
 .about {
-  background-color: #004876;
+  background-color: #123244;
 }
 .about .info-text {
   background-color: transparent;
@@ -60,7 +60,7 @@ body {
   height: 100%;
 }
 .schedule {
-  background-color: #004876;
+  background-color: #123244;
   text-align: center;
 }
 .schedule h1{
@@ -76,7 +76,7 @@ body {
   width: 80%;
   margin: 1em;
   border-radius: 0;
-  background-color: #004876;
+  background-color: #123244;
   border-color: #ffffff;
   padding: 1em;
 }
@@ -88,7 +88,7 @@ body {
   border-color: #ffffff;
 }
 .schedule .table .list-group-item {
-  background-color: #004876;
+  background-color: #123244;
   border-color: #ffffff;
   text-align: left;
 }
@@ -96,7 +96,7 @@ body {
   color: #ffffff;
 }
 .sponsors {
-  background-color: #004876;
+  background-color: #123244;
   text-align: center;
 }
 .sponsors h1{
@@ -131,7 +131,7 @@ body {
   width: 100%;
 }
 .footer {
-  background-color: #002841;
+  background-color: #00000065;
 }
 .footer-text {
   margin-top: 1em;
