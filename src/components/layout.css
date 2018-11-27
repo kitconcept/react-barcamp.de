@@ -50,7 +50,7 @@
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  width: 80%;
+  width: 100%;
 }
 .about .info-picture {
   width: 100%;
@@ -73,6 +73,10 @@
   border-color: #ffffff;
   padding:1em;
 }
+.schedule .heading{
+  font-size: 1.5em;
+  color:#ffffff;
+}
 .schedule .table .card-header{
   border-color:#ffffff;
 }
@@ -82,7 +86,7 @@
   text-align: left;
 }
 .schedule .link{
-  color: #000000;
+  color: #ffffff;
 }
 .sponsors {
   background-color: #004876;

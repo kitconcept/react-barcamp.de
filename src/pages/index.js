@@ -67,7 +67,7 @@ const IndexPage = () => (
           <div class="card table">
             <ul class="list-group list-group-flush">
               <div class="card-header">
-                <h3 class="schedule-heading">Saturday</h3>
+               <a class="heading" href="https://barcamptools.eu/react-barcamp-cologne-2019/events/307d07d7-5709-4445-b7c8-93001034eebe#sessions">Saturday 26.01.</a>
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">09:00 - Arrival</li>
@@ -85,7 +85,7 @@ const IndexPage = () => (
         <div class="col col-12 col-sm-6">
           <div class="card table">
             <div class="card-header">
-              <h3 class="schedule-heading">Sunday</h3>
+              <a class="heading" href="https://barcamptools.eu/react-barcamp-cologne-2019/events/5796ecb0-7428-4525-bf9d-f4e4e21713b8#location">Sunday 27.01.</a>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">09:00 - Arrival</li>
@@ -99,14 +99,13 @@ const IndexPage = () => (
         </div>
       </div>
       <p>
-        Further planning here:{' '}
+        Further infos:{" "}
         <a
           class="link"
           href="https://barcamptools.eu/react-barcamp-cologne-2019/events"
         >
           Barcamptools Schedule
         </a>
-        <br />{' '}
       </p>
     </div>
     <div class="container sponsors">
