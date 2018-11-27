@@ -10,6 +10,7 @@ body {
   background-image: url(../images/DomCologne3.png);
   background-repeat: no-repeat;
   background-position-x: 90%;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
