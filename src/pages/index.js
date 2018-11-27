@@ -3,12 +3,18 @@ import Layout from '../components/layout'
 import BarcampSession from '../images/BarcampSession.jpg'
 import Programmer from '../images/programmer.jpg'
 import Reacticon from '../images/react-icon-sm.png'
+import {
+  Map,
+  InfoWindow,
+  Marker,
+  GoogleApiWrapper,
+} from '../../node_modules/google-map-react'
 const IndexPage = () => (
   <Layout>
     <div class="above-the-fold">
       <div class="container">
         <h1>React Barcamp 2019</h1>
-        <h3>26th and 27th January 2019 in Cologne</h3>
+        <h3>26th and 27th January 2019 in <a href="#map">Cologne</a></h3>
         <a
           href="https://barcamptools.eu/react-barcamp-cologne-2019/"
           class="btn btn-lg btn-outline-secondary"
@@ -36,7 +42,12 @@ const IndexPage = () => (
         </div>
         <div class="col col-6 d-none d-sm-block">
           <div class="image ">
-            <img class="info-picture" src={BarcampSession} alt="placeholder" align="right" />
+            <img
+              class="info-picture"
+              src={BarcampSession}
+              alt="placeholder"
+              align="right"
+            />
           </div>
         </div>
       </div>
@@ -67,7 +78,12 @@ const IndexPage = () => (
           <div class="card table">
             <ul class="list-group list-group-flush">
               <div class="card-header">
-               <a class="heading" href="https://barcamptools.eu/react-barcamp-cologne-2019/events/307d07d7-5709-4445-b7c8-93001034eebe#sessions">Saturday 26.01.</a>
+                <a
+                  class="heading"
+                  href="https://barcamptools.eu/react-barcamp-cologne-2019/events/307d07d7-5709-4445-b7c8-93001034eebe#sessions"
+                >
+                  Saturday 26.01.
+                </a>
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">09:00 - Arrival</li>
@@ -85,7 +101,12 @@ const IndexPage = () => (
         <div class="col col-12 col-sm-6">
           <div class="card table">
             <div class="card-header">
-              <a class="heading" href="https://barcamptools.eu/react-barcamp-cologne-2019/events/5796ecb0-7428-4525-bf9d-f4e4e21713b8#location">Sunday 27.01.</a>
+              <a
+                class="heading"
+                href="https://barcamptools.eu/react-barcamp-cologne-2019/events/5796ecb0-7428-4525-bf9d-f4e4e21713b8#location"
+              >
+                Sunday 27.01.
+              </a>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">09:00 - Arrival</li>
@@ -99,7 +120,7 @@ const IndexPage = () => (
         </div>
       </div>
       <p>
-        Further infos:{" "}
+        Further infos:{' '}
         <a
           class="link"
           href="https://barcamptools.eu/react-barcamp-cologne-2019/events"
@@ -180,12 +201,12 @@ const IndexPage = () => (
       </div>
     </div>
     <div class="container-fluid location">
-      <h1>Location</h1>
-      <div class="map" />
+      <div class="map" id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.9170204473367!2d6.990856315748642!3d50.92525197954363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf242a777a51df%3A0x721311869833f03f!2sGFU+Cyrus+AG!5e0!3m2!1sde!2sde!4v1543320356673" width="100%" height="100%" frameborder="0" ></iframe>
+      </div>
     </div>
     <div class="container-fluid footer">
       <div class="container">
-        <h1>Footer</h1>
         <div class="row">
           <div class="col col-12 col-sm-6 col-md-3">
             <div class="footer-text">
@@ -213,4 +234,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default IndexPage 

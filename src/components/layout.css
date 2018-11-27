@@ -15,7 +15,7 @@
   align-items: center;
 }
 .container {
-  background-color: #0000ff;
+  /*background-color: #0000ff;*/
   margin-top: 3em;
   margin-bottom: 3em;
   color: #ffffff;
@@ -28,6 +28,9 @@
 }
 .above-the-fold .container h1 {
   font-size: 7em;
+}
+.above-the-fold .container a{
+  color:#ffffff;
 }
 .above-the-fold .container .btn-outline-secondary {
   border-radius: 0;
@@ -105,19 +108,18 @@
   color: #ffffff;
 }
 .location {
-  background-color: #008000;
+  /*background-color: #1d721a;*/
   margin-top: 3em;
   padding-right: 0;
   padding-left: 0;
+  height: 70vh;
 }
-
 .map {
-  background-color: #660033;
-  height: 20em;
+  height: 100%;
   width: 100%;
 }
 .footer {
-  background-color: #ffff00;
+  background-color: #002841;
 }
 .footer-text {
   background-color: #66ff33;
