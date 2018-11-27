@@ -1,8 +1,8 @@
-.body {
+body {
   /*background-image: url(grid.jpg);
   background-repeat: repeat-y;
   background-position: center;*/
-  background-color: #004876;
+  background-color: #123244;
 }
 .above-the-fold {
   width: 100%;
@@ -10,6 +10,7 @@
   background-image: url(../images/DomCologne3.png);
   background-repeat: no-repeat;
   background-position-x: 90%;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,15 +33,15 @@
 .above-the-fold .container a {
   color: #ffffff;
 }
-.above-the-fold .container .btn-outline-secondary {
+.above-the-fold .container .btn-outline-secondary,
+.registernow .btn-outline-secondary {
   border-radius: 0;
   border-color: #ffffff;
   color: #ffffff;
-  margin: 3px, solid;
-  margin-top: 1em;
+  margin: 3em;
 }
 .about {
-  background-color: #004876;
+  background-color: #123244;
 }
 .about .info-text {
   background-color: transparent;
@@ -49,18 +50,23 @@
   margin-bottom: 1em;
   width: 100%;
 }
+
 .about .image {
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 .about .info-picture {
-  width: 80%;
+  width: 100%;
   height: 100%;
 }
 .schedule {
-  background-color: #004876;
+  background-color: #123244;
   text-align: center;
+}
+.schedule h1 {
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 .schedule .row .col {
   display: flex;
@@ -71,7 +77,7 @@
   width: 80%;
   margin: 1em;
   border-radius: 0;
-  background-color: #004876;
+  background-color: #123244;
   border-color: #ffffff;
   padding: 1em;
 }
@@ -83,7 +89,7 @@
   border-color: #ffffff;
 }
 .schedule .table .list-group-item {
-  background-color: #004876;
+  background-color: #123244;
   border-color: #ffffff;
   text-align: left;
 }
@@ -91,11 +97,16 @@
   color: #ffffff;
 }
 .sponsors {
-  background-color: #004876;
+  background-color: #123244;
   text-align: center;
 }
+.sponsors h1 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
 .sponsors .card {
-  border-radius: 0;
+  border: 0;
+  /*border-radius: 0;*/
   border-color: #ffffff;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -106,6 +117,9 @@
 
 .sponsors a {
   color: #ffffff;
+}
+.registernow {
+  text-align: center;
 }
 .location {
   /*background-color: #1d721a;*/
@@ -119,7 +133,10 @@
   width: 100%;
 }
 .footer {
-  background-color: #002841;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+.footer .container {
+  margin-bottom: 0;
 }
 .footer-text {
   margin-top: 1em;
