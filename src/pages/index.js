@@ -35,8 +35,8 @@ const IndexPage = () => (
           </div>
         </div>
         <div class="col col-6 d-none d-sm-block">
-          <div class="image">
-            <img class="info-picture" src={BarcampSession} alt="placeholder" />
+          <div class="image ">
+            <img class="info-picture" src={BarcampSession} alt="placeholder" align="right" />
           </div>
         </div>
       </div>
