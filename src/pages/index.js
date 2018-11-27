@@ -14,7 +14,9 @@ const IndexPage = () => (
     <div class="above-the-fold">
       <div class="container">
         <h1>React Barcamp 2019</h1>
-        <h3>26th and 27th January 2019 in <a href="#map">Cologne</a></h3>
+        <h3>
+          26th and 27th January 2019 in <a href="#map">Cologne</a>
+        </h3>
         <a
           href="https://barcamptools.eu/react-barcamp-cologne-2019/"
           class="btn btn-lg btn-outline-secondary"
@@ -202,30 +204,25 @@ const IndexPage = () => (
     </div>
     <div class="container-fluid location">
       <div class="map" id="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.9170204473367!2d6.990856315748642!3d50.92525197954363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf242a777a51df%3A0x721311869833f03f!2sGFU+Cyrus+AG!5e0!3m2!1sde!2sde!4v1543320356673" width="100%" height="100%" frameborder="0" ></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.9170204473367!2d6.990856315748642!3d50.92525197954363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf242a777a51df%3A0x721311869833f03f!2sGFU+Cyrus+AG!5e0!3m2!1sde!2sde!4v1543320356673"
+          width="100%"
+          height="100%"
+          frameborder="0"
+        />
       </div>
     </div>
     <div class="container-fluid footer">
       <div class="container">
         <div class="row">
-          <div class="col col-12 col-sm-6 col-md-3">
+          <div class="col col-12 col-sm-6">
             <div class="footer-text">
-              <p>test</p>
+              <a href="">Imprint</a>
             </div>
           </div>
-          <div class="col col-12 col-sm-6 col-md-3">
-            <div class="footer-text">
-              <p>test</p>
-            </div>
-          </div>
-          <div class="col col-12 col-sm-6 col-md-3">
-            <div class="footer-text">
-              <p>test</p>
-            </div>
-          </div>
-          <div class="col col-12 col-sm-6 col-md-3">
-            <div class="footer-text">
-              <p>test</p>
+          <div class="col-12 col-sm-6">
+            <div class="footer-text orga-by">
+              <p>Organized by <a href="https://kitconcept.com/">Kitconcept GmbH</a></p>
             </div>
           </div>
         </div>
@@ -234,4 +231,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage 
+export default IndexPage

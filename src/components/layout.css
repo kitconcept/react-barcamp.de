@@ -29,8 +29,8 @@
 .above-the-fold .container h1 {
   font-size: 7em;
 }
-.above-the-fold .container a{
-  color:#ffffff;
+.above-the-fold .container a {
+  color: #ffffff;
 }
 .above-the-fold .container .btn-outline-secondary {
   border-radius: 0;
@@ -59,35 +59,35 @@
   height: 100%;
 }
 .schedule {
-  background-color:#004876;
+  background-color: #004876;
   text-align: center;
 }
-.schedule .row .col{
+.schedule .row .col {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .schedule .table {
   width: 80%;
-  margin:1em;
+  margin: 1em;
   border-radius: 0;
   background-color: #004876;
   border-color: #ffffff;
-  padding:1em;
+  padding: 1em;
 }
-.schedule .heading{
+.schedule .heading {
   font-size: 1.5em;
-  color:#ffffff;
+  color: #ffffff;
 }
-.schedule .table .card-header{
-  border-color:#ffffff;
+.schedule .table .card-header {
+  border-color: #ffffff;
 }
 .schedule .table .list-group-item {
   background-color: #004876;
   border-color: #ffffff;
   text-align: left;
 }
-.schedule .link{
+.schedule .link {
   color: #ffffff;
 }
 .sponsors {
@@ -96,9 +96,9 @@
 }
 .sponsors .card {
   border-radius: 0;
-  border-color:#ffffff;
-  margin-top:1em;
-  margin-bottom: 1em; 
+  border-color: #ffffff;
+  margin-top: 1em;
+  margin-bottom: 1em;
   background-color: transparent;
   margin-top: 1em;
   text-align: center;
@@ -122,5 +122,12 @@
   background-color: #002841;
 }
 .footer-text {
-  background-color: #66ff33;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.footer-text a{
+  color: #ffffff;
+}
+.orga-by {
+  text-align: right;
 }
