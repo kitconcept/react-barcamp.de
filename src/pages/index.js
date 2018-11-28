@@ -23,7 +23,7 @@ const IndexPage = () => (
         >
           Register now
         </a>
-        <p class="btn-comment">Free of charge</p>
+        <p class="btn-comment">Barcamp is free of charge</p>
       </div>
     </div>
     <div class="container about">
