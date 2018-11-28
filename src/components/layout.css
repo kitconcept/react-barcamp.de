@@ -133,7 +133,11 @@ body {
 }
 .sponsors .sponsor-btn {
   margin-top: 0;
-  margin-bottom: 7em;
+  margin-bottom: 5em;
+}
+.sponsors .btn{
+  padding:0.5em;
+  font-size: 1.7em;
 }
 .button {
   text-align: center;
