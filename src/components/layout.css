@@ -175,6 +175,7 @@ body {
 }
 .footer .soc-media img {
   width: 2em;
+  margin-right:0.5em;
 }
 .footer-text a {
   color: #ffffff;

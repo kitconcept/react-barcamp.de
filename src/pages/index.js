@@ -5,6 +5,7 @@ import Programmer from '../images/programmer.jpg'
 import Reacticon from '../images/react-icon-sm.png'
 import Twitericon from '../images/twitter-bird.png'
 import Facebookicon from '../images/facebook-logo.png'
+import Mailicon from '../images/mail.png'
 
 const IndexPage = () => (
   <Layout>
@@ -224,7 +225,7 @@ const IndexPage = () => (
       <div class="sp-bronze">
         <h2>Bronze Sponsors</h2>
         <div class="row">
-          <div class="col col-12 col-sm-4 col-md-2">
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
@@ -232,7 +233,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div class="col col-12 col-sm-4 col-md-2">
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
@@ -240,7 +241,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div class="col col-12 col-sm-4 col-md-2">
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
@@ -248,7 +249,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div class="col col-12 col-sm-4 col-md-2">
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
@@ -256,7 +257,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div class="col col-12 col-sm-4 col-md-2">
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
@@ -264,7 +265,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div class="col col-12 col-sm-4 col-md-2">
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
@@ -334,6 +335,9 @@ const IndexPage = () => (
               </a>
               <a href="https://twitter.com/ReactBarcamp?ref_src=twsrc%5Etfw">
                 <img src={Twitericon} />
+              </a>
+              <a href="mailto:info@kitconcept.com?">
+                <img src={Mailicon} />
               </a>
             </div>
           </div>
