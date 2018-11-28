@@ -3,9 +3,9 @@ import Layout from '../components/layout'
 import BarcampSession from '../images/BarcampSession.jpg'
 import Programmer from '../images/programmer.jpg'
 import Reacticon from '../images/react-icon-sm.png'
-import Twitericon from '../images/twitter-bird.png'
-import Facebookicon from '../images/facebook-logo.png'
-import Mailicon from '../images/mail.png'
+import Twitericon from '../images/twitter-bird-white.png'
+import Facebookicon from '../images/facebook-logo-white.png'
+import Mailicon from '../images/mail-white.png'
 
 const IndexPage = () => (
   <Layout>
