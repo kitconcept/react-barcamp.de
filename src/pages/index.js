@@ -142,6 +142,16 @@ const IndexPage = () => (
     </div>
     <div class="container sponsors">
       <h1>Sponsors</h1>
+      <div class="container button sponsor-btn">
+        <a
+          href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019"
+          class="btn btn-lg btn-outline-secondary "
+          role="button"
+          aria-pressed="true"
+        >
+          Become a Sponsor
+        </a>
+      </div>
       <div class="sp-diamond">
         <h2>Diamond Sponsor</h2>
         <div class="row">
@@ -274,16 +284,6 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
-      </div>
-      <div class="container button sponsor-btn">
-        <a
-          href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019"
-          class="btn btn-lg btn-outline-secondary "
-          role="button"
-          aria-pressed="true"
-        >
-          Become a Sponsor
-        </a>
       </div>
     </div>
     <div class="container-fuid button reg-now">
