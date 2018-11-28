@@ -127,7 +127,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <p>
+      <p class="infos">
         Further infos:{' '}
         <a
           class="link"
