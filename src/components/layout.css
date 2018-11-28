@@ -123,21 +123,11 @@ body {
   margin-top: 1em;
   text-align: center;
 }
-.sponsors .card-img-top {
-  padding: 4em;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
+.sponsors .card .card-img-top{
+  width:150px;
+  align-self: center;
 }
 
-.sponsors .sp-diamond .card-img-top {
-  padding: 6em;
-  padding-bottom: 0.5em;
-  padding-top:1em;
-}
-.sponsors .sp-bronze .card-img-top {
-  padding: 2em;
-  padding-bottom: 0;
-}
 .sponsors a {
   color: #ffffff;
 }
