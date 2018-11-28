@@ -23,7 +23,7 @@ body {
 }
 .above-the-fold .container {
   position: absolute;
-  top: 0;
+  top:1em;
   text-align: left;
   background-color: transparent;
 }
@@ -42,6 +42,7 @@ body {
 }
 .about {
   background-color: #123244;
+  margin-top:5em;
 }
 .about .info-text {
   background-color: transparent;
