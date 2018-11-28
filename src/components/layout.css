@@ -23,7 +23,7 @@ body {
 }
 .above-the-fold .container {
   position: absolute;
-  top:1em;
+  top: 1em;
   text-align: left;
   background-color: transparent;
 }
@@ -42,7 +42,7 @@ body {
 }
 .about {
   background-color: #123244;
-  margin-top:5em;
+  margin-top: 5em;
 }
 .about .info-text {
   background-color: transparent;
@@ -105,17 +105,17 @@ body {
   margin-top: 2em;
   margin-bottom: 1em;
 }
-.diamond-sp-hd{
-  color: #61DBFB;
+.diamond-sp-hd {
+  color: #61dbfb;
 }
-.gold-sp-hd{
+.gold-sp-hd {
   color: #ffd700;
 }
-.silver-sp-hd{
-  color:#c0c0c0;
+.silver-sp-hd {
+  color: #c0c0c0;
 }
-.bronce-sp-hd{
-  color:#cd7f32;
+.bronce-sp-hd {
+  color: #cd7f32;
 }
 .sponsors .card {
   border: 0;
@@ -131,23 +131,23 @@ body {
 .sponsors a {
   color: #ffffff;
 }
-.sponsors .sponsor-btn{
-  margin-top:0;
+.sponsors .sponsor-btn {
+  margin-top: 0;
   margin-bottom: 7em;
 }
 .button {
   text-align: center;
 }
-.reg-now{
+.reg-now {
   background-color: rgb(0, 0, 0, 0.4);
 }
-.reg-now .btn{
-  margin-top:1em;
+.reg-now .btn {
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 .location {
   /*background-color: #1d721a;*/
-  margin-top:0;
+  margin-top: 0;
   padding-right: 0;
   padding-left: 0;
   height: 70vh;
@@ -169,6 +169,9 @@ body {
 }
 .footer-text a {
   color: #ffffff;
+}
+.coc-link {
+  text-align: left;
 }
 .orga-by {
   text-align: right;
