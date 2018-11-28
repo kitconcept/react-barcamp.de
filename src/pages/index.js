@@ -35,6 +35,8 @@ const IndexPage = () => (
               The goal is to share what you know, to learn from others, to
               ignite discussion, and to connect in an open environment.
             </p>
+            <p>Further Infos:</p>
+            <a href="https://en.wikipedia.org/wiki/BarCamp">https://en.wikipedia.org/wiki/BarCamp</a>
           </div>
         </div>
         <div class="col col-6 d-none d-sm-block">
@@ -64,6 +66,8 @@ const IndexPage = () => (
               the overall amount of code. This makes not only writing but also
               reading the code much easier.
             </p>
+            <p>Further Infos:</p>
+            <a href="https://reactjs.org/">https://reactjs.org/</a>
           </div>
         </div>
       </div>
