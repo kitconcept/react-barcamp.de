@@ -159,7 +159,8 @@ body {
 }
 .footer {
   background-color: rgb(0, 0, 0, 0.4);
-  height: 10em;
+  margin-bottom: 0;
+  padding-bottom: 2em;
 }
 .footer .container {
   margin-top: 0;
@@ -167,6 +168,9 @@ body {
 }
 .footer-text {
   margin-top: 2em;
+}
+.footer .soc-media img {
+  width: 2em;
 }
 .footer-text a {
   color: #ffffff;

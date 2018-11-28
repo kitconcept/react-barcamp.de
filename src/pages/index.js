@@ -3,6 +3,8 @@ import Layout from '../components/layout'
 import BarcampSession from '../images/BarcampSession.jpg'
 import Programmer from '../images/programmer.jpg'
 import Reacticon from '../images/react-icon-sm.png'
+import Twitericon from '../images/twitter-bird.png'
+import Facebookicon from '../images/facebook-logo.png'
 
 const IndexPage = () => (
   <Layout>
@@ -322,6 +324,17 @@ const IndexPage = () => (
                 Organized by{' '}
                 <a href="https://kitconcept.com/">kitconcept GmbH</a>
               </p>
+            </div>
+          </div>
+          <div class="col-0 col-sm-4 col-md-5" />
+          <div class="col-12 col-sm-2 col-md-2">
+            <div class="footer-text soc-media">
+              <a href="https://www.facebook.com/profile">
+                <img src={Facebookicon} />
+              </a>
+              <a href="https://twitter.com/ReactBarcamp?ref_src=twsrc%5Etfw">
+                <img src={Twitericon} />
+              </a>
             </div>
           </div>
         </div>
