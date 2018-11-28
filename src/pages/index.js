@@ -329,7 +329,7 @@ const IndexPage = () => (
           <div class="col-0 col-sm-2 col-md-4" />
           <div class="col-12 col-sm-3 col-md-2">
             <div class="footer-text soc-media">
-              <a href="https://www.facebook.com/profile">
+              <a href="https://www.facebook.com/React-Barcamp-738517023197582/">
                 <img src={Facebookicon} />
               </a>
               <a href="https://twitter.com/ReactBarcamp?ref_src=twsrc%5Etfw">
