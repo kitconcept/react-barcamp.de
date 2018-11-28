@@ -14,7 +14,7 @@ const IndexPage = () => (
         </h3>
         <a
           href="https://barcamptools.eu/react-barcamp-cologne-2019/"
-          class="btn btn-lg btn-outline-secondary"
+          class="btn btn-lg btn-outline-secondary button"
           role="button"
           aria-pressed="true"
         >
@@ -259,8 +259,18 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
+      <div class="container button sponsor-btn">
+        <a
+          href="mailto:info@kitconcept.com?subject=Become Sponsor for React Barcamp"
+          class="btn btn-lg btn-outline-secondary "
+          role="button"
+          aria-pressed="true"
+        >
+          Become a Sponsor
+        </a>
+      </div>
     </div>
-    <div class="container registernow">
+    <div class="container-fuid button reg-now">
       <a
         href="https://barcamptools.eu/react-barcamp-cologne-2019/"
         class="btn btn-lg btn-outline-secondary"
