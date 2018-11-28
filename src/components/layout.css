@@ -40,6 +40,11 @@ body {
   color: #ffffff;
   margin-top: 3em;
 }
+.above-the-fold .btn-comment{
+  margin-top: 1em;
+  color: rgb(255, 255, 255,0.5);
+  margin-left:0.5em;
+}
 .about {
   background-color: #123244;
   margin-top: 5em;
