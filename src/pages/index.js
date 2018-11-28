@@ -306,17 +306,17 @@ const IndexPage = () => (
     <div class="container-fluid footer">
       <div class="container">
         <div class="row">
-          <div class="col col-12 col-sm-4">
+          <div class="col col-12 col-sm-2 col-md-1">
             <div class="footer-text">
               <a href="">Imprint</a>
             </div>
           </div>
-          <div class="col-12 col-sm-4">
+          <div class="col-12 col-sm-2 col-md-1">
             <div class="footer-text coc-link">
               <a href="http://berlincodeofconduct.org/">Code of conduct</a>
             </div>
           </div>
-          <div class="col-12 col-sm-4">
+          <div class="col-12 col-sm-2 col-md-3">
             <div class="footer-text orga-by">
               <p>
                 Organized by{' '}
