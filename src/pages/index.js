@@ -37,7 +37,7 @@ const IndexPage = () => (
               ignite discussion, and to connect in an open environment.
             </p>
             <p>
-              Further Infos:{" "}
+              Further Infos:{' '}
               <a href="https://en.wikipedia.org/wiki/BarCamp">
                 https://en.wikipedia.org/wiki/BarCamp
               </a>
@@ -72,7 +72,7 @@ const IndexPage = () => (
               reading the code much easier.
             </p>
             <p>
-              Further Infos:{" "}
+              Further Infos:{' '}
               <a href="https://reactjs.org/">https://reactjs.org/</a>
             </p>
           </div>
@@ -139,127 +139,135 @@ const IndexPage = () => (
     </div>
     <div class="container sponsors">
       <h1>Sponsors</h1>
-      <h2 class="diamond-sp-hd">Diamond Sponsor</h2>
-      <div class="row">
-        <div class="col col-0 col-sm-2 col-md-3" />
-        <div class="col col-12 col-sm-8 col-md-6 diamond-sp">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Your name here</a>
+      <div class="sp-diamond">
+        <h2>Diamond Sponsor</h2>
+        <div class="row">
+          <div class="col col-0 col-sm-2 col-md-3" />
+          <div class="col col-12 col-sm-8 col-md-6">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <h2 class="gold-sp-hd">Gold Sponsors</h2>
-      <div class="row">
-        <div class="col col-12 col-sm-6 col-md-4">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Your name here</a>
+      <div class="sp-gold">
+        <h2>Gold Sponsors</h2>
+        <div class="row">
+          <div class="col col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-md-4">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Your name here</a>
+          <div class="col col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-md-4">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Your name here</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="silver-sp-hd">Silver Sponsors</h2>
-      <div class="row">
-        <div class="col col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Your name here</a>
-            </div>
-          </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Your name here</a>
-            </div>
-          </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Your name here</a>
-            </div>
-          </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Your name here</a>
+          <div class="col col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <h2 class="bronce-sp-hd">Bronce Sponsors</h2>
-      <div class="row">
-        <div class="col col-12 col-sm-4 col-md-2">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Your name here</a>
+      <div class="sp-silver">
+        <h2>Silver Sponsors</h2>
+        <div class="row">
+          <div class="col col-12 col-sm-6 col-md-3">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-3">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-3">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-3">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col col-12 col-sm-4 col-md-2">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Your name here</a>
+      </div>
+      <div class="sp-bronze">
+        <h2>Bronze Sponsors</h2>
+        <div class="row">
+          <div class="col col-12 col-sm-4 col-md-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col col-12 col-sm-4 col-md-2">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Your name here</a>
+          <div class="col col-12 col-sm-4 col-md-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col col-12 col-sm-4 col-md-2">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Your name here</a>
+          <div class="col col-12 col-sm-4 col-md-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col col-12 col-sm-4 col-md-2">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Your name here</a>
+          <div class="col col-12 col-sm-4 col-md-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col col-12 col-sm-4 col-md-2">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Your name here</a>
+          <div class="col col-12 col-sm-4 col-md-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
         </div>
@@ -305,7 +313,7 @@ const IndexPage = () => (
           </div>
           <div class="col-12 col-sm-4">
             <div class="footer-text coc-link">
-                <a href="http://berlincodeofconduct.org/">Code of conduct</a>
+              <a href="http://berlincodeofconduct.org/">Code of conduct</a>
             </div>
           </div>
           <div class="col-12 col-sm-4">
