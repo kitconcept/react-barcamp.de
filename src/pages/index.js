@@ -265,7 +265,7 @@ const IndexPage = () => (
       </div>
       <div class="container button sponsor-btn">
         <a
-          href="mailto:info@kitconcept.com?subject=Become Sponsor for React Barcamp"
+          href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019"
           class="btn btn-lg btn-outline-secondary "
           role="button"
           aria-pressed="true"
