@@ -7,6 +7,7 @@ import Reacticon from '../images/react-icon-sm-blue-greyed.png'
 import Twitericon from '../images/twitter-bird-white.png'
 import Facebookicon from '../images/facebook-logo-white.png'
 import Mailicon from '../images/mail-white.png'
+import Cyrusicon from '../images/sp-cyrus.png'
 
 const IndexPage = () => (
   <Layout>
@@ -355,6 +356,22 @@ const IndexPage = () => (
               <div class="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-diamond">
+        <h2>Location Sponsor</h2>
+        <div class="row">
+          <div class="col col-0 col-sm-2 col-md-3" />
+          <div class="col col-12 col-sm-8 col-md-6">
+            <div class="card">
+              <img class="card-img-top" src={Cyrusicon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="https://www.gfu.net/?network=g&gclid=EAIaIQobChMI4Z-h0IP63gIVBkQYCh29oQoVEAAYASAAEgLg9fD_BwE">
+                  GFU Cyrus AG
                 </a>
               </div>
             </div>
