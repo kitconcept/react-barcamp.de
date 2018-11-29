@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import BarcampSession from '../images/BarcampSession.jpg'
 import Programmer from '../images/programmer.jpg'
-import Reacticon from '../images/react-icon-sm.png'
+import Reacticon from '../images/react-icon-sm-blue-greyed.png'
 import Twitericon from '../images/twitter-bird-white.png'
 import Facebookicon from '../images/facebook-logo-white.png'
 import Mailicon from '../images/mail-white.png'
@@ -232,7 +232,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <div class="sp-bronze">
+      {/*<div class="sp-bronze">
         <h2>Bronze Sponsors</h2>
         <div class="row">
           <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
@@ -284,7 +284,60 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
-      </div>
+</div>*/}
+<div class="sp-bronze">
+        <h2>Community Sponsors</h2>
+        <div class="row">
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
     </div>
     <div class="container-fuid button reg-now">
       <a
