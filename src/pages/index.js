@@ -29,7 +29,7 @@ const IndexPage = () => (
     </div>
     <div class="container about">
       <div class="row">
-        <div class="col col-12 col-sm-6">
+        <div class="col col-12 col-md-6">
           <div class="info-text">
             <h3>What is a Barcamp?</h3>
             <p>
@@ -43,7 +43,7 @@ const IndexPage = () => (
             <a href="https://en.wikipedia.org/wiki/BarCamp">Read more...</a>
           </div>
         </div>
-        <div class="col col-6 d-none d-sm-block">
+        <div class="col col-6 d-none d-md-block">
           <div class="image ">
             <img
               class="info-picture"
@@ -55,12 +55,12 @@ const IndexPage = () => (
         </div>
       </div>
       <div class="row">
-        <div class="col col-6 d-none d-sm-block">
+        <div class="col col-6 d-none d-md-block">
           <div class="image">
             <img class="info-picture" src={Programmer} alt="placeholder" />
           </div>
         </div>
-        <div class="col col-12 col-sm-6">
+        <div class="col col-12 col-md-6">
           <div class="info-text">
             <h3>What is React?</h3>
             <p>
@@ -283,7 +283,7 @@ const IndexPage = () => (
       <div class="sp-bronze">
         <h2>Community Sponsors</h2>
         <div class="row">
-          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+          <div class="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
@@ -291,7 +291,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+          <div class="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
@@ -299,7 +299,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+          <div class="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
@@ -307,7 +307,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+          <div class="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
@@ -315,7 +315,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+          <div class="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
@@ -323,7 +323,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+          <div class="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
