@@ -359,7 +359,7 @@ const IndexPage = () => (
         <div class="row">
           <div class="col col-12 col-sm-2 col-md-1">
             <div class="footer-text">
-            <Link to="/imprint/">Imprint</Link>
+              <Link to="/imprint/">Imprint</Link>
             </div>
           </div>
           <div class="col-12 col-sm-3 col-md-2">
