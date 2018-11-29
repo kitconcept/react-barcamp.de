@@ -187,24 +187,26 @@ body {
   text-align: center;
   color: #ffffff;
 }
-@media (max-width: 992px) {
-  .above-the-fold .container h1 {
-    font-size: 5em;
-  }
-  .above-the-fold{
-    background-position-x: 67%; 
-  }
-}
-@media (max-width: 750px) {
-  .above-the-fold .container h1 {
-    font-size: 4em;
-  }
+@media (max-width: 1200px) {
   .above-the-fold {
     background-position-x: 70%;
   }
 }
+@media (max-width: 992px) {
+  .above-the-fold .container h1 {
+    font-size: 5em;
+  }
+}
+@media (max-width: 768px) {
+  .above-the-fold .container h1 {
+    font-size: 4em;
+  }
+}
 
-@media (max-width: 540px) {
+@media (max-width: 576px) {
+  .above-the-fold {
+    background-image: url(../images/DomCologne-sm.png);
+  }
   .above-the-fold .container h1 {
     font-size: 3em;
   }
@@ -220,7 +222,7 @@ body {
     margin-top: 0;
   }
 }
-@media (max-height: 650px){
+@media (max-height: 650px) {
   .above-the-fold .btn-comment {
     font-size: 0.7em;
   }
