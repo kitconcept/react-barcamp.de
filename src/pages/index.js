@@ -1,8 +1,9 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { Link } from 'gatsby'
 import BarcampSession from '../images/BarcampSession.jpg'
 import Programmer from '../images/programmer.jpg'
-import Reacticon from '../images/react-icon-sm.png'
+import Reacticon from '../images/react-icon-sm-blue-greyed.png'
 import Twitericon from '../images/twitter-bird-white.png'
 import Facebookicon from '../images/facebook-logo-white.png'
 import Mailicon from '../images/mail-white.png'
@@ -39,12 +40,7 @@ const IndexPage = () => (
               The goal is to share what you know, to learn from others, to
               ignite discussion, and to connect in an open environment.
             </p>
-            <p>
-              Further Infos:{' '}
-              <a href="https://en.wikipedia.org/wiki/BarCamp">
-                https://en.wikipedia.org/wiki/BarCamp
-              </a>
-            </p>
+            <a href="https://en.wikipedia.org/wiki/BarCamp">Read more...</a>
           </div>
         </div>
         <div class="col col-6 d-none d-sm-block">
@@ -69,15 +65,14 @@ const IndexPage = () => (
             <h3>What is React?</h3>
             <p>
               React is a Javascript library that makes it incredible easy to
-              build fast user Interfaces for Websites and mobile. It allows you
-              to create reusable components to reduce repetitive programing and
-              the overall amount of code. This makes not only writing but also
-              reading the code much easier.
+              build fast user Interfaces for Websites and mobile. Data on react
+              sites caneasily be changed without reloading the page, improving
+              the overall user expierence. <br />
+              It also allows you to create reusable components to reduce
+              repetitive programing and the overall amount of code. This makes
+              not only writing but also reading the code much easier.
             </p>
-            <p>
-              Further Infos:{' '}
-              <a href="https://reactjs.org/">https://reactjs.org/</a>
-            </p>
+            <a href="https://reactjs.org/">Read more...</a>
           </div>
         </div>
       </div>
@@ -232,8 +227,61 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <div class="sp-bronze">
+      {/*<div class="sp-bronze">
         <h2>Bronze Sponsors</h2>
+        <div class="row">
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>*/}
+      <div class="sp-bronze">
+        <h2>Community Sponsors</h2>
         <div class="row">
           <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
             <div class="card">
@@ -311,7 +359,7 @@ const IndexPage = () => (
         <div class="row">
           <div class="col col-12 col-sm-2 col-md-1">
             <div class="footer-text">
-              <a href="">Imprint</a>
+              <Link to="/imprint/">Imprint</Link>
             </div>
           </div>
           <div class="col-12 col-sm-3 col-md-2">
@@ -337,7 +385,7 @@ const IndexPage = () => (
                 <img src={Twitericon} />
               </a>
               <a href="mailto:info@kitconcept.com?">
-                <img src={Mailicon} />
+                <img class="mail" src={Mailicon} />
               </a>
             </div>
           </div>
