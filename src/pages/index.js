@@ -3,6 +3,9 @@ import Layout from '../components/layout'
 import BarcampSession from '../images/BarcampSession.jpg'
 import Programmer from '../images/programmer.jpg'
 import Reacticon from '../images/react-icon-sm.png'
+import Twitericon from '../images/twitter-bird-white.png'
+import Facebookicon from '../images/facebook-logo-white.png'
+import Mailicon from '../images/mail-white.png'
 
 const IndexPage = () => (
   <Layout>
@@ -14,12 +17,13 @@ const IndexPage = () => (
         </h3>
         <a
           href="https://barcamptools.eu/react-barcamp-cologne-2019/"
-          class="btn btn-lg btn-outline-secondary"
+          class="btn btn-lg btn-outline-secondary button"
           role="button"
           aria-pressed="true"
         >
           Register now
         </a>
+        <p class="btn-comment">Barcamp is free of charge</p>
       </div>
     </div>
     <div class="container about">
@@ -34,6 +38,12 @@ const IndexPage = () => (
               contribute in the context of user experience is welcome to join.
               The goal is to share what you know, to learn from others, to
               ignite discussion, and to connect in an open environment.
+            </p>
+            <p>
+              Further Infos:{' '}
+              <a href="https://en.wikipedia.org/wiki/BarCamp">
+                https://en.wikipedia.org/wiki/BarCamp
+              </a>
             </p>
           </div>
         </div>
@@ -63,6 +73,10 @@ const IndexPage = () => (
               to create reusable components to reduce repetitive programing and
               the overall amount of code. This makes not only writing but also
               reading the code much easier.
+            </p>
+            <p>
+              Further Infos:{' '}
+              <a href="https://reactjs.org/">https://reactjs.org/</a>
             </p>
           </div>
         </div>
@@ -116,7 +130,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <p>
+      <p class="infos">
         Further infos:{' '}
         <a
           class="link"
@@ -128,76 +142,151 @@ const IndexPage = () => (
     </div>
     <div class="container sponsors">
       <h1>Sponsors</h1>
-      <div class="row">
-        <div class="col col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Sponsor Name</a>
-            </div>
-          </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Sponsor Name</a>
-            </div>
-          </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Sponsor Name</a>
-            </div>
-          </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Sponsor Name</a>
+      <div class="container button sponsor-btn">
+        <a
+          href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019"
+          class="btn btn-lg btn-outline-secondary "
+          role="button"
+          aria-pressed="true"
+        >
+          Become a Sponsor
+        </a>
+      </div>
+      <div class="sp-diamond">
+        <h2>Diamond Sponsor</h2>
+        <div class="row">
+          <div class="col col-0 col-sm-2 col-md-3" />
+          <div class="col col-12 col-sm-8 col-md-6">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Sponsor Name</a>
+      <div class="sp-gold">
+        <h2>Gold Sponsors</h2>
+        <div class="row">
+          <div class="col col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Sponsor Name</a>
+      </div>
+      <div class="sp-silver">
+        <h2>Silver Sponsors</h2>
+        <div class="row">
+          <div class="col col-12 col-sm-6 col-md-3">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-3">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-3">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-3">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Sponsor Name</a>
+      </div>
+      <div class="sp-bronze">
+        <h2>Bronze Sponsors</h2>
+        <div class="row">
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col col-12 col-sm-6 col-md-3">
-          <div class="card">
-            <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-            <div class="card-body">
-              <a href="#">Sponsor Name</a>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
+            <div class="card">
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <div class="card-body">
+                <a href="#">Become a Sponsor</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container registernow">
+    <div class="container-fuid button reg-now">
       <a
         href="https://barcamptools.eu/react-barcamp-cologne-2019/"
         class="btn btn-lg btn-outline-secondary"
@@ -220,17 +309,36 @@ const IndexPage = () => (
     <div class="container-fluid footer">
       <div class="container">
         <div class="row">
-          <div class="col col-12 col-sm-6">
+          <div class="col col-12 col-sm-2 col-md-1">
             <div class="footer-text">
               <a href="">Imprint</a>
             </div>
           </div>
-          <div class="col-12 col-sm-6">
+          <div class="col-12 col-sm-3 col-md-2">
+            <div class="footer-text coc-link">
+              <a href="http://berlincodeofconduct.org/">Code of conduct</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-2 col-md-3">
             <div class="footer-text orga-by">
               <p>
                 Organized by{' '}
                 <a href="https://kitconcept.com/">kitconcept GmbH</a>
               </p>
+            </div>
+          </div>
+          <div class="col-0 col-sm-2 col-md-4" />
+          <div class="col-12 col-sm-3 col-md-2">
+            <div class="footer-text soc-media">
+              <a href="https://www.facebook.com/React-Barcamp-738517023197582/">
+                <img src={Facebookicon} />
+              </a>
+              <a href="https://twitter.com/ReactBarcamp?ref_src=twsrc%5Etfw">
+                <img src={Twitericon} />
+              </a>
+              <a href="mailto:info@kitconcept.com?">
+                <img src={Mailicon} />
+              </a>
             </div>
           </div>
         </div>

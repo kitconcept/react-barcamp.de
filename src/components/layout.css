@@ -23,7 +23,7 @@ body {
 }
 .above-the-fold .container {
   position: absolute;
-  top: 0;
+  top: 1em;
   text-align: left;
   background-color: transparent;
 }
@@ -34,14 +34,19 @@ body {
   color: #ffffff;
 }
 .above-the-fold .container .btn-outline-secondary,
-.registernow .btn-outline-secondary {
+.button .btn-outline-secondary {
   border-radius: 0;
   border-color: #ffffff;
   color: #ffffff;
   margin-top: 3em;
 }
+.above-the-fold .btn-comment {
+  margin-top: 0.5em;
+  color: rgb(255, 255, 255, 0.5);
+}
 .about {
   background-color: #123244;
+  margin-top: 5em;
 }
 .about .info-text {
   background-color: transparent;
@@ -59,6 +64,10 @@ body {
 .about .info-picture {
   width: 100%;
   height: 100%;
+}
+.about .row{
+  margin-top:1em;
+  margin-bottom:1em;
 }
 .schedule {
   background-color: #123244;
@@ -93,6 +102,9 @@ body {
   border-color: #ffffff;
   text-align: left;
 }
+.schedule .infos {
+  margin-top: 1.5em;
+}
 .schedule .link {
   color: #ffffff;
 }
@@ -102,8 +114,9 @@ body {
 }
 .sponsors h1 {
   margin-top: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 0;
 }
+
 .sponsors .card {
   border: 0;
   /*border-radius: 0;*/
@@ -114,16 +127,35 @@ body {
   margin-top: 1em;
   text-align: center;
 }
+.sponsors .card .card-img-top {
+  width: 150px;
+  align-self: center;
+}
 
 .sponsors a {
   color: #ffffff;
 }
-.registernow {
+.sponsors .sponsor-btn {
+  margin-top: 0;
+  margin-bottom: 3em;
+}
+.sponsors .btn {
+  padding: 0.5em;
+}
+.button {
   text-align: center;
+}
+.reg-now {
+  background-color: rgb(0, 0, 0, 0.4);
+}
+.reg-now .btn {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width:12em;
 }
 .location {
   /*background-color: #1d721a;*/
-  margin-top: 3em;
+  margin-top: 0;
   padding-right: 0;
   padding-left: 0;
   height: 70vh;
@@ -134,17 +166,20 @@ body {
 }
 .footer {
   background-color: rgb(0, 0, 0, 0.4);
+  margin-bottom: 0;
+  padding-bottom: 2em;
 }
 .footer .container {
+  margin-top: 0;
   margin-bottom: 0;
 }
 .footer-text {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+}
+.footer .soc-media img {
+  width: 2em;
+  margin-right:0.5em;
 }
 .footer-text a {
   color: #ffffff;
-}
-.orga-by {
-  text-align: right;
 }
