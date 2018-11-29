@@ -187,3 +187,44 @@ body {
   text-align: center;
   color: #ffffff;
 }
+@media (max-width: 992px) {
+  .above-the-fold .container h1 {
+    font-size: 5em;
+  }
+  .above-the-fold{
+    background-position-x: 67%; 
+  }
+}
+@media (max-width: 750px) {
+  .above-the-fold .container h1 {
+    font-size: 4em;
+  }
+  .above-the-fold {
+    background-position-x: 70%;
+  }
+}
+
+@media (max-width: 540px) {
+  .above-the-fold .container h1 {
+    font-size: 3em;
+  }
+  .above-the-fold {
+    background-position-x: 70%;
+  }
+  .above-the-fold .container h3 {
+    font-size: 1.5em;
+  }
+}
+@media (max-height: 840px) {
+  .above-the-fold .container {
+    margin-top: 0;
+  }
+}
+@media (max-height: 650px){
+  .above-the-fold .btn-comment {
+    font-size: 0.7em;
+  }
+  .above-the-fold .container .button {
+    margin-top: 1em;
+  }
+}
