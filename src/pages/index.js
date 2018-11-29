@@ -155,7 +155,9 @@ const IndexPage = () => (
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="#">Become a Sponsor</a>
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  Become a Sponsor
+                </a>
               </div>
             </div>
           </div>
@@ -168,7 +170,9 @@ const IndexPage = () => (
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="#">Become a Sponsor</a>
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  Become a Sponsor
+                </a>
               </div>
             </div>
           </div>
@@ -176,7 +180,9 @@ const IndexPage = () => (
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="#">Become a Sponsor</a>
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  Become a Sponsor
+                </a>
               </div>
             </div>
           </div>
@@ -184,7 +190,9 @@ const IndexPage = () => (
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="#">Become a Sponsor</a>
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  Become a Sponsor
+                </a>
               </div>
             </div>
           </div>
@@ -197,7 +205,9 @@ const IndexPage = () => (
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="#">Become a Sponsor</a>
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  Become a Sponsor
+                </a>
               </div>
             </div>
           </div>
@@ -205,7 +215,9 @@ const IndexPage = () => (
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="#">Become a Sponsor</a>
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  Become a Sponsor
+                </a>
               </div>
             </div>
           </div>
@@ -213,7 +225,9 @@ const IndexPage = () => (
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="#">Become a Sponsor</a>
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  Become a Sponsor
+                </a>
               </div>
             </div>
           </div>
@@ -221,7 +235,9 @@ const IndexPage = () => (
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="#">Become a Sponsor</a>
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  Become a Sponsor
+                </a>
               </div>
             </div>
           </div>
@@ -287,7 +303,9 @@ const IndexPage = () => (
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="#">Become a Sponsor</a>
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  Become a Sponsor
+                </a>
               </div>
             </div>
           </div>
@@ -295,7 +313,9 @@ const IndexPage = () => (
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="#">Become a Sponsor</a>
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  Become a Sponsor
+                </a>
               </div>
             </div>
           </div>
@@ -303,7 +323,9 @@ const IndexPage = () => (
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="#">Become a Sponsor</a>
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  Become a Sponsor
+                </a>
               </div>
             </div>
           </div>
@@ -311,7 +333,9 @@ const IndexPage = () => (
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="#">Become a Sponsor</a>
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  Become a Sponsor
+                </a>
               </div>
             </div>
           </div>
@@ -319,7 +343,9 @@ const IndexPage = () => (
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="#">Become a Sponsor</a>
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  Become a Sponsor
+                </a>
               </div>
             </div>
           </div>
@@ -327,7 +353,9 @@ const IndexPage = () => (
             <div class="card">
               <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="#">Become a Sponsor</a>
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  Become a Sponsor
+                </a>
               </div>
             </div>
           </div>
