@@ -285,7 +285,7 @@ const IndexPage = () => (
           </div>
         </div>
 </div>*/}
-<div class="sp-bronze">
+      <div class="sp-bronze">
         <h2>Community Sponsors</h2>
         <div class="row">
           <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
@@ -337,7 +337,7 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
-</div>
+      </div>
     </div>
     <div class="container-fuid button reg-now">
       <a
