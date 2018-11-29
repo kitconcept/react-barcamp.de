@@ -64,9 +64,9 @@ const IndexPage = () => (
           <div class="info-text">
             <h3>What is React?</h3>
             <p>
-              React is a Javascript library that makes it incredible easy to
-              build fast user Interfaces for Websites and mobile. Data on react
-              sites caneasily be changed without reloading the page, improving
+              React is a JavaScript library that makes it incredible easy to
+              build fast user Interfaces for websites and mobile. Data on React
+              sites can easily be changed without reloading the page, improving
               the overall user expierence. <br />
               It also allows you to create reusable components to reduce
               repetitive programing and the overall amount of code. This makes
