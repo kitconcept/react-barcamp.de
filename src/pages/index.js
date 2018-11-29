@@ -385,7 +385,7 @@ const IndexPage = () => (
                 <img src={Twitericon} />
               </a>
               <a href="mailto:info@kitconcept.com?">
-                <img src={Mailicon} />
+                <img class="mail" src={Mailicon} />
               </a>
             </div>
           </div>
