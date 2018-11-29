@@ -29,7 +29,7 @@ const IndexPage = () => (
     </div>
     <div class="container about">
       <div class="row">
-        <div class="col col-12 col-sm-6">
+        <div class="col col-12 col-md-6">
           <div class="info-text">
             <h3>What is a Barcamp?</h3>
             <p>
@@ -43,7 +43,7 @@ const IndexPage = () => (
             <a href="https://en.wikipedia.org/wiki/BarCamp">Read more...</a>
           </div>
         </div>
-        <div class="col col-6 d-none d-sm-block">
+        <div class="col col-6 d-none d-md-block">
           <div class="image ">
             <img
               class="info-picture"
@@ -55,12 +55,12 @@ const IndexPage = () => (
         </div>
       </div>
       <div class="row">
-        <div class="col col-6 d-none d-sm-block">
+        <div class="col col-6 d-none d-md-block">
           <div class="image">
             <img class="info-picture" src={Programmer} alt="placeholder" />
           </div>
         </div>
-        <div class="col col-12 col-sm-6">
+        <div class="col col-12 col-md-6">
           <div class="info-text">
             <h3>What is React?</h3>
             <p>
