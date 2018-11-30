@@ -2,13 +2,13 @@ import React from 'react'
 import Layout from '../components/layout'
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import BarcampSession from '../images/BarcampSession.jpg'
-import Programmer from '../images/programmer.jpg'
-import Reacticon from '../images/react-icon-sm-blue-greyed.png'
-import Twitericon from '../images/twitter-bird-white.png'
-import Facebookicon from '../images/facebook-logo-white.png'
-import Mailicon from '../images/mail-white.png'
-import Cyrusicon from '../images/sp-cyrus.png'
+import BarcampSession from '../images/BarcampSession-min.jpg'
+import Programmer from '../images/programmer-min.jpg'
+import Reacticon from '../images/react-icon-sm-blue-greyed-min.png'
+import Twitericon from '../images/twitter-bird-white-min.png'
+import Facebookicon from '../images/facebook-logo-white-min.png'
+import Mailicon from '../images/mail-white-min.png'
+import Cyrusicon from '../images/sp-cyrus-min.png'
 
 const IndexPage = props => (
   <Layout>
@@ -449,7 +449,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    imageCologne: file(relativePath: { eq: "DomCologne3.png" }) {
+    imageCologne: file(relativePath: { eq: "DomCologne3-min.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
           ...GatsbyImageSharpFluid
