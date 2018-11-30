@@ -51,11 +51,9 @@ const IndexPage = props => (
         </div>
         <div class="col col-6 d-none d-md-block">
           <div class="image ">
-            <img
+            <Img
               class="info-picture"
-              src={BarcampSession}
-              alt="placeholder"
-              align="right"
+              fluid={props.data.imageBarcampSession.childImageSharp.fluid}
             />
           </div>
         </div>
@@ -63,7 +61,10 @@ const IndexPage = props => (
       <div class="row">
         <div class="col col-6 d-none d-md-block">
           <div class="image">
-            <img class="info-picture" src={Programmer} alt="placeholder" />
+            <Img
+              class="info-picture"
+              fluid={props.data.imageProgrammer.childImageSharp.fluid}
+            />
           </div>
         </div>
         <div class="col col-12 col-md-6">
@@ -159,7 +160,7 @@ const IndexPage = props => (
           <div class="col col-0 col-sm-2 col-md-3" />
           <div class="col col-12 col-sm-8 col-md-6">
             <div class="card">
-              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <mg class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -450,6 +451,20 @@ export default IndexPage
 export const pageQuery = graphql`
   query {
     imageCologne: file(relativePath: { eq: "DomCologne3-min.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageBarcampSession: file(relativePath: { eq: "BarcampSession-min.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageProgrammer: file(relativePath: { eq: "programmer-min.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
           ...GatsbyImageSharpFluid
