@@ -452,19 +452,19 @@ export const pageQuery = graphql`
   query {
     imageCologne: file(relativePath: { eq: "DomCologne3-mini.png" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
+        fluid(maxWidth: 2000, maxHeight: 900, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageBarcampSession: file(relativePath: { eq: "BarcampSession-min.jpg" }) {
+    imageBarcampSession: file(relativePath: { eq: "BarcampSession-mini.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    imageProgrammer: file(relativePath: { eq: "programmer-min.jpg" }) {
+    imageProgrammer: file(relativePath: { eq: "programmer-mini.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
           ...GatsbyImageSharpFluid
