@@ -3,7 +3,6 @@ module.exports = {
     title: 'React Barcamp Cologne 2019',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -11,8 +10,10 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
