@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import BarcampSession from '../images/BarcampSession.jpg'
 import Programmer from '../images/programmer.jpg'
 import Reacticon from '../images/react-icon-sm-blue-greyed.png'
@@ -9,9 +10,13 @@ import Facebookicon from '../images/facebook-logo-white.png'
 import Mailicon from '../images/mail-white.png'
 import Cyrusicon from '../images/sp-cyrus.png'
 
-const IndexPage = () => (
+const IndexPage = props => (
   <Layout>
     <div class="above-the-fold">
+      <Img
+        className="full-width-image-container"
+        fluid={props.data.imageCologne.childImageSharp.fluid}
+      />
       <div class="container">
         <h1>React Barcamp 2019</h1>
         <h3>
@@ -441,3 +446,15 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query {
+    imageCologne: file(relativePath: { eq: "DomCologne3.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

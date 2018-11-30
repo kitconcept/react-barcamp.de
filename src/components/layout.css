@@ -7,10 +7,10 @@ body {
 .above-the-fold {
   width: 100%;
   height: 100vh;
-  background-image: url(../images/DomCologne3.png);
+  /*background-image: url(../images/DomCologne3.png);
   background-repeat: no-repeat;
   background-position-x: 90%;
-  background-size: cover;
+  background-size: cover;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +21,12 @@ body {
   margin-bottom: 3em;
   color: #ffffff;
 }
+
+.above-the-fold .full-width-image-container {
+  flex: 1;
+  align-self: normal;
+}
+
 .above-the-fold .container {
   position: absolute;
   top: 1em;
@@ -206,7 +212,7 @@ body {
 
 @media (max-width: 576px) {
   .above-the-fold {
-    background-image: url(../images/DomCologne-sm.png);
+    /*background-image: url(../images/DomCologne-sm.png);*/
   }
   .above-the-fold .container h1 {
     font-size: 2.5em;
