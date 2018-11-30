@@ -12,7 +12,7 @@ import Cyrusicon from '../images/sp-cyrus.png'
 
 const IndexPage = props => (
   <Layout>
-    <div class="above-the-fold">
+    <div class="above-the-fold ">
       <Img
         className="full-width-image-container"
         fluid={props.data.imageCologne.childImageSharp.fluid}
@@ -452,7 +452,7 @@ export const pageQuery = graphql`
     imageCologne: file(relativePath: { eq: "DomCologne3-min.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
