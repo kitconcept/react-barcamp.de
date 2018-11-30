@@ -13,7 +13,10 @@ import Cyrusicon from '../images/sp-cyrus.png'
 const IndexPage = props => (
   <Layout>
     <div class="above-the-fold">
-      <Img fluid={props.data.imageCologne.childImageSharp.fluid} />
+      <Img
+        className="full-width-image-container"
+        fluid={props.data.imageCologne.childImageSharp.fluid}
+      />
       <div class="container">
         <h1>React Barcamp 2019</h1>
         <h3>

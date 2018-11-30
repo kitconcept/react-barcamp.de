@@ -7,7 +7,7 @@ body {
 .above-the-fold {
   width: 100%;
   height: 100vh;
-  /*Übackground-image: url(../images/DomCologne3.png);
+  /*background-image: url(../images/DomCologne3.png);
   background-repeat: no-repeat;
   background-position-x: 90%;
   background-size: cover;*/
@@ -21,6 +21,12 @@ body {
   margin-bottom: 3em;
   color: #ffffff;
 }
+
+.above-the-fold .full-width-image-container {
+  flex: 1;
+  align-self: normal;
+}
+
 .above-the-fold .container {
   position: absolute;
   top: 1em;
