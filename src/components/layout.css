@@ -156,6 +156,7 @@ body {
   padding-right: 0;
   padding-left: 0;
   height: 70vh;
+  max-height: 500px;
 }
 .map {
   height: 100%;
