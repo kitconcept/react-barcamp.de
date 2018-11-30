@@ -451,7 +451,7 @@ export const pageQuery = graphql`
   query {
     imageCologne: file(relativePath: { eq: "DomCologne3.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
