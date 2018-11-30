@@ -450,7 +450,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    imageCologne: file(relativePath: { eq: "DomCologne3-min.png" }) {
+    imageCologne: file(relativePath: { eq: "DomCologne3-mini.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
           ...GatsbyImageSharpFluid
@@ -465,6 +465,15 @@ export const pageQuery = graphql`
       }
     }
     imageProgrammer: file(relativePath: { eq: "programmer-min.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageReactIcon: file(
+      relativePath: { eq: "react-icon-sm-blue-greyed-min.png" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
           ...GatsbyImageSharpFluid
