@@ -9,6 +9,8 @@ import Twitericon from '../images/twitter-bird-white-min.png'
 import Facebookicon from '../images/facebook-logo-white-min.png'
 import Mailicon from '../images/mail-white-min.png'
 import Cyrusicon from '../images/sp-cyrus-min.png'
+import Railsloveicon from '../images/railslove_logo.png'
+import BonnJSicon from '../images/BonnJS_Logo-min.png'
 
 const IndexPage = props => (
   <Layout>
@@ -170,15 +172,17 @@ const IndexPage = props => (
         </div>
       </div>
       <div class="sp-gold">
-        <h2>Gold Sponsors</h2>
+        <h2>Sponsors</h2>
         <div class="row">
           <div class="col col-12 col-sm-6 col-md-4">
             <div class="card">
-              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <img
+                class="card-img-top"
+                src={Railsloveicon}
+                alt="Sponsor Logo"
+              />
               <div class="card-body">
-                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                  Become a Sponsor
-                </a>
+                <a href="https://www.railslove.com/">Railslove GmbH</a>
               </div>
             </div>
           </div>
@@ -204,7 +208,7 @@ const IndexPage = props => (
           </div>
         </div>
       </div>
-      <div class="sp-silver">
+      {/*<div class="sp-silver">
         <h2>Silver Sponsors</h2>
         <div class="row">
           <div class="col col-12 col-sm-6 col-md-3">
@@ -249,7 +253,7 @@ const IndexPage = props => (
           </div>
         </div>
       </div>
-      {/*<div class="sp-bronze">
+      <div class="sp-bronze">
         <h2>Bronze Sponsors</h2>
         <div class="row">
           <div class="col col-12 col-sm-4 col-md-4 col-lg-2">
@@ -307,11 +311,9 @@ const IndexPage = props => (
         <div class="row">
           <div class="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div class="card">
-              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <img class="card-img-top" src={BonnJSicon} alt="Sponsor Logo" />
               <div class="card-body">
-                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                  Become a Sponsor
-                </a>
+                <a href="https://www.meetup.com/BonnJS/">BonnJS</a>
               </div>
             </div>
           </div>
