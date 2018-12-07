@@ -56,11 +56,9 @@ const IndexPage = props => (
         </div>
         <div class="col col-6 d-none d-md-block">
           <div class="image ">
-            <img
+            <Img
               class="info-picture"
-              src={BarcampSession}
-              alt="placeholder"
-              align="right"
+              fluid={props.data.imageBarcampSession.childImageSharp.fluid}
             />
           </div>
         </div>
@@ -68,7 +66,10 @@ const IndexPage = props => (
       <div class="row">
         <div class="col col-6 d-none d-md-block">
           <div class="image">
-            <img class="info-picture" src={Programmer} alt="placeholder" />
+            <Img
+              class="info-picture"
+              fluid={props.data.imageProgrammer.childImageSharp.fluid}
+            />
           </div>
         </div>
         <div class="col col-12 col-md-6">
@@ -459,7 +460,30 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    imageCologne: file(relativePath: { eq: "DomCologne3-min.png" }) {
+    imageCologne: file(relativePath: { eq: "DomCologne3-mini.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000, maxHeight: 900, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageBarcampSession: file(relativePath: { eq: "BarcampSession-mini.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageProgrammer: file(relativePath: { eq: "programmer-mini.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    imageReactIcon: file(
+      relativePath: { eq: "react-icon-sm-blue-greyed-min.png" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 2000, maxHeight: 1200, quality: 100) {
           ...GatsbyImageSharpFluid
