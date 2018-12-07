@@ -26,6 +26,10 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
+          <meta
+            name="google-site-verification"
+            content="wXlh381BgLztoeqVBLM1C1rHcz8DyRFPeoa7UVHl5ic"
+          />
         </Helmet>
         <body>{children}</body>
       </>
