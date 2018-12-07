@@ -160,7 +160,7 @@ const IndexPage = props => (
           <div class="col col-0 col-sm-2 col-md-3" />
           <div class="col col-12 col-sm-8 col-md-6">
             <div class="card">
-              <mg class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <img class="card-img-top" src={Reacticon} alt="Sponsor Logo" />
               <div class="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
