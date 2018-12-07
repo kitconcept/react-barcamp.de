@@ -14,7 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-130501942-1',
+        trackingId: 'UA-58253982-5',
         // Puts tracking script in the head instead of the body
         head: false,
         // Setting this parameter is optional
@@ -22,13 +22,9 @@ module.exports = {
         // Setting this parameter is also optional
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ['/preview/**', '/do-not-track/me/too/'],
-        // Enables Google Optimize using your container Id
-        optimizeId: 'UA-130501942-1',
-        // Any additional create only fields (optional)
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: 'example.com',
+        cookieDomain: 'auto',
       },
     },
     'gatsby-transformer-sharp',
