@@ -441,13 +441,13 @@ const IndexPage = props => (
           <div className="col-12 col-sm-3 col-md-2">
             <div className="footer-text soc-media">
               <a href="https://www.facebook.com/React-Barcamp-738517023197582/">
-                <img src={Facebookicon} />
+                <img src={Facebookicon} alt="Facebook" />
               </a>
               <a href="https://twitter.com/ReactBarcamp?ref_src=twsrc%5Etfw">
-                <img src={Twitericon} />
+                <img src={Twitericon} alt="Twitter" />
               </a>
               <a href="mailto:info@kitconcept.com?">
-                <img className="mail" src={Mailicon} />
+                <img className="mail" alt="Mail" src={Mailicon} />
               </a>
             </div>
           </div>
