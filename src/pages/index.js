@@ -408,10 +408,11 @@ const IndexPage = props => (
     <div className="container-fluid location">
       <div className="map" id="map">
         <iframe
+          title="Barcamp location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.9170204473367!2d6.990856315748642!3d50.92525197954363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf242a777a51df%3A0x721311869833f03f!2sGFU+Cyrus+AG!5e0!3m2!1sde!2sde!4v1543320356673"
           width="100%"
           height="100%"
-          frameborder="0"
+          frameBorder="0"
         />
       </div>
     </div>
