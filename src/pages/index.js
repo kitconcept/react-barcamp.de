@@ -204,7 +204,11 @@ const IndexPage = props => (
           </div>
           <div className="col col-12 col-sm-6 col-md-4">
             <div className="card">
-              <img className="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <img
+                className="card-img-top"
+                src={Reacticon}
+                alt="Sponsor Logo"
+              />
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -227,7 +231,11 @@ const IndexPage = props => (
           </div>
           <div className="col col-12 col-sm-6 col-md-3">
             <div className="card">
-              <img className="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <img
+                className="card-img-top"
+                src={Reacticon}
+                alt="Sponsor Logo"
+              />
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -237,7 +245,11 @@ const IndexPage = props => (
           </div>
           <div className="col col-12 col-sm-6 col-md-3">
             <div className="card">
-              <img className="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <img
+                className="card-img-top"
+                src={Reacticon}
+                alt="Sponsor Logo"
+              />
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -247,7 +259,11 @@ const IndexPage = props => (
           </div>
           <div className="col col-12 col-sm-6 col-md-3">
             <div className="card">
-              <img className="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <img
+                className="card-img-top"
+                src={Reacticon}
+                alt="Sponsor Logo"
+              />
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -316,7 +332,11 @@ const IndexPage = props => (
         <div className="row">
           <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div className="card">
-              <img className="card-img-top" src={BonnJSicon} alt="Sponsor Logo" />
+              <img
+                className="card-img-top"
+                src={BonnJSicon}
+                alt="Sponsor Logo"
+              />
               <div className="card-body">
                 <a href="https://www.meetup.com/BonnJS/">BonnJS</a>
               </div>
@@ -338,7 +358,11 @@ const IndexPage = props => (
           </div>
           <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div className="card">
-              <img className="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <img
+                className="card-img-top"
+                src={Reacticon}
+                alt="Sponsor Logo"
+              />
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -348,7 +372,11 @@ const IndexPage = props => (
           </div>
           <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div className="card">
-              <img className="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <img
+                className="card-img-top"
+                src={Reacticon}
+                alt="Sponsor Logo"
+              />
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -358,7 +386,11 @@ const IndexPage = props => (
           </div>
           <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div className="card">
-              <img className="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <img
+                className="card-img-top"
+                src={Reacticon}
+                alt="Sponsor Logo"
+              />
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -368,7 +400,11 @@ const IndexPage = props => (
           </div>
           <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div className="card">
-              <img className="card-img-top" src={Reacticon} alt="Sponsor Logo" />
+              <img
+                className="card-img-top"
+                src={Reacticon}
+                alt="Sponsor Logo"
+              />
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -384,7 +420,11 @@ const IndexPage = props => (
           <div className="col col-0 col-sm-2 col-md-3" />
           <div className="col col-12 col-sm-8 col-md-6">
             <div className="card">
-              <img className="card-img-top" src={Cyrusicon} alt="Sponsor Logo" />
+              <img
+                className="card-img-top"
+                src={Cyrusicon}
+                alt="Sponsor Logo"
+              />
               <div className="card-body">
                 <a href="https://www.gfu.net/?network=g&gclid=EAIaIQobChMI4Z-h0IP63gIVBkQYCh29oQoVEAAYASAAEgLg9fD_BwE">
                   GFU Cyrus AG
