@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 const ImprintPage = () => (
   <Layout>
-    <div class="imprint">
+    <div className="imprint">
       <h1>Imprint</h1>
       <p>
         kitconcept GmbH
