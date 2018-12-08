@@ -27,16 +27,32 @@ pipeline {
 
     // Static Code Analysis
     stage('Static Code Analysis') {
-      agent {
-        label 'node'
-      }
-      steps {
-        deleteDir()
-        checkout scm
-        sh 'npm install'
-        sh 'npm run format:ci'
+      parallel {
+        stage('Prettier') {
+          agent {
+            label 'node'
+          }
+          steps {
+            deleteDir()
+            checkout scm
+            sh 'npm install'
+            sh 'npm run format:ci'
+          }
+        }
+        stage('Outdated') {
+          agent {
+            label 'node'
+          }
+          steps {
+            deleteDir()
+            checkout scm
+            sh 'npm install'
+            sh 'npm outdated'
+          }
+        }
       }
     }
+
 
     // Deploy
     stage('Deploy') {
