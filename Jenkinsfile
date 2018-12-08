@@ -32,9 +32,6 @@ pipeline {
           agent {
             label 'node'
           }
-          when {
-            branch 'master'
-          }
           steps {
             deleteDir()
             checkout scm
@@ -45,9 +42,6 @@ pipeline {
         stage('Outdated') {
           agent {
             label 'node'
-          }
-          when {
-            branch 'master'
           }
           steps {
             deleteDir()
