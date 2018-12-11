@@ -31,6 +31,7 @@ const Layout = ({ children }) => (
             content="wXlh381BgLztoeqVBLM1C1rHcz8DyRFPeoa7UVHl5ic"
           />
         </Helmet>
+
         <div>{children}</div>
       </>
     )}
