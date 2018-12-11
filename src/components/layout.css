@@ -237,13 +237,13 @@ body {
   .above-the-fold .container h1 {
     font-size: 5em;
   }
+  .headroom {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .above-the-fold .container h1 {
     font-size: 4em;
-  }
-  .headroom {
-    display: none;
   }
 }
 
