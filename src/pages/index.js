@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { Link, graphql } from 'gatsby'
-import Headroom from 'react-headroom'
 import Img from 'gatsby-image'
 // import BarcampSession from '../images/BarcampSession-min.jpg'
 // import Programmer from '../images/programmer-min.jpg'
@@ -18,26 +17,7 @@ import ReactCologneicon from '../images/ReactCologneLogo.png'
 
 const IndexPage = props => (
   <Layout>
-    <Headroom class="navbar" disableInlineStyles="true">
-      <div class="container">
-        <a href="#top" class="nav-link">
-          React Barcamp
-        </a>
-        <a href="#about" class="nav-link">
-          About
-        </a>
-        <a href="#schedule" class="nav-link">
-          Schedule
-        </a>
-        <a href="#sponsors" class="nav-link">
-          Sponsors
-        </a>
-        <a href="#location" class="nav-link">
-          Location
-        </a>
-      </div>
-    </Headroom>
-    <div className="above-the-fold" id="top">
+    <div className="above-the-fold">
       <Img
         className="full-width-image-container"
         fluid={props.data.imageCologne.childImageSharp.fluid}
@@ -58,7 +38,7 @@ const IndexPage = props => (
         <p className="btn-comment">Barcamp is free of charge</p>
       </div>
     </div>
-    <div className="container about" id="about">
+    <div className="container about">
       <div className="row">
         <div className="col col-12 col-md-6">
           <div className="info-text">
@@ -109,7 +89,7 @@ const IndexPage = props => (
         </div>
       </div>
     </div>
-    <div className="container schedule" id="schedule">
+    <div className="container schedule">
       <h1>Schedule</h1>
       <div className="row ">
         <div className="col col-12 col-sm-6">
@@ -167,7 +147,7 @@ const IndexPage = props => (
         </a>
       </p>
     </div>
-    <div className="container sponsors" id="sponsors">
+    <div className="container sponsors">
       <h1>Sponsors</h1>
       <div className="container button sponsor-btn">
         <a
@@ -465,7 +445,7 @@ const IndexPage = props => (
         Register now
       </a>
     </div>
-    <div className="container-fluid location" id="location">
+    <div className="container-fluid location">
       <div className="map" id="map">
         <iframe
           title="Barcamp location"
