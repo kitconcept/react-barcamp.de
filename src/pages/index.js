@@ -19,21 +19,23 @@ import ReactCologneicon from '../images/ReactCologneLogo.png'
 const IndexPage = props => (
   <Layout>
     <Headroom class="navbar" disableInlineStyles="true">
-      <a href="#top" class="nav-link">
-        React Barcamp
-      </a>
-      <a href="#about" class="nav-link">
-        About
-      </a>
-      <a href="#schedule" class="nav-link">
-        Schedule
-      </a>
-      <a href="#sponsors" class="nav-link">
-        Sponsors
-      </a>
-      <a href="#location" class="nav-link">
-        Location
-      </a>
+      <div class="container">
+        <a href="#top" class="nav-link">
+          React Barcamp
+        </a>
+        <a href="#about" class="nav-link">
+          About
+        </a>
+        <a href="#schedule" class="nav-link">
+          Schedule
+        </a>
+        <a href="#sponsors" class="nav-link">
+          Sponsors
+        </a>
+        <a href="#location" class="nav-link">
+          Location
+        </a>
+      </div>
     </Headroom>
     <div className="above-the-fold" id="top">
       <Img
