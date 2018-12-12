@@ -21,7 +21,7 @@ const IndexPage = props => (
     <Headroom class="navbar" disableInlineStyles="true">
       <div class="container">
         <a href="#top" class="nav-link">
-          React Barcamp
+          <img src={Reacticon} class="nav-image" />
         </a>
         <a href="#about" class="nav-link">
           About

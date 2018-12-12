@@ -37,6 +37,9 @@ body {
   display: inline;
   font-size: 1.2em;
 }
+.headroom .nav-image {
+  width: 30px;
+}
 .above-the-fold {
   width: 100%;
   height: 100vh;
