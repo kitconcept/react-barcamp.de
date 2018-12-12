@@ -51,7 +51,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .container {
   /*background-color: #0000ff;*/
   margin-top: 3em;
@@ -171,6 +170,11 @@ body {
 .sponsors .card .card-img-top {
   width: 150px;
   align-self: center;
+  -webkit-filter: grayscale(100%);
+}
+.sponsors .card .card-img-top:hover {
+  -webkit-filter: grayscale(0%);
+  cursor: pointer;
 }
 .sponsors a {
   color: #ffffff;
@@ -239,9 +243,6 @@ body {
 @media (max-width: 992px) {
   .above-the-fold .container h1 {
     font-size: 5em;
-  }
-  .headroom {
-    display: none;
   }
 }
 @media (max-width: 768px) {

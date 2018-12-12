@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { Link, graphql } from 'gatsby'
-import Headroom from 'react-headroom'
 import Img from 'gatsby-image'
 // import BarcampSession from '../images/BarcampSession-min.jpg'
 // import Programmer from '../images/programmer-min.jpg'
@@ -18,6 +17,7 @@ import ReactCologneicon from '../images/ReactCologneLogo.png'
 
 const IndexPage = props => (
   <Layout>
+
     <Headroom class="navbar" disableInlineStyles="true">
       <div class="container">
         <a href="#top" class="nav-link">
@@ -58,13 +58,13 @@ const IndexPage = props => (
         <p className="btn-comment">Barcamp is free of charge</p>
       </div>
     </div>
-    <div className="container about" id="about">
+    <div className="container about">
       <div className="row">
         <div className="col col-12 col-md-6">
           <div className="info-text">
             <h3>What is a Barcamp?</h3>
             <p>
-              A BarCamp is an event shaped by your contribution. Rather than
+              A Barcamp is an event shaped by your contribution. Rather than
               having scheduled speakers, you will have the opportunity to talk
               about what is important to you. Anyone with something to
               contribute in the context of user experience is welcome to join.
@@ -109,7 +109,7 @@ const IndexPage = props => (
         </div>
       </div>
     </div>
-    <div className="container schedule" id="schedule">
+    <div className="container schedule">
       <h1>Schedule</h1>
       <div className="row ">
         <div className="col col-12 col-sm-6">
@@ -167,7 +167,7 @@ const IndexPage = props => (
         </a>
       </p>
     </div>
-    <div className="container sponsors" id="sponsors">
+    <div className="container sponsors">
       <h1>Sponsors</h1>
       <div className="container button sponsor-btn">
         <a
@@ -200,11 +200,13 @@ const IndexPage = props => (
         <div className="row">
           <div className="col col-12 col-sm-6 col-md-4">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={Railsloveicon}
-                alt="Sponsor Logo"
-              />
+              <a href="https://www.railslove.com/">
+                <img
+                  className="card-img-top"
+                  src={Railsloveicon}
+                  alt="Railslove GmbH Logo"
+                />
+              </a>
               <div className="card-body">
                 <a href="https://www.railslove.com/">Railslove GmbH</a>
               </div>
@@ -212,11 +214,13 @@ const IndexPage = props => (
           </div>
           <div className="col col-12 col-sm-6 col-md-4">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={Kitconcepticon}
-                alt="Sponsor Logo"
-              />
+              <a href="https://kitconcept.com/">
+                <img
+                  className="card-img-top"
+                  src={Kitconcepticon}
+                  alt="Logo Kitconcept GmbH"
+                />
+              </a>
               <div className="card-body">
                 <a href="https://kitconcept.com/">kitconcept GmbH</a>
               </div>
@@ -224,11 +228,13 @@ const IndexPage = props => (
           </div>
           <div className="col col-12 col-sm-6 col-md-4">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={Reacticon}
-                alt="Sponsor Logo"
-              />
+              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                <img
+                  className="card-img-top"
+                  src={Reacticon}
+                  alt="Placeholder Sponsor Logo"
+                />
+              </a>
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -243,7 +249,13 @@ const IndexPage = props => (
         <div className="row">
           <div className="col col-12 col-sm-6 col-md-3">
             <div className="card">
-              <img className="card-img-top" src={Mitpicon} alt="Sponsor Logo" />
+              <a href="https://www.mitp.de/">
+                <img
+                  className="card-img-top"
+                  src={Mitpicon}
+                  alt="Sponsor Logo"
+                />
+              </a>
               <div className="card-body">
                 <a href="https://www.mitp.de/">mitp Verlags GmbH</a>
               </div>
@@ -251,11 +263,13 @@ const IndexPage = props => (
           </div>
           <div className="col col-12 col-sm-6 col-md-3">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={Reacticon}
-                alt="Sponsor Logo"
-              />
+              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                <img
+                  className="card-img-top"
+                  src={Reacticon}
+                  alt="Placeholder Sponsor Logo"
+                />
+              </a>
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -265,11 +279,13 @@ const IndexPage = props => (
           </div>
           <div className="col col-12 col-sm-6 col-md-3">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={Reacticon}
-                alt="Sponsor Logo"
-              />
+              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                <img
+                  className="card-img-top"
+                  src={Reacticon}
+                  alt="Placeholder Sponsor Logo"
+                />
+              </a>
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -279,11 +295,13 @@ const IndexPage = props => (
           </div>
           <div className="col col-12 col-sm-6 col-md-3">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={Reacticon}
-                alt="Sponsor Logo"
-              />
+              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                <img
+                  className="card-img-top"
+                  src={Reacticon}
+                  alt="Placeholder Sponsor Logo"
+                />
+              </a>
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -352,11 +370,13 @@ const IndexPage = props => (
         <div className="row">
           <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={BonnJSicon}
-                alt="Sponsor Logo"
-              />
+              <a href="https://www.meetup.com/BonnJS/">
+                <img
+                  className="card-img-top"
+                  src={BonnJSicon}
+                  alt="Sponsor Logo"
+                />
+              </a>
               <div className="card-body">
                 <a href="https://www.meetup.com/BonnJS/">BonnJS</a>
               </div>
@@ -364,11 +384,13 @@ const IndexPage = props => (
           </div>
           <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={ReactCologneicon}
-                alt="Sponsor Logo"
-              />
+              <a href="https://www.meetup.com/React-Cologne/">
+                <img
+                  className="card-img-top"
+                  src={ReactCologneicon}
+                  alt="Sponsor Logo"
+                />
+              </a>
               <div className="card-body">
                 <a href="https://www.meetup.com/React-Cologne/">
                   React Cologne
@@ -378,11 +400,13 @@ const IndexPage = props => (
           </div>
           <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={Reacticon}
-                alt="Sponsor Logo"
-              />
+              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                <img
+                  className="card-img-top"
+                  src={Reacticon}
+                  alt="Placeholder Sponsor Logo"
+                />
+              </a>
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -392,11 +416,13 @@ const IndexPage = props => (
           </div>
           <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={Reacticon}
-                alt="Sponsor Logo"
-              />
+              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                <img
+                  className="card-img-top"
+                  src={Reacticon}
+                  alt="Placeholder Sponsor Logo"
+                />
+              </a>
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -406,11 +432,13 @@ const IndexPage = props => (
           </div>
           <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={Reacticon}
-                alt="Sponsor Logo"
-              />
+              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                <img
+                  className="card-img-top"
+                  src={Reacticon}
+                  alt="Placeholder Sponsor Logo"
+                />
+              </a>
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -420,11 +448,13 @@ const IndexPage = props => (
           </div>
           <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={Reacticon}
-                alt="Sponsor Logo"
-              />
+              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                <img
+                  className="card-img-top"
+                  src={Reacticon}
+                  alt="Placeholder Sponsor Logo"
+                />
+              </a>
               <div className="card-body">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   Become a Sponsor
@@ -440,11 +470,13 @@ const IndexPage = props => (
           <div className="col col-0 col-sm-2 col-md-3" />
           <div className="col col-12 col-sm-8 col-md-6">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={Cyrusicon}
-                alt="Sponsor Logo"
-              />
+              <a href="https://www.gfu.net/?network=g&gclid=EAIaIQobChMI4Z-h0IP63gIVBkQYCh29oQoVEAAYASAAEgLg9fD_BwE">
+                <img
+                  className="card-img-top"
+                  src={Cyrusicon}
+                  alt="Sponsor Logo"
+                />
+              </a>
               <div className="card-body">
                 <a href="https://www.gfu.net/?network=g&gclid=EAIaIQobChMI4Z-h0IP63gIVBkQYCh29oQoVEAAYASAAEgLg9fD_BwE">
                   GFU Cyrus AG
@@ -465,7 +497,7 @@ const IndexPage = props => (
         Register now
       </a>
     </div>
-    <div className="container-fluid location" id="location">
+    <div className="container-fluid location">
       <div className="map" id="map">
         <iframe
           title="Barcamp location"
@@ -489,15 +521,15 @@ const IndexPage = props => (
               <a href="http://berlincodeofconduct.org/">Code of conduct</a>
             </div>
           </div>
-          <div className="col-12 col-sm-2 col-md-3">
+          <div className="col-12 col-sm-2 col-md-4">
             <div className="footer-text orga-by">
               <p>
-                Organized by <a href="https://kitconcept.com/">kitconcept</a>{' '}
-                and friends.
+                Organized by <a href="https://kitconcept.com/">kitconcept</a>
+                &ensp;and friends.
               </p>
             </div>
           </div>
-          <div className="col-0 col-sm-2 col-md-4" />
+          <div className="col-0 col-sm-2 col-md-3" />
           <div className="col-12 col-sm-3 col-md-2">
             <div className="footer-text soc-media">
               <a href="https://www.facebook.com/React-Barcamp-738517023197582/">
