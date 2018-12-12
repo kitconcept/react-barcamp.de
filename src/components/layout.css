@@ -134,6 +134,11 @@ body {
 .sponsors .card .card-img-top {
   width: 150px;
   align-self: center;
+  -webkit-filter: grayscale(100%);
+}
+.sponsors .card .card-img-top:hover {
+  -webkit-filter: grayscale(0%);
+  cursor: pointer;
 }
 .sponsors a {
   color: #ffffff;
