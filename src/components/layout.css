@@ -47,7 +47,9 @@ body {
 }
 
 .headroom .nav-image {
+  margin-top: 0.2em;
   width: 35px;
+  float: left;
 }
 
 .above-the-fold {

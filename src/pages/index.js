@@ -13,7 +13,7 @@ import Cyrusicon from '../images/sp-cyrus-min.png';
 import Mitpicon from '../images/mitp-logo.png';
 import Railsloveicon from '../images/railslove_logo.png';
 import BonnJSicon from '../images/BonnJS_Logo-min.png';
-import Kitconcepticon from '../images/kitconcept-logo.png';
+import Kitconcepticon from '../images/kitconcept-logo-white.png';
 import ReactCologneicon from '../images/ReactCologneLogo.png';
 import Headroom from 'react-headroom';
 
@@ -21,7 +21,7 @@ const IndexPage = props => (
   <Layout>
     <Headroom className="navbar" disableInlineStyles>
       <div className="container">
-        <a href="#top">
+        <a href="#top" className="nav-image">
           <img src={ReacticonMini} className="nav-image" />
         </a>
 
@@ -526,8 +526,8 @@ const IndexPage = props => (
           <div className="col-12 col-sm-2 col-md-4">
             <div className="footer-text orga-by">
               <p>
-                Organized by <a href="https://kitconcept.com/">kitconcept</a>
-                &ensp;and friends.
+                Organized by <a href="https://kitconcept.com/">kitconcept</a>{' '}
+                and friends.
               </p>
             </div>
           </div>
