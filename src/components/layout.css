@@ -37,14 +37,12 @@ body {
   padding-top: 0.5em;
   margin-top: 0;
   margin-bottom: 0.5em;
+  text-align: right;
 }
 
-.headroom .container .text-right {
-  align-self: right;
-}
 .headroom .nav-link {
-  display: inline;
-  color: white;
+  display: inline-block;
+  color: #ffffff;
   font-size: 1.2em;
 }
 
