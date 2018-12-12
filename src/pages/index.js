@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 // import BarcampSession from '../images/BarcampSession-min.jpg'
 // import Programmer from '../images/programmer-min.jpg'
+import Headroom from 'react-headroom'
 import Reacticon from '../images/react-icon-sm-blue-greyed-min.png'
 import Twitericon from '../images/twitter-bird-white-min.png'
 import Facebookicon from '../images/facebook-logo-white-min.png'
@@ -17,7 +18,6 @@ import ReactCologneicon from '../images/ReactCologneLogo.png'
 
 const IndexPage = props => (
   <Layout>
-
     <Headroom class="navbar" disableInlineStyles="true">
       <div class="container">
         <a href="#top" class="nav-link">
@@ -585,4 +585,3 @@ export const pageQuery = graphql`
     }
   }
 `
-//dummy
