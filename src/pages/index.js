@@ -14,10 +14,30 @@ import Railsloveicon from '../images/railslove_logo.png'
 import BonnJSicon from '../images/BonnJS_Logo-min.png'
 import Kitconcepticon from '../images/kitconcept-logo.png'
 import ReactCologneicon from '../images/ReactCologneLogo.png'
+import Headroom from 'react-headroom'
 
 const IndexPage = props => (
   <Layout>
-    <div className="above-the-fold">
+    <Headroom class="navbar" disableInlineStyles="true">
+      <div class="container">
+        <a href="#top" class="nav-link">
+          <img src={Reacticon} class="nav-image" />
+        </a>
+        <a href="#about" class="nav-link">
+          About
+        </a>
+        <a href="#schedule" class="nav-link">
+          Schedule
+        </a>
+        <a href="#sponsors" class="nav-link">
+          Sponsors
+        </a>
+        <a href="#location" class="nav-link">
+          Location
+        </a>
+      </div>
+    </Headroom>
+    <div className="above-the-fold" id="top">
       <Img
         className="full-width-image-container"
         fluid={props.data.imageCologne.childImageSharp.fluid}
@@ -38,7 +58,7 @@ const IndexPage = props => (
         <p className="btn-comment">Barcamp is free of charge</p>
       </div>
     </div>
-    <div className="container about">
+    <div className="container about" id="about">
       <div className="row">
         <div className="col col-12 col-md-6">
           <div className="info-text">
@@ -89,7 +109,7 @@ const IndexPage = props => (
         </div>
       </div>
     </div>
-    <div className="container schedule">
+    <div className="container schedule" id="schedule">
       <h1>Schedule</h1>
       <div className="row ">
         <div className="col col-12 col-sm-6">
@@ -147,7 +167,7 @@ const IndexPage = props => (
         </a>
       </p>
     </div>
-    <div className="container sponsors">
+    <div className="container sponsors" id="sponsors">
       <h1>Sponsors</h1>
       <div className="container button sponsor-btn">
         <a
@@ -477,7 +497,7 @@ const IndexPage = props => (
         Register now
       </a>
     </div>
-    <div className="container-fluid location">
+    <div className="container-fluid location" id="location">
       <div className="map" id="map">
         <iframe
           title="Barcamp location"
