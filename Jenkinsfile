@@ -47,7 +47,7 @@ pipeline {
             deleteDir()
             checkout scm
             sh 'npm install'
-            sh 'npm outdated'
+            //sh 'npm outdated'
           }
         }
       }
