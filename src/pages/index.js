@@ -58,7 +58,7 @@ const IndexPage = props => (
         <p className="btn-comment">Barcamp is free of charge</p>
       </div>
     </div>
-    <div className="container about">
+    <div className="container about" id="about">
       <div className="row">
         <div className="col col-12 col-md-6">
           <div className="info-text">
@@ -109,7 +109,7 @@ const IndexPage = props => (
         </div>
       </div>
     </div>
-    <div className="container schedule">
+    <div className="container schedule" id="schedule">
       <h1>Schedule</h1>
       <div className="row ">
         <div className="col col-12 col-sm-6">
@@ -167,7 +167,7 @@ const IndexPage = props => (
         </a>
       </p>
     </div>
-    <div className="container sponsors">
+    <div className="container sponsors" id="sponsors">
       <h1>Sponsors</h1>
       <div className="container button sponsor-btn">
         <a
@@ -497,7 +497,7 @@ const IndexPage = props => (
         Register now
       </a>
     </div>
-    <div className="container-fluid location">
+    <div className="container-fluid location" id="location">
       <div className="map" id="map">
         <iframe
           title="Barcamp location"
