@@ -28,6 +28,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
+    "serve": "cd public && python -m SimpleHTTPServer 8000 public",
     "format": "prettier --write \"src/**/*.js\"",
     "format:ci": "prettier --list-different \"src/**/*.js\"",
     "psi": "psi https://react-barcamp.de --threshold 8 ; true",
