@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 // import BarcampSession from '../images/BarcampSession-min.jpg'
 // import Programmer from '../images/programmer-min.jpg'
+import ReacticonMini from '../images/react-icon-mini.png';
 import Reacticon from '../images/react-icon-sm-blue-greyed-min.png';
 import Twitericon from '../images/twitter-bird-white-min.png';
 import Facebookicon from '../images/facebook-logo-white-min.png';
@@ -20,9 +21,10 @@ const IndexPage = props => (
   <Layout>
     <Headroom className="navbar" disableInlineStyles>
       <div className="container">
-        <a href="#top" className="nav-link">
-          <img src={Reacticon} className="nav-image" />
+        <a href="#top">
+          <img src={ReacticonMini} className="nav-image" />
         </a>
+
         <a href="#about" className="nav-link">
           About
         </a>
@@ -45,7 +47,7 @@ const IndexPage = props => (
       <div className="container">
         <h1>React Barcamp 2019</h1>
         <h3>
-          26th and 27th January 2019 in <a href="#map">Cologne</a>
+          26th and 27th January 2019 in <a href="#location">Cologne</a>
         </h3>
         <a
           href="https://barcamptools.eu/react-barcamp-cologne-2019/"
@@ -498,7 +500,7 @@ const IndexPage = props => (
       </a>
     </div>
     <div className="container-fluid location" id="location">
-      <div className="map" id="map">
+      <div className="map">
         <iframe
           title="Barcamp location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.9170204473367!2d6.990856315748642!3d50.92525197954363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf242a777a51df%3A0x721311869833f03f!2sGFU+Cyrus+AG!5e0!3m2!1sde!2sde!4v1543320356673"
