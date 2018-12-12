@@ -15,6 +15,7 @@ import Railsloveicon from '../images/railslove_logo.png'
 import BonnJSicon from '../images/BonnJS_Logo-min.png'
 import Kitconcepticon from '../images/kitconcept-logo.png'
 import ReactCologneicon from '../images/ReactCologneLogo.png'
+import Headroom from 'react-headroom'
 
 const IndexPage = props => (
   <Layout>
