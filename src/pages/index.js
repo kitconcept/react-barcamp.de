@@ -21,9 +21,10 @@ const IndexPage = props => (
   <Layout>
     <Headroom className="navbar" disableInlineStyles>
       <div className="container">
-        <a href="#top" className="nav-link">
+        <a href="#top" className="nav-link text-right">
           <img src={ReacticonMini} className="nav-image" />
         </a>
+
         <a href="#about" className="nav-link">
           About
         </a>

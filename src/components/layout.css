@@ -39,6 +39,9 @@ body {
   margin-bottom: 0.5em;
 }
 
+.headroom .container .text-right {
+  align-self: right;
+}
 .headroom .nav-link {
   display: inline;
   color: white;
