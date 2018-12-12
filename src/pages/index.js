@@ -18,21 +18,21 @@ import Headroom from 'react-headroom'
 
 const IndexPage = props => (
   <Layout>
-    <Headroom class="navbar" disableInlineStyles="true">
-      <div class="container">
-        <a href="#top" class="nav-link">
-          <img src={Reacticon} class="nav-image" />
+    <Headroom className="navbar" disableInlineStyles>
+      <div className="container">
+        <a href="#top" className="nav-link">
+          <img src={Reacticon} className="nav-image" />
         </a>
-        <a href="#about" class="nav-link">
+        <a href="#about" className="nav-link">
           About
         </a>
-        <a href="#schedule" class="nav-link">
+        <a href="#schedule" className="nav-link">
           Schedule
         </a>
-        <a href="#sponsors" class="nav-link">
+        <a href="#sponsors" className="nav-link">
           Sponsors
         </a>
-        <a href="#location" class="nav-link">
+        <a href="#location" className="nav-link">
           Location
         </a>
       </div>
