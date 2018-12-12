@@ -1,61 +1,71 @@
 body {
-  /*background-image: url(grid.jpg);
+  /* background-image: url(grid.jpg);
   background-repeat: repeat-y;
-  background-position: center;*/
+  background-position: center; */
   background-color: #123244;
 }
 
 .headroom {
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
   background-color: rgb(0, 0, 0, 0.4);
 }
+
 .headroom--unfixed {
   position: relative;
   transform: translateY(0);
 }
+
 .headroom--scrolled {
   transition: transform 200ms ease-in-out;
 }
+
 .headroom--unpinned {
   position: fixed;
   transform: translateY(-100%);
 }
+
 .headroom--pinned {
   position: fixed;
   transform: translateY(0%);
 }
+
 .headroom .container {
-  margin-top: 0;
   padding-top: 0.5em;
+  margin-top: 0;
   margin-bottom: 0.5em;
 }
+
 .headroom .nav-link {
-  color: white;
   display: inline;
+  color: white;
   font-size: 1.2em;
 }
+
 .headroom .nav-image {
   width: 30px;
 }
+
 .above-the-fold {
-  width: 100%;
-  height: 100vh;
-  /*background-image: url(../images/DomCologne3.png);
+
+  /* background-image: url(../images/DomCologne3.png);
   background-repeat: no-repeat;
   background-position-x: 90%;
-  background-size: cover;*/
+  background-size: cover; */
   display: flex;
-  justify-content: center;
+  width: 100%;
+  height: 100vh;
   align-items: center;
+  justify-content: center;
 }
+
 .container {
-  /*background-color: #0000ff;*/
+  /* background-color: #0000ff; */
   margin-top: 3em;
   margin-bottom: 3em;
-  color: #ffffff;
+  color: #fff;
 }
 
 .above-the-fold .full-width-image-container {
@@ -66,36 +76,42 @@ body {
 .above-the-fold .container {
   position: absolute;
   top: 1em;
-  text-align: left;
   background-color: transparent;
+  text-align: left;
 }
+
 .above-the-fold .container h1 {
   font-size: 7em;
 }
+
 .above-the-fold .container a {
-  color: #ffffff;
+  color: #fff;
 }
+
 .above-the-fold .container .btn-outline-secondary,
 .button .btn-outline-secondary {
-  border-radius: 0;
-  border-color: #ffffff;
-  color: #ffffff;
   margin-top: 3em;
+  border-color: #fff;
+  border-radius: 0;
+  color: #fff;
 }
+
 .above-the-fold .btn-comment {
   margin-top: 0.5em;
   color: rgb(255, 255, 255, 0.5);
 }
+
 .about {
-  background-color: #123244;
   margin-top: 5em;
+  background-color: #123244;
 }
+
 .about .info-text {
-  background-color: transparent;
+  width: 100%;
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  width: 100%;
+  background-color: transparent;
 }
 
 .about .image {
@@ -103,54 +119,66 @@ body {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
 .about .info-picture {
   width: 100%;
   height: 100%;
 }
+
 .about .row {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
 .schedule {
   background-color: #123244;
   text-align: center;
 }
+
 .schedule h1 {
   margin-top: 2em;
   margin-bottom: 1em;
 }
+
 .schedule .row .col {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .schedule .table {
   width: 80%;
-  margin: 1em;
-  border-radius: 0;
-  background-color: #123244;
-  border-color: #ffffff;
   padding: 1em;
+  margin: 1em;
+  background-color: #123244;
+  border-color: #fff;
+  border-radius: 0;
 }
+
 .schedule .heading {
+  color: #fff;
   font-size: 1.5em;
-  color: #ffffff;
 }
+
 .schedule .table .card-header {
-  border-color: #ffffff;
+  border-color: #fff;
 }
+
 .schedule .table .list-group-item {
   background-color: #123244;
-  border-color: #ffffff;
+  border-color: #fff;
   text-align: left;
 }
+
 .schedule .infos {
   margin-top: 1.5em;
 }
+
 .sponsors {
   background-color: #123244;
   text-align: center;
 }
+
 .sponsors h1 {
   margin-top: 2em;
   margin-bottom: 0;
@@ -158,12 +186,13 @@ body {
 
 .sponsors .card {
   border: 0;
-  /*border-radius: 0;*/
-  border-color: #ffffff;
+  margin-top: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
   background-color: transparent;
-  margin-top: 1em;
+
+  /* border-radius: 0; */
+  border-color: #fff;
   text-align: center;
 }
 
@@ -172,79 +201,98 @@ body {
   align-self: center;
   -webkit-filter: grayscale(100%);
 }
+
 .sponsors .card .card-img-top:hover {
-  -webkit-filter: grayscale(0%);
   cursor: pointer;
+  -webkit-filter: grayscale(0%);
 }
+
 .sponsors a {
-  color: #ffffff;
+  color: #fff;
 }
+
 .sponsors .sponsor-btn {
   margin-top: 0;
   margin-bottom: 3em;
 }
+
 .sponsors .btn {
   padding: 0.5em;
 }
+
 .button {
   text-align: center;
 }
+
 .reg-now {
   background-color: rgb(0, 0, 0, 0.4);
 }
+
 .reg-now .btn {
+  width: 12em;
   margin-top: 3em;
   margin-bottom: 3em;
-  width: 12em;
 }
+
 .location {
-  /*background-color: #1d721a;*/
-  margin-top: 0;
-  padding-right: 0;
-  padding-left: 0;
   height: 70vh;
   max-height: 500px;
+  padding-right: 0;
+  padding-left: 0;
+  /* background-color: #1d721a; */
+  margin-top: 0;
 }
+
 .map {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
+
 .footer {
-  background-color: rgb(0, 0, 0, 0.4);
-  margin-bottom: 0;
   padding-bottom: 2em;
+  margin-bottom: 0;
+  background-color: rgb(0, 0, 0, 0.4);
 }
+
 .footer .container {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .footer-text {
   margin-top: 2em;
 }
+
 .footer .soc-media img {
   width: 2em;
   margin-right: 0.5em;
 }
+
 .footer .soc-media .mail {
   width: 1.8em;
 }
+
 .footer-text a {
-  color: #ffffff;
+  color: #fff;
 }
+
 .imprint {
+  color: #fff;
   text-align: center;
-  color: #ffffff;
 }
+
 @media (max-width: 1200px) {
   .above-the-fold {
     background-position-x: 70%;
   }
 }
+
 @media (max-width: 992px) {
   .above-the-fold .container h1 {
     font-size: 5em;
   }
 }
+
 @media (max-width: 768px) {
   .above-the-fold .container h1 {
     font-size: 4em;
@@ -253,28 +301,35 @@ body {
 
 @media (max-width: 576px) {
   .above-the-fold {
-    /*background-image: url(../images/DomCologne-sm.png);*/
+    /* background-image: url(../images/DomCologne-sm.png); */
   }
+
   .above-the-fold .container h1 {
     font-size: 2.5em;
   }
+
   .above-the-fold {
     background-position-x: 70%;
   }
+
   .above-the-fold .container h3 {
     font-size: 1em;
   }
+
   .above-the-fold .btn-comment {
     font-size: 0.7em;
   }
+
   .above-the-fold .container {
     margin-top: 0;
   }
 }
+
 @media (max-height: 768px) {
   .above-the-fold .container {
     margin-top: 0;
   }
+
   .above-the-fold .container .btn {
     margin-top: 0.5em;
   }

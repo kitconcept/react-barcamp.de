@@ -1,20 +1,20 @@
-import React from 'react'
-import Layout from '../components/layout'
-import { Link, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import React from 'react';
+import Layout from '../components/layout';
+import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 // import BarcampSession from '../images/BarcampSession-min.jpg'
 // import Programmer from '../images/programmer-min.jpg'
-import Reacticon from '../images/react-icon-sm-blue-greyed-min.png'
-import Twitericon from '../images/twitter-bird-white-min.png'
-import Facebookicon from '../images/facebook-logo-white-min.png'
-import Mailicon from '../images/mail-white-min.png'
-import Cyrusicon from '../images/sp-cyrus-min.png'
-import Mitpicon from '../images/mitp-logo.png'
-import Railsloveicon from '../images/railslove_logo.png'
-import BonnJSicon from '../images/BonnJS_Logo-min.png'
-import Kitconcepticon from '../images/kitconcept-logo.png'
-import ReactCologneicon from '../images/ReactCologneLogo.png'
-import Headroom from 'react-headroom'
+import Reacticon from '../images/react-icon-sm-blue-greyed-min.png';
+import Twitericon from '../images/twitter-bird-white-min.png';
+import Facebookicon from '../images/facebook-logo-white-min.png';
+import Mailicon from '../images/mail-white-min.png';
+import Cyrusicon from '../images/sp-cyrus-min.png';
+import Mitpicon from '../images/mitp-logo.png';
+import Railsloveicon from '../images/railslove_logo.png';
+import BonnJSicon from '../images/BonnJS_Logo-min.png';
+import Kitconcepticon from '../images/kitconcept-logo.png';
+import ReactCologneicon from '../images/ReactCologneLogo.png';
+import Headroom from 'react-headroom';
 
 const IndexPage = props => (
   <Layout>
@@ -547,9 +547,9 @@ const IndexPage = props => (
       </div>
     </div>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
 
 export const pageQuery = graphql`
   query {
@@ -584,4 +584,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

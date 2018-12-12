@@ -1,6 +1,6 @@
-import React from 'react'
-import Layout from '../components/layout'
-import { Link } from 'gatsby'
+import React from 'react';
+import Layout from '../components/layout';
+import { Link } from 'gatsby';
 
 const ImprintPage = () => (
   <Layout>
@@ -33,6 +33,6 @@ const ImprintPage = () => (
       <Link to="/">Back to Main page</Link>
     </div>
   </Layout>
-)
+);
 
-export default ImprintPage
+export default ImprintPage;
