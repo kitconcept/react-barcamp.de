@@ -200,7 +200,7 @@ const CodeOfConductPage = () => (
       </p>
       <Link to="/">Back to Main page</Link>
     </div>
-  </Layout>
+  </Layout> //foo
 );
 
 export default CodeOfConductPage;
