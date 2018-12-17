@@ -281,7 +281,10 @@ body {
 .footer-text a {
   color: #fff;
 }
-
+.coc {
+  text-align: left;
+  color: #ffffff;
+}
 .imprint {
   color: #fff;
   text-align: center;
