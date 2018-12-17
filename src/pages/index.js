@@ -520,7 +520,7 @@ const IndexPage = props => (
           </div>
           <div className="col-12 col-sm-3 col-md-2">
             <div className="footer-text coc-link">
-              <a href="http://berlincodeofconduct.org/">Code of conduct</a>
+              <Link to="/coc/">Code of conduct</Link>
             </div>
           </div>
           <div className="col-12 col-sm-2 col-md-4">
