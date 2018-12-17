@@ -71,7 +71,7 @@ const CodeOfConductPage = () => (
           public; please be respectful to all patrons of these locations.
         </li>
       </ul>
-      <h2>Unacceptable Behavior</h2>
+      <h2>4. Unacceptable Behavior</h2>
 
       <p>
         The following behaviors are considered harassment and are unacceptable
@@ -180,7 +180,7 @@ const CodeOfConductPage = () => (
         Martin Junker,{' '}
         <a href="mailto:kontakt@martinjunker.de">kontakt@martinjunker.de</a>
       </p>
-      <h2>10. License and attribution</h2>
+      <h2>11. License and attribution</h2>
       <p>
         This Code of Conduct is based on the Citizen Code of Conduct and is
         distributed under a{' '}
