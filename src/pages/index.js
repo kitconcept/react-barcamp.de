@@ -13,7 +13,7 @@ import Cyrusicon from '../images/sp-cyrus-min.png';
 import Mitpicon from '../images/mitp-logo.png';
 import Railsloveicon from '../images/railslove_logo.png';
 import BonnJSicon from '../images/BonnJS_Logo-min.png';
-import Kitconcepticon from '../images/kitconcept-logo-white.png';
+import Kitconcepticon from '../images/kitconcept-logo.png';
 import ReactCologneicon from '../images/ReactCologneLogo.png';
 import Headroom from 'react-headroom';
 
@@ -218,7 +218,7 @@ const IndexPage = props => (
             <div className="card">
               <a href="https://kitconcept.com/">
                 <img
-                  className="card-img-top"
+                  className="card-img-top white-preview"
                   src={Kitconcepticon}
                   alt="Logo Kitconcept GmbH"
                 />

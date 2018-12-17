@@ -204,6 +204,9 @@ body {
   align-self: center;
   -webkit-filter: grayscale(100%);
 }
+.sponsors .card .white-preview {
+  filter: brightness(0) invert(1);
+}
 
 .sponsors .card .card-img-top:hover {
   cursor: pointer;
