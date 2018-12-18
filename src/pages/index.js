@@ -11,6 +11,8 @@ import Facebookicon from '../images/facebook-logo-white-min.png';
 import Mailicon from '../images/mail-white-min.png';
 import Cyrusicon from '../images/sp-cyrus-min.png';
 import Mitpicon from '../images/mitp-logo.png';
+import Manningicon from '../images/Manning_logo.png';
+import Bwiicon from '../images/bwi_logo.png';
 import Railsloveicon from '../images/railslove_logo.png';
 import BonnJSicon from '../images/BonnJS_Logo-min.png';
 import Kitconcepticon from '../images/kitconcept-logo.png';
@@ -216,6 +218,16 @@ const IndexPage = props => (
           </div>
           <div className="col col-12 col-sm-6 col-md-4">
             <div className="card">
+              <a href="https://www.bwi.de/">
+                <img className="card-img-top" src={Bwiicon} alt="BWI Logo" />
+              </a>
+              <div className="card-body">
+                <a href="https://www.bwi.de/">BWI</a>
+              </div>
+            </div>
+          </div>
+          <div className="col col-12 col-sm-6 col-md-4">
+            <div className="card">
               <a href="https://kitconcept.com/">
                 <img
                   className="card-img-top white-preview"
@@ -225,22 +237,6 @@ const IndexPage = props => (
               </a>
               <div className="card-body">
                 <a href="https://kitconcept.com/">kitconcept GmbH</a>
-              </div>
-            </div>
-          </div>
-          <div className="col col-12 col-sm-6 col-md-4">
-            <div className="card">
-              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                <img
-                  className="card-img-top"
-                  src={Reacticon}
-                  alt="Placeholder Sponsor Logo"
-                />
-              </a>
-              <div className="card-body">
-                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                  Become a Sponsor
-                </a>
               </div>
             </div>
           </div>
@@ -265,17 +261,15 @@ const IndexPage = props => (
           </div>
           <div className="col col-12 col-sm-6 col-md-3">
             <div className="card">
-              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+              <a href="https://www.manning.com/">
                 <img
                   className="card-img-top"
-                  src={Reacticon}
+                  src={Manningicon}
                   alt="Placeholder Sponsor Logo"
                 />
               </a>
               <div className="card-body">
-                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                  Become a Sponsor
-                </a>
+                <a href="https://www.manning.com/">Manning Publications Co.</a>
               </div>
             </div>
           </div>
