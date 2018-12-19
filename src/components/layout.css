@@ -42,13 +42,13 @@ body {
 
 .headroom .nav-link {
   display: inline-block;
-  color: #ffffff;
+  color: #fff;
   font-size: 1.2em;
 }
 
 .headroom .nav-image {
-  margin-top: 0.2em;
   width: 35px;
+  margin-top: 0.2em;
   float: left;
 }
 
@@ -190,7 +190,6 @@ body {
 .sponsors .card {
   border: 0;
   margin-top: 1em;
-  margin-top: 1em;
   margin-bottom: 1em;
   background-color: transparent;
 
@@ -204,6 +203,7 @@ body {
   align-self: center;
   -webkit-filter: grayscale(100%);
 }
+
 .sponsors .card .white-preview {
   filter: brightness(0) invert(1);
 }
@@ -245,6 +245,7 @@ body {
   max-height: 500px;
   padding-right: 0;
   padding-left: 0;
+
   /* background-color: #1d721a; */
   margin-top: 0;
 }
@@ -281,10 +282,12 @@ body {
 .footer-text a {
   color: #fff;
 }
+
 .coc {
+  color: #fff;
   text-align: left;
-  color: #ffffff;
 }
+
 .imprint {
   color: #fff;
   text-align: center;
@@ -300,6 +303,7 @@ body {
   .above-the-fold .container h1 {
     font-size: 5em;
   }
+
   .headroom {
     display: none;
   }
