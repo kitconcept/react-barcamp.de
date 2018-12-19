@@ -517,15 +517,20 @@ const IndexPage = props => (
               <Link to="/coc/">Code of conduct</Link>
             </div>
           </div>
+          <div className="col-12 col-sm-2 col-md-2">
+            <div className="footer-text coc-link">
+              <Link to="/privacy-policy/">Privacy Policy</Link>
+            </div>
+          </div>
           <div className="col-12 col-sm-2 col-md-4">
-            <div className="footer-text orga-by">
+            <div className="footer-text">
               <p>
                 Organized by <a href="https://kitconcept.com/">kitconcept</a>{' '}
                 and friends.
               </p>
             </div>
           </div>
-          <div className="col-0 col-sm-2 col-md-3" />
+          <div className="col-0 col-sm-0 col-md-1" />
           <div className="col-12 col-sm-3 col-md-2">
             <div className="footer-text soc-media">
               <a href="https://www.facebook.com/React-Barcamp-738517023197582/">

@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/layout';
-import { Link } from 'gatsby';
 
 const PrivacyPage = () => (
   <Layout>
@@ -634,6 +633,7 @@ const PrivacyPage = () => (
           Erstellt mit Datenschutz-Generator.de von RA Dr. Thomas Schwenke
         </a>
       </p>
+      <a href="/">Back to Main page</a>
     </div>
   </Layout>
 );
