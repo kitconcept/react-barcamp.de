@@ -15,6 +15,7 @@ import Manningicon from '../images/Manning_logo.png';
 import Bwiicon from '../images/bwi_logo.png';
 import Railsloveicon from '../images/railslove_logo.png';
 import BonnJSicon from '../images/BonnJS_Logo-min.png';
+import FrontEndMuensterIcon from '../images/frontend-freunde-muenster-logo.png';
 import Kitconcepticon from '../images/kitconcept-logo.png';
 import ReactCologneicon from '../images/ReactCologneLogo.png';
 import Headroom from 'react-headroom';
@@ -403,8 +404,8 @@ const IndexPage = props => (
               <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                 <img
                   className="card-img-top"
-                  src={Reacticon}
-                  alt="Placeholder Sponsor Logo"
+                  src={FrontEndMuensterIcon}
+                  alt="Logo of Frontend Freunde Munster"
                 />
               </a>
               <div className="card-body">
