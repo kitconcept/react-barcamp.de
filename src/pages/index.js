@@ -14,6 +14,7 @@ import Mitpicon from '../images/mitp-logo.png';
 import Manningicon from '../images/Manning_logo.png';
 import Bwiicon from '../images/bwi_logo.png';
 import Railsloveicon from '../images/railslove_logo.png';
+import MaTeaIcon from '../images/Ma-Tea-Logo.png';
 import BonnJSicon from '../images/BonnJS_Logo-min.png';
 import FrontEndMuensterIcon from '../images/frontend-freunde-muenster-logo.png';
 import ReactJsDus from '../images/ReactJSDusseldorf.png';
@@ -244,6 +245,50 @@ const IndexPage = props => (
               <div className="card-body">
                 <a href="https://kitconcept.com/">kitconcept GmbH</a>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col col-12 col-sm-6 col-md-4">
+          <div className="card">
+            <a href="https://www.ma-tea.de/">
+              <img className="card-img-top" src={MaTeaIcon} alt="Ma Tea Logo" />
+            </a>
+            <div className="card-body">
+              <a href="https://www.ma-tea.de/">Ma-Tea</a>
+            </div>
+          </div>
+        </div>
+        <div className="col col-12 col-sm-6 col-md-4">
+          <div className="card">
+            <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+              <img
+                className="card-img-top"
+                src={Reacticon}
+                alt="Placeholder Sponsor Logo"
+              />
+            </a>
+            <div className="card-body">
+              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                Become a Sponsor
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="col col-12 col-sm-6 col-md-4">
+          <div className="card">
+            <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+              <img
+                className="card-img-top"
+                src={Reacticon}
+                alt="Placeholder Sponsor Logo"
+              />
+            </a>
+            <div className="card-body">
+              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                Become a Sponsor
+              </a>
             </div>
           </div>
         </div>
