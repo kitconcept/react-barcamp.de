@@ -16,6 +16,7 @@ import Bwiicon from '../images/bwi_logo.png';
 import Railsloveicon from '../images/railslove_logo.png';
 import BonnJSicon from '../images/BonnJS_Logo-min.png';
 import FrontEndMuensterIcon from '../images/frontend-freunde-muenster-logo.png';
+import ReactJsDus from '../images/ReactJSDusseldorf.png';
 import Kitconcepticon from '../images/kitconcept-logo.png';
 import ReactCologneicon from '../images/ReactCologneLogo.png';
 import Headroom from 'react-headroom';
@@ -401,7 +402,7 @@ const IndexPage = props => (
           </div>
           <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div className="card">
-              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+              <a href="https://www.meetup.com/frontend-freunde/">
                 <img
                   className="card-img-top"
                   src={FrontEndMuensterIcon}
@@ -409,24 +410,24 @@ const IndexPage = props => (
                 />
               </a>
               <div className="card-body">
-                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                  Become a Sponsor
+                <a href="https://www.meetup.com/frontend-freunde/">
+                  Frontend Freunde Muenster
                 </a>
               </div>
             </div>
           </div>
           <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
             <div className="card">
-              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+              <a href="https://www.meetup.com/ReactJS-Meetup-Dusseldorf/">
                 <img
                   className="card-img-top"
-                  src={Reacticon}
-                  alt="Placeholder Sponsor Logo"
+                  src={ReactJsDus}
+                  alt="Logo of React JS Dusseldorf"
                 />
               </a>
               <div className="card-body">
-                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                  Become a Sponsor
+                <a href="https://www.meetup.com/ReactJS-Meetup-Dusseldorf/">
+                  ReactJS Duesseldorf
                 </a>
               </div>
             </div>
