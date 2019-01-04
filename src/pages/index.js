@@ -14,7 +14,7 @@ import Mitpicon from '../images/mitp-logo.png';
 import Manningicon from '../images/Manning_logo.png';
 import Bwiicon from '../images/bwi_logo.png';
 import Railsloveicon from '../images/railslove_logo.png';
-import MaTeaIcon from '../images/Ma-Tea-Logo.png';
+import MaTeaIcon from '../images/Ma-Tea-Logo-new.png';
 import BonnJSicon from '../images/BonnJS_Logo-min.png';
 import FrontEndMuensterIcon from '../images/frontend-freunde-muenster-logo.png';
 import ReactJsDus from '../images/ReactJSDusseldorf.png';
