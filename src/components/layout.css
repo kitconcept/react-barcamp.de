@@ -356,10 +356,6 @@ body {
 }
 
 @media (max-width: 576px) {
-  .above-the-fold {
-    /* background-image: url(../images/DomCologne-sm.png); */
-  }
-
   .above-the-fold .container h1 {
     font-size: 2.5em;
   }
@@ -377,11 +373,11 @@ body {
   }
 
   .above-the-fold .container {
-    margin-top: 0;
+    margin-top: 2em;
   }
 }
 
-/*@media (max-height: 768px) {
+/* @media (max-height: 768px) {
   .above-the-fold .container {
     margin-top: 0;
   }
@@ -389,4 +385,4 @@ body {
   .above-the-fold .container .btn {
     margin-top: 0.5em;
   }
-}*/
+} */
