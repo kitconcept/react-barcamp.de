@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+
 // import BarcampSession from '../images/BarcampSession-min.jpg'
 // import Programmer from '../images/programmer-min.jpg'
 import ReacticonMini from '../images/react-icon-mini.png';
@@ -22,175 +23,235 @@ import Kitconcepticon from '../images/kitconcept-logo.png';
 import ReactCologneicon from '../images/ReactCologneLogo.png';
 import Headroom from 'react-headroom';
 
-const IndexPage = props => (
-  <Layout>
-    <Headroom className="navbar" disableInlineStyles>
-      <div className="container">
-        <a href="#top" className="nav-image">
-          <img
-            alt="Link to top of the page"
-            src={ReacticonMini}
-            className="nav-image"
-          />
-        </a>
-
-        <a href="#about" className="nav-link">
-          About
-        </a>
-        <a href="#schedule" className="nav-link">
-          Schedule
-        </a>
-        <a href="#sponsors" className="nav-link">
-          Sponsors
-        </a>
-        <a href="#location" className="nav-link">
-          Location
-        </a>
-      </div>
-    </Headroom>
-    <div className="above-the-fold" id="top">
-      <Img
-        className="full-width-image-container"
-        fluid={props.data.imageCologne.childImageSharp.fluid}
-      />
-      <div className="container">
-        <h1>React Barcamp 2019</h1>
-        <h3>
-          26th and 27th January 2019 in <a href="#location">Cologne</a>
-        </h3>
-        <a
-          href="https://barcamptools.eu/react-barcamp-cologne-2019/"
-          className="btn btn-lg btn-outline-secondary button"
-          role="button"
-          aria-pressed="true"
-        >
-          Register now
-        </a>
-        <p className="btn-comment">Barcamp is free of charge</p>
-      </div>
-    </div>
-    <div className="container about" id="about">
-      <div className="row">
-        <div className="col col-12 col-md-6">
-          <div className="info-text">
-            <h3>What is a Barcamp?</h3>
-            <p>
-              A Barcamp is an event shaped by your contribution. Rather than
-              having scheduled speakers, you will have the opportunity to talk
-              about what is important to you. Anyone with something to
-              contribute in the context of user experience is welcome to join.
-              The goal is to share what you know, to learn from others, to
-              ignite discussion, and to connect in an open environment.
-            </p>
-            <a href="https://en.wikipedia.org/wiki/BarCamp">Read more...</a>
-          </div>
-        </div>
-        <div className="col col-6 d-none d-md-block">
-          <div className="image ">
-            <Img
-              className="info-picture"
-              fluid={props.data.imageBarcampSession.childImageSharp.fluid}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col col-6 d-none d-md-block">
-          <div className="image">
-            <Img
-              className="info-picture"
-              fluid={props.data.imageProgrammer.childImageSharp.fluid}
-            />
-          </div>
-        </div>
-        <div className="col col-12 col-md-6">
-          <div className="info-text">
-            <h3>What is React?</h3>
-            <p>
-              React is a JavaScript library that makes it incredible easy to
-              build fast user Interfaces for websites and mobile. Data on React
-              sites can easily be changed without reloading the page, improving
-              the overall user expierence. <br />
-              It also allows you to create reusable components to reduce
-              repetitive programing and the overall amount of code. This makes
-              not only writing but also reading the code much easier.
-            </p>
-            <a href="https://reactjs.org/">Read more...</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="container schedule" id="schedule">
-      <h1>Schedule</h1>
-      <div className="row ">
-        <div className="col col-12 col-sm-6">
-          <div className="card table">
-            <ul className="list-group list-group-flush">
-              <div className="card-header">
-                <a
-                  className="heading"
-                  href="https://barcamptools.eu/react-barcamp-cologne-2019/events/307d07d7-5709-4445-b7c8-93001034eebe#sessions"
-                >
-                  Saturday 26.01.
+class IndexPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false,
+    };
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+  toggleMenu = () => {
+    this.setState(state => ({
+      isOpen: !state.isOpen,
+    }));
+  };
+  render() {
+    return (
+      <Layout>
+        <div class={this.state.isOpen ? 'mobile-nav open' : 'mobile-nav'}>
+          <div>
+            <ul class="unstyled">
+              <li>
+                <a href="#about" className="nav-link" onClick={this.toggleMenu}>
+                  About
                 </a>
-              </div>
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item">09:00 - Arrival</li>
-                <li className="list-group-item">
-                  09:30 - Welcome and Session Planning
-                </li>
-                <li className="list-group-item">13:00 - Lunch</li>
-                <li className="list-group-item">14:00 - Lightning Talks</li>
-                <li className="list-group-item">18:00 - Final Session</li>
-                <li className="list-group-item">19:00 - End</li>
-              </ul>
+              </li>
+              <li>
+                <a
+                  href="#schedule"
+                  className="nav-link"
+                  onClick={this.toggleMenu}
+                >
+                  Schedule
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#sponsors"
+                  className="nav-link"
+                  onClick={this.toggleMenu}
+                >
+                  Sponsors
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#location"
+                  className="nav-link"
+                  onClick={this.toggleMenu}
+                >
+                  Location
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-        <div className="col col-12 col-sm-6">
-          <div className="card table">
-            <div className="card-header">
-              <a
-                className="heading"
-                href="https://barcamptools.eu/react-barcamp-cologne-2019/events/5796ecb0-7428-4525-bf9d-f4e4e21713b8#location"
-              >
-                Sunday 27.01.
+        <Headroom className="navbar" disableInlineStyles>
+          <div className="container">
+            <button className="navbar-toggler" onClick={this.toggleMenu}>
+              <span class="navbar-toggler-icon" />
+            </button>
+            <div className="desktop-nav">
+              <a href="#top" className="nav-image">
+                <img
+                  alt="Link to top of the page"
+                  src={ReacticonMini}
+                  className="nav-image"
+                />
+              </a>
+
+              <a href="#about" className="nav-link">
+                About
+              </a>
+              <a href="#schedule" className="nav-link">
+                Schedule
+              </a>
+              <a href="#sponsors" className="nav-link">
+                Sponsors
+              </a>
+              <a href="#location" className="nav-link">
+                Location
               </a>
             </div>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">09:00 - Arrival</li>
-              <li className="list-group-item">10:00 - Session Planning</li>
-              <li className="list-group-item">12:45 - Lunch</li>
-              <li className="list-group-item">14:30 - Lightning Talks</li>
-              <li className="list-group-item">15:30 - Final Session</li>
-              <li className="list-group-item">16:00 - End</li>
-            </ul>
+          </div>
+        </Headroom>
+        <div className="above-the-fold" id="top">
+          <Img
+            className="full-width-image-container"
+            fluid={this.props.data.imageCologne.childImageSharp.fluid}
+          />
+          <div className="container">
+            <h1>React Barcamp 2019</h1>
+            <h3>
+              26th and 27th January 2019 in <a href="#location">Cologne</a>
+            </h3>
+            <a
+              href="https://barcamptools.eu/react-barcamp-cologne-2019/"
+              className="btn btn-lg btn-outline-secondary button"
+              role="button"
+              aria-pressed="true"
+            >
+              Register now
+            </a>
+            <p className="btn-comment">Barcamp is free of charge</p>
           </div>
         </div>
-      </div>
-      <p className="infos">
-        Further infos:{' '}
-        <a
-          className="link"
-          href="https://barcamptools.eu/react-barcamp-cologne-2019/events"
-        >
-          Barcamptools Schedule
-        </a>
-      </p>
-    </div>
-    <div className="container sponsors" id="sponsors">
-      <h1>Sponsors</h1>
-      <div className="container button sponsor-btn">
-        <a
-          href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019"
-          className="btn btn-lg btn-outline-secondary "
-          role="button"
-          aria-pressed="true"
-        >
-          Become a Sponsor
-        </a>
-      </div>
-      {/*<div className="sp-diamond">
+        <div className="container about" id="about">
+          <div className="row">
+            <div className="col col-12 col-md-6">
+              <div className="info-text">
+                <h3>What is a Barcamp?</h3>
+                <p>
+                  A Barcamp is an event shaped by your contribution. Rather than
+                  having scheduled speakers, you will have the opportunity to
+                  talk about what is important to you. Anyone with something to
+                  contribute in the context of user experience is welcome to
+                  join. The goal is to share what you know, to learn from
+                  others, to ignite discussion, and to connect in an open
+                  environment.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/BarCamp">Read more...</a>
+              </div>
+            </div>
+            <div className="col col-6 d-none d-md-block">
+              <div className="image ">
+                <Img
+                  className="info-picture"
+                  fluid={
+                    this.props.data.imageBarcampSession.childImageSharp.fluid
+                  }
+                />
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col col-6 d-none d-md-block">
+              <div className="image">
+                <Img
+                  className="info-picture"
+                  fluid={this.props.data.imageProgrammer.childImageSharp.fluid}
+                />
+              </div>
+            </div>
+            <div className="col col-12 col-md-6">
+              <div className="info-text">
+                <h3>What is React?</h3>
+                <p>
+                  React is a JavaScript library that makes it incredible easy to
+                  build fast user Interfaces for websites and mobile. Data on
+                  React sites can easily be changed without reloading the page,
+                  improving the overall user expierence. <br />
+                  It also allows you to create reusable components to reduce
+                  repetitive programing and the overall amount of code. This
+                  makes not only writing but also reading the code much easier.
+                </p>
+                <a href="https://reactjs.org/">Read more...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container schedule" id="schedule">
+          <h1>Schedule</h1>
+          <div className="row ">
+            <div className="col col-12 col-sm-6">
+              <div className="card table">
+                <ul className="list-group list-group-flush">
+                  <div className="card-header">
+                    <a
+                      className="heading"
+                      href="https://barcamptools.eu/react-barcamp-cologne-2019/events/307d07d7-5709-4445-b7c8-93001034eebe#sessions"
+                    >
+                      Saturday 26.01.
+                    </a>
+                  </div>
+                  <ul className="list-group list-group-flush">
+                    <li className="list-group-item">09:00 - Arrival</li>
+                    <li className="list-group-item">
+                      09:30 - Welcome and Session Planning
+                    </li>
+                    <li className="list-group-item">13:00 - Lunch</li>
+                    <li className="list-group-item">14:00 - Lightning Talks</li>
+                    <li className="list-group-item">18:00 - Final Session</li>
+                    <li className="list-group-item">19:00 - End</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+            <div className="col col-12 col-sm-6">
+              <div className="card table">
+                <div className="card-header">
+                  <a
+                    className="heading"
+                    href="https://barcamptools.eu/react-barcamp-cologne-2019/events/5796ecb0-7428-4525-bf9d-f4e4e21713b8#location"
+                  >
+                    Sunday 27.01.
+                  </a>
+                </div>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">09:00 - Arrival</li>
+                  <li className="list-group-item">10:00 - Session Planning</li>
+                  <li className="list-group-item">12:45 - Lunch</li>
+                  <li className="list-group-item">14:30 - Lightning Talks</li>
+                  <li className="list-group-item">15:30 - Final Session</li>
+                  <li className="list-group-item">16:00 - End</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p className="infos">
+            Further infos:{' '}
+            <a
+              className="link"
+              href="https://barcamptools.eu/react-barcamp-cologne-2019/events"
+            >
+              Barcamptools Schedule
+            </a>
+          </p>
+        </div>
+        <div className="container sponsors" id="sponsors">
+          <h1>Sponsors</h1>
+          <div className="container button sponsor-btn">
+            <a
+              href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019"
+              className="btn btn-lg btn-outline-secondary "
+              role="button"
+              aria-pressed="true"
+            >
+              Become a Sponsor
+            </a>
+          </div>
+          {/*<div className="sp-diamond">
         <h2>Diamond Sponsor</h2>
         <div className="row">
           <div className="col col-0 col-sm-2 col-md-3" />
@@ -206,159 +267,169 @@ const IndexPage = props => (
           </div>
         </div>
 </div>*/}
-      <div className="sp-gold">
-        {/*<h2>Sponsors</h2>*/}
-        <div className="row">
-          <div className="col col-12 col-sm-6 col-md-4">
-            <div className="card">
-              <a href="https://www.railslove.com/">
-                <img
-                  className="card-img-top"
-                  src={Railsloveicon}
-                  alt="Railslove GmbH Logo"
-                />
-              </a>
-              <div className="card-body">
-                <a href="https://www.railslove.com/">Railslove GmbH</a>
+          <div className="sp-gold">
+            {/*<h2>Sponsors</h2>*/}
+            <div className="row">
+              <div className="col col-12 col-sm-6 col-md-4">
+                <div className="card">
+                  <a href="https://www.railslove.com/">
+                    <img
+                      className="card-img-top"
+                      src={Railsloveicon}
+                      alt="Railslove GmbH Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.railslove.com/">Railslove GmbH</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-sm-6 col-md-4">
+                <div className="card">
+                  <a href="https://www.bwi.de/">
+                    <img
+                      className="card-img-top"
+                      src={Bwiicon}
+                      alt="BWI Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.bwi.de/">BWI</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-sm-6 col-md-4">
+                <div className="card">
+                  <a href="https://kitconcept.com/">
+                    <img
+                      className="card-img-top white-preview"
+                      src={Kitconcepticon}
+                      alt="Logo Kitconcept GmbH"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://kitconcept.com/">kitconcept GmbH</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col col-12 col-sm-6 col-md-4">
-            <div className="card">
-              <a href="https://www.bwi.de/">
-                <img className="card-img-top" src={Bwiicon} alt="BWI Logo" />
-              </a>
-              <div className="card-body">
-                <a href="https://www.bwi.de/">BWI</a>
-              </div>
-            </div>
-          </div>
-          <div className="col col-12 col-sm-6 col-md-4">
-            <div className="card">
-              <a href="https://kitconcept.com/">
-                <img
-                  className="card-img-top white-preview"
-                  src={Kitconcepticon}
-                  alt="Logo Kitconcept GmbH"
-                />
-              </a>
-              <div className="card-body">
-                <a href="https://kitconcept.com/">kitconcept GmbH</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col col-12 col-sm-6 col-md-4">
-          <div className="card">
-            <a href="https://www.ma-tea.de/">
-              <img className="card-img-top" src={MaTeaIcon} alt="Ma Tea Logo" />
-            </a>
-            <div className="card-body">
-              <a href="https://www.ma-tea.de/">Ma-Tea</a>
-            </div>
-          </div>
-        </div>
-        <div className="col col-12 col-sm-6 col-md-4">
-          <div className="card">
-            <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-              <img
-                className="card-img-top"
-                src={Reacticon}
-                alt="Placeholder Sponsor Logo"
-              />
-            </a>
-            <div className="card-body">
-              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                Become a Sponsor
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="col col-12 col-sm-6 col-md-4">
-          <div className="card">
-            <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-              <img
-                className="card-img-top"
-                src={Reacticon}
-                alt="Placeholder Sponsor Logo"
-              />
-            </a>
-            <div className="card-body">
-              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                Become a Sponsor
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="sp-silver">
-        <h2>Media Sponsors</h2>
-        <div className="row">
-          <div className="col col-12 col-sm-6 col-md-3">
-            <div className="card">
-              <a href="https://www.mitp.de/">
-                <img
-                  className="card-img-top"
-                  src={Mitpicon}
-                  alt="Sponsor Logo"
-                />
-              </a>
-              <div className="card-body">
-                <a href="https://www.mitp.de/">mitp Verlags GmbH</a>
-              </div>
-            </div>
-          </div>
-          <div className="col col-12 col-sm-6 col-md-3">
-            <div className="card">
-              <a href="https://www.manning.com/">
-                <img
-                  className="card-img-top"
-                  src={Manningicon}
-                  alt="Placeholder Sponsor Logo"
-                />
-              </a>
-              <div className="card-body">
-                <a href="https://www.manning.com/">Manning Publications Co.</a>
-              </div>
-            </div>
-          </div>
-          <div className="col col-12 col-sm-6 col-md-3">
-            <div className="card">
-              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                <img
-                  className="card-img-top"
-                  src={Reacticon}
-                  alt="Placeholder Sponsor Logo"
-                />
-              </a>
-              <div className="card-body">
-                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                  Become a Sponsor
+          <div className="row">
+            <div className="col col-12 col-sm-6 col-md-4">
+              <div className="card">
+                <a href="https://www.ma-tea.de/">
+                  <img
+                    className="card-img-top"
+                    src={MaTeaIcon}
+                    alt="Ma Tea Logo"
+                  />
                 </a>
+                <div className="card-body">
+                  <a href="https://www.ma-tea.de/">Ma-Tea</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col col-12 col-sm-6 col-md-3">
-            <div className="card">
-              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                <img
-                  className="card-img-top"
-                  src={Reacticon}
-                  alt="Placeholder Sponsor Logo"
-                />
-              </a>
-              <div className="card-body">
+            <div className="col col-12 col-sm-6 col-md-4">
+              <div className="card">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                  Become a Sponsor
+                  <img
+                    className="card-img-top"
+                    src={Reacticon}
+                    alt="Placeholder Sponsor Logo"
+                  />
                 </a>
+                <div className="card-body">
+                  <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                    Become a Sponsor
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col col-12 col-sm-6 col-md-4">
+              <div className="card">
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  <img
+                    className="card-img-top"
+                    src={Reacticon}
+                    alt="Placeholder Sponsor Logo"
+                  />
+                </a>
+                <div className="card-body">
+                  <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                    Become a Sponsor
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      {/*
+          <div className="sp-silver">
+            <h2>Media Sponsors</h2>
+            <div className="row">
+              <div className="col col-12 col-sm-6 col-md-3">
+                <div className="card">
+                  <a href="https://www.mitp.de/">
+                    <img
+                      className="card-img-top"
+                      src={Mitpicon}
+                      alt="Sponsor Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.mitp.de/">mitp Verlags GmbH</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-sm-6 col-md-3">
+                <div className="card">
+                  <a href="https://www.manning.com/">
+                    <img
+                      className="card-img-top"
+                      src={Manningicon}
+                      alt="Placeholder Sponsor Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.manning.com/">
+                      Manning Publications Co.
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-sm-6 col-md-3">
+                <div className="card">
+                  <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                    <img
+                      className="card-img-top"
+                      src={Reacticon}
+                      alt="Placeholder Sponsor Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                      Become a Sponsor
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-sm-6 col-md-3">
+                <div className="card">
+                  <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                    <img
+                      className="card-img-top"
+                      src={Reacticon}
+                      alt="Placeholder Sponsor Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                      Become a Sponsor
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/*
       <div className="sp-bronze">
         <h2>Bronze Sponsors</h2>
         <div className="row">
@@ -412,194 +483,197 @@ const IndexPage = props => (
           </div>
         </div>
 </div>*/}
-      <div className="sp-bronze">
-        <h2>Community Sponsors</h2>
-        <div className="row">
-          <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
-            <div className="card">
-              <a href="https://www.meetup.com/BonnJS/">
-                <img
-                  className="card-img-top"
-                  src={BonnJSicon}
-                  alt="Sponsor Logo"
-                />
-              </a>
-              <div className="card-body">
-                <a href="https://www.meetup.com/BonnJS/">BonnJS</a>
+          <div className="sp-bronze">
+            <h2>Community Sponsors</h2>
+            <div className="row">
+              <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
+                <div className="card">
+                  <a href="https://www.meetup.com/BonnJS/">
+                    <img
+                      className="card-img-top"
+                      src={BonnJSicon}
+                      alt="Sponsor Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.meetup.com/BonnJS/">BonnJS</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
+                <div className="card">
+                  <a href="https://www.meetup.com/React-Cologne/">
+                    <img
+                      className="card-img-top"
+                      src={ReactCologneicon}
+                      alt="Sponsor Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.meetup.com/React-Cologne/">
+                      React Cologne
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
+                <div className="card">
+                  <a href="https://www.meetup.com/frontend-freunde/">
+                    <img
+                      className="card-img-top"
+                      src={FrontEndMuensterIcon}
+                      alt="Logo of Frontend Freunde Munster"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.meetup.com/frontend-freunde/">
+                      Frontend Freunde Muenster
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
+                <div className="card">
+                  <a href="https://www.meetup.com/ReactJS-Meetup-Dusseldorf/">
+                    <img
+                      className="card-img-top"
+                      src={ReactJsDus}
+                      alt="Logo of React JS Dusseldorf"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.meetup.com/ReactJS-Meetup-Dusseldorf/">
+                      ReactJS Duesseldorf
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
+                <div className="card">
+                  <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                    <img
+                      className="card-img-top"
+                      src={Reacticon}
+                      alt="Placeholder Sponsor Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                      Become a Sponsor
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
+                <div className="card">
+                  <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                    <img
+                      className="card-img-top"
+                      src={Reacticon}
+                      alt="Placeholder Sponsor Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                      Become a Sponsor
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
-            <div className="card">
-              <a href="https://www.meetup.com/React-Cologne/">
-                <img
-                  className="card-img-top"
-                  src={ReactCologneicon}
-                  alt="Sponsor Logo"
-                />
-              </a>
-              <div className="card-body">
-                <a href="https://www.meetup.com/React-Cologne/">
-                  React Cologne
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
-            <div className="card">
-              <a href="https://www.meetup.com/frontend-freunde/">
-                <img
-                  className="card-img-top"
-                  src={FrontEndMuensterIcon}
-                  alt="Logo of Frontend Freunde Munster"
-                />
-              </a>
-              <div className="card-body">
-                <a href="https://www.meetup.com/frontend-freunde/">
-                  Frontend Freunde Muenster
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
-            <div className="card">
-              <a href="https://www.meetup.com/ReactJS-Meetup-Dusseldorf/">
-                <img
-                  className="card-img-top"
-                  src={ReactJsDus}
-                  alt="Logo of React JS Dusseldorf"
-                />
-              </a>
-              <div className="card-body">
-                <a href="https://www.meetup.com/ReactJS-Meetup-Dusseldorf/">
-                  ReactJS Duesseldorf
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
-            <div className="card">
-              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                <img
-                  className="card-img-top"
-                  src={Reacticon}
-                  alt="Placeholder Sponsor Logo"
-                />
-              </a>
-              <div className="card-body">
-                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                  Become a Sponsor
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
-            <div className="card">
-              <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                <img
-                  className="card-img-top"
-                  src={Reacticon}
-                  alt="Placeholder Sponsor Logo"
-                />
-              </a>
-              <div className="card-body">
-                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                  Become a Sponsor
-                </a>
+          <div className="sp-diamond">
+            <h2>Location Sponsor</h2>
+            <div className="row">
+              <div className="col col-0 col-sm-2 col-md-3" />
+              <div className="col col-12 col-sm-8 col-md-6">
+                <div className="card">
+                  <a href="https://www.gfu.net/?network=g&gclid=EAIaIQobChMI4Z-h0IP63gIVBkQYCh29oQoVEAAYASAAEgLg9fD_BwE">
+                    <img
+                      className="card-img-top"
+                      src={Cyrusicon}
+                      alt="Sponsor Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.gfu.net/?network=g&gclid=EAIaIQobChMI4Z-h0IP63gIVBkQYCh29oQoVEAAYASAAEgLg9fD_BwE">
+                      GFU Cyrus AG
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="sp-diamond">
-        <h2>Location Sponsor</h2>
-        <div className="row">
-          <div className="col col-0 col-sm-2 col-md-3" />
-          <div className="col col-12 col-sm-8 col-md-6">
-            <div className="card">
-              <a href="https://www.gfu.net/?network=g&gclid=EAIaIQobChMI4Z-h0IP63gIVBkQYCh29oQoVEAAYASAAEgLg9fD_BwE">
-                <img
-                  className="card-img-top"
-                  src={Cyrusicon}
-                  alt="Sponsor Logo"
-                />
-              </a>
-              <div className="card-body">
-                <a href="https://www.gfu.net/?network=g&gclid=EAIaIQobChMI4Z-h0IP63gIVBkQYCh29oQoVEAAYASAAEgLg9fD_BwE">
-                  GFU Cyrus AG
-                </a>
+        <div className="container-fuid button reg-now">
+          <a
+            href="https://barcamptools.eu/react-barcamp-cologne-2019/"
+            className="btn btn-lg btn-outline-secondary"
+            role="button"
+            aria-pressed="true"
+          >
+            Register now
+          </a>
+        </div>
+        <div className="container-fluid location" id="location">
+          <div className="map">
+            <iframe
+              title="Barcamp location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.9170204473367!2d6.990856315748642!3d50.92525197954363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf242a777a51df%3A0x721311869833f03f!2sGFU+Cyrus+AG!5e0!3m2!1sde!2sde!4v1543320356673"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+            />
+          </div>
+        </div>
+        <div className="container-fluid footer">
+          <div className="container">
+            <div className="row">
+              <div className="col col-12 col-sm-2 col-md-1">
+                <div className="footer-text">
+                  <Link to="/imprint/">Imprint</Link>
+                </div>
+              </div>
+              <div className="col-12 col-sm-3 col-md-2">
+                <div className="footer-text coc-link">
+                  <Link to="/coc/">Code of conduct</Link>
+                </div>
+              </div>
+              <div className="col-12 col-sm-2 col-md-2">
+                <div className="footer-text coc-link">
+                  <Link to="/privacy-policy/">Privacy Policy</Link>
+                </div>
+              </div>
+              <div className="col-12 col-sm-2 col-md-4">
+                <div className="footer-text">
+                  <p>
+                    Organized by{' '}
+                    <a href="https://kitconcept.com/">kitconcept</a> and
+                    friends.
+                  </p>
+                </div>
+              </div>
+              <div className="col-0 col-sm-0 col-md-1" />
+              <div className="col-12 col-sm-3 col-md-2">
+                <div className="footer-text soc-media">
+                  <a href="https://www.facebook.com/React-Barcamp-738517023197582/">
+                    <img src={Facebookicon} alt="Facebook" />
+                  </a>
+                  <a href="https://twitter.com/ReactBarcamp?ref_src=twsrc%5Etfw">
+                    <img src={Twitericon} alt="Twitter" />
+                  </a>
+                  <a href="mailto:info@kitconcept.com?">
+                    <img className="mail" alt="Mail" src={Mailicon} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div className="container-fuid button reg-now">
-      <a
-        href="https://barcamptools.eu/react-barcamp-cologne-2019/"
-        className="btn btn-lg btn-outline-secondary"
-        role="button"
-        aria-pressed="true"
-      >
-        Register now
-      </a>
-    </div>
-    <div className="container-fluid location" id="location">
-      <div className="map">
-        <iframe
-          title="Barcamp location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.9170204473367!2d6.990856315748642!3d50.92525197954363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf242a777a51df%3A0x721311869833f03f!2sGFU+Cyrus+AG!5e0!3m2!1sde!2sde!4v1543320356673"
-          width="100%"
-          height="100%"
-          frameBorder="0"
-        />
-      </div>
-    </div>
-    <div className="container-fluid footer">
-      <div className="container">
-        <div className="row">
-          <div className="col col-12 col-sm-2 col-md-1">
-            <div className="footer-text">
-              <Link to="/imprint/">Imprint</Link>
-            </div>
-          </div>
-          <div className="col-12 col-sm-3 col-md-2">
-            <div className="footer-text coc-link">
-              <Link to="/coc/">Code of conduct</Link>
-            </div>
-          </div>
-          <div className="col-12 col-sm-2 col-md-2">
-            <div className="footer-text coc-link">
-              <Link to="/privacy-policy/">Privacy Policy</Link>
-            </div>
-          </div>
-          <div className="col-12 col-sm-2 col-md-4">
-            <div className="footer-text">
-              <p>
-                Organized by <a href="https://kitconcept.com/">kitconcept</a>{' '}
-                and friends.
-              </p>
-            </div>
-          </div>
-          <div className="col-0 col-sm-0 col-md-1" />
-          <div className="col-12 col-sm-3 col-md-2">
-            <div className="footer-text soc-media">
-              <a href="https://www.facebook.com/React-Barcamp-738517023197582/">
-                <img src={Facebookicon} alt="Facebook" />
-              </a>
-              <a href="https://twitter.com/ReactBarcamp?ref_src=twsrc%5Etfw">
-                <img src={Twitericon} alt="Twitter" />
-              </a>
-              <a href="mailto:info@kitconcept.com?">
-                <img className="mail" alt="Mail" src={Mailicon} />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </Layout>
-);
+      </Layout>
+    );
+  }
+}
 
 export default IndexPage;
 
