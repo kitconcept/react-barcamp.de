@@ -41,11 +41,6 @@ class IndexPage extends React.Component {
       <Layout>
         <div class={this.state.isOpen ? 'mobile-nav open' : 'mobile-nav'}>
           <div>
-            <div className="mobile-nav-btn">
-              <button className="navbar-toggler" onClick={this.toggleMenu}>
-                <span class="navbar-toggler-icon" />
-              </button>
-            </div>
             <ul class="unstyled">
               <li>
                 <a href="#about" className="nav-link" onClick={this.toggleMenu}>
@@ -84,11 +79,9 @@ class IndexPage extends React.Component {
         </div>
         <Headroom className="navbar" disableInlineStyles>
           <div className="container">
-            <div className="mobile-nav-btn">
-              <button className="navbar-toggler" onClick={this.toggleMenu}>
-                <span class="navbar-toggler-icon" />
-              </button>
-            </div>
+            <button className="navbar-toggler" onClick={this.toggleMenu}>
+              <span class="navbar-toggler-icon" />
+            </button>
             <div className="desktop-nav">
               <a href="#top" className="nav-image">
                 <img
