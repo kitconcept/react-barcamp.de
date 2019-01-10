@@ -41,17 +41,17 @@ pipeline {
             sh 'yarn run format:ci'
           }
         }
-        stage('Outdated') {
-          agent {
-            label 'node'
-          }
-          steps {
-            deleteDir()
-            checkout scm
-            sh 'yarn install'
-            //sh 'npm outdated'
-          }
-        }
+        // stage('Outdated') {
+        //   agent {
+        //     label 'node'
+        //   }
+        //   steps {
+        //     deleteDir()
+        //     checkout scm
+        //     sh 'yarn install'
+        //     sh 'yarn outdated'
+        //   }
+        // }
       }
     }
 
