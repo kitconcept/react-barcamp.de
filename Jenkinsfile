@@ -22,7 +22,7 @@ pipeline {
       steps {
         deleteDir()
         checkout scm
-        sh 'npm install'
+        sh 'yarn install'
         sh 'node_modules/gatsby/dist/bin/gatsby.js build --prefix-paths'
       }
     }
@@ -37,8 +37,8 @@ pipeline {
           steps {
             deleteDir()
             checkout scm
-            sh 'npm install'
-            sh 'npm run format:ci'
+            sh 'yarn install'
+            sh 'yarn run format:ci'
           }
         }
         stage('Outdated') {
@@ -48,7 +48,7 @@ pipeline {
           steps {
             deleteDir()
             checkout scm
-            sh 'npm install'
+            sh 'yarn install'
             //sh 'npm outdated'
           }
         }
@@ -66,7 +66,7 @@ pipeline {
       }
       steps {
         sh '(cd /srv/react-barcamp.de/ && git fetch --all && git reset --hard origin/master)'
-        sh '(cd /srv/react-barcamp.de/ && npm install)'
+        sh '(cd /srv/react-barcamp.de/ && yarn install)'
         sh '(cd /srv/react-barcamp.de/ && node_modules/gatsby/dist/bin/gatsby.js build --prefix-paths)'
       }
     }
@@ -84,7 +84,7 @@ pipeline {
           steps {
             deleteDir()
             checkout scm
-            sh 'npm install'
+            sh 'yarn install'
             script {
               psiExitCode = sh(
                 script: 'yarn run psi',
@@ -106,8 +106,8 @@ pipeline {
           steps {
             deleteDir()
             checkout scm
-            sh 'npm install'
-            sh 'npm run lighthouse:ci'
+            sh 'yarn install'
+            sh 'yarn run lighthouse:ci'
           }
           post {
             always {
