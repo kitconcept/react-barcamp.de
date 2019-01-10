@@ -52,6 +52,13 @@ body {
   float: left;
 }
 
+.headroom .navbar-toggler {
+  margin-top: 0.25em;
+  margin-right: 1em;
+  margin-bottom: 0.25em;
+  float: right;
+}
+
 .headroom .navbar-toggler-icon {
   background-image: url('../images/hamburger-white.png');
 }
@@ -71,10 +78,26 @@ body {
   visibility: hidden;
 }
 
+.mobile-nav .navbar-toggler {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+}
+
+.mobile-nav .navbar-toggler-icon {
+  background-image: url('../images/cross.png');
+}
+
 .mobile-nav.open {
   opacity: 1;
   transition-delay: 0.05s;
   visibility: visible;
+}
+
+.mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .mobile-nav a {
