@@ -52,6 +52,13 @@ body {
   float: left;
 }
 
+.navbar-toggler {
+  margin-top: 0.5em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  float: right;
+}
+
 .headroom .navbar-toggler-icon {
   background-image: url('../images/hamburger-white.png');
 }
@@ -71,11 +78,11 @@ body {
   visibility: hidden;
 }
 
-/* .mobile-nav .navbar-toggler {
-  position: relative;
-  top: -65%;
-  float: right;
-} */
+.mobile-nav .navbar-toggler {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+}
 
 .mobile-nav .navbar-toggler-icon {
   background-image: url('../images/cross.png');
