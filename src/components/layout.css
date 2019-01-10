@@ -52,7 +52,7 @@ body {
   float: left;
 }
 
-.navbar-toggler {
+.headroom .navbar-toggler {
   margin-top: 0.5em;
   margin-right: 1em;
   margin-bottom: 0.5em;
