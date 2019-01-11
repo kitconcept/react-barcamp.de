@@ -17,6 +17,7 @@ import Bwiicon from '../images/bwi_logo.png';
 import Railsloveicon from '../images/railslove_logo.png';
 import MaTeaIcon from '../images/Ma-Tea-Logo-new.png';
 import Ambienticon from '../images/Ai-Logo-full_400px.png';
+import Codeviseicon from '../images/codevise_logo_512px.png';
 import BonnJSicon from '../images/BonnJS_Logo-min.png';
 import FrontEndMuensterIcon from '../images/frontend-freunde-muenster-logo.png';
 import ReactJsDus from '../images/ReactJSDusseldorf.png';
@@ -354,6 +355,22 @@ class IndexPage extends React.Component {
             </div>
             <div className="col col-12 col-sm-6 col-md-4">
               <div className="card">
+                <a href="https://codevise.de/de/">
+                  <img
+                    className="card-img-top"
+                    src={Codeviseicon}
+                    alt="Logo of Codevise"
+                  />
+                </a>
+                <div className="card-body">
+                  <a href="https://codevise.de/de/">Codevise Solutions</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/*<div className="row">
+            <div className="col col-12 col-sm-6 col-md-4">
+              <div className="card">
                 <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
                   <img
                     className="card-img-top"
@@ -368,7 +385,39 @@ class IndexPage extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
+            <div className="col col-12 col-sm-6 col-md-4">
+              <div className="card">
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  <img
+                    className="card-img-top"
+                    src={Reacticon}
+                    alt="Placeholder Sponsor Logo"
+                  />
+                </a>
+                <div className="card-body">
+                  <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                    Become a Sponsor
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col col-12 col-sm-6 col-md-4">
+              <div className="card">
+                <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                  <img
+                    className="card-img-top"
+                    src={Reacticon}
+                    alt="Placeholder Sponsor Logo"
+                  />
+                </a>
+                <div className="card-body">
+                  <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
+                    Become a Sponsor
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>*/}
           <div className="sp-silver">
             <h2>Media Sponsors</h2>
             <div className="row">
@@ -436,60 +485,6 @@ class IndexPage extends React.Component {
               </div>
             </div>
           </div>
-          {/*
-      <div className="sp-bronze">
-        <h2>Bronze Sponsors</h2>
-        <div className="row">
-          <div className="col col-12 col-sm-4 col-md-4 col-lg-2">
-            <div className="card">
-              <img className="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-              <div className="card-body">
-                <a href="#">Become a Sponsor</a>
-              </div>
-            </div>
-          </div>
-          <div className="col col-12 col-sm-4 col-md-4 col-lg-2">
-            <div className="card">
-              <img className="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-              <div className="card-body">
-                <a href="#">Become a Sponsor</a>
-              </div>
-            </div>
-          </div>
-          <div className="col col-12 col-sm-4 col-md-4 col-lg-2">
-            <div className="card">
-              <img className="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-              <div className="card-body">
-                <a href="#">Become a Sponsor</a>
-              </div>
-            </div>
-          </div>
-          <div className="col col-12 col-sm-4 col-md-4 col-lg-2">
-            <div className="card">
-              <img className="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-              <div className="card-body">
-                <a href="#">Become a Sponsor</a>
-              </div>
-            </div>
-          </div>
-          <div className="col col-12 col-sm-4 col-md-4 col-lg-2">
-            <div className="card">
-              <img className="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-              <div className="card-body">
-                <a href="#">Become a Sponsor</a>
-              </div>
-            </div>
-          </div>
-          <div className="col col-12 col-sm-4 col-md-4 col-lg-2">
-            <div className="card">
-              <img className="card-img-top" src={Reacticon} alt="Sponsor Logo" />
-              <div className="card-body">
-                <a href="#">Become a Sponsor</a>
-              </div>
-            </div>
-          </div>
-        </div>
-</div>*/}
           <div className="sp-bronze">
             <h2>Community Sponsors</h2>
             <div className="row">
