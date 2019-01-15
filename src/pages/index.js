@@ -249,7 +249,7 @@ class IndexPage extends React.Component {
         </div>
         <div className="container sponsors" id="sponsors">
           <h1>Sponsors</h1>
-          <div className="container button sponsor-btn">
+          {/*<div className="container button sponsor-btn">
             <a
               href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019"
               className="btn btn-lg btn-outline-secondary "
@@ -259,7 +259,7 @@ class IndexPage extends React.Component {
               Become a Sponsor
             </a>
           </div>
-          {/*<div className="sp-diamond">
+          <div className="sp-diamond">
         <h2>Diamond Sponsor</h2>
         <div className="row">
           <div className="col col-0 col-sm-2 col-md-3" />
@@ -421,6 +421,7 @@ class IndexPage extends React.Component {
           <div className="sp-silver">
             <h2>Media Sponsors</h2>
             <div className="row">
+              <div className="col col-12 col-sm-6 col-md-3" />
               <div className="col col-12 col-sm-6 col-md-3">
                 <div className="card">
                   <a href="https://www.mitp.de/">
@@ -451,43 +452,12 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-12 col-sm-6 col-md-3">
-                <div className="card">
-                  <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                    <img
-                      className="card-img-top"
-                      src={Reacticon}
-                      alt="Placeholder Sponsor Logo"
-                    />
-                  </a>
-                  <div className="card-body">
-                    <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                      Become a Sponsor
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col col-12 col-sm-6 col-md-3">
-                <div className="card">
-                  <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                    <img
-                      className="card-img-top"
-                      src={Reacticon}
-                      alt="Placeholder Sponsor Logo"
-                    />
-                  </a>
-                  <div className="card-body">
-                    <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                      Become a Sponsor
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <div className="sp-bronze">
             <h2>Community Sponsors</h2>
             <div className="row">
+              <div className="col col-6 col-sm-4 col-md-4 col-lg-2" />
               <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
                 <div className="card">
                   <a href="https://www.meetup.com/BonnJS/">
@@ -546,38 +516,6 @@ class IndexPage extends React.Component {
                   <div className="card-body">
                     <a href="https://www.meetup.com/ReactJS-Meetup-Dusseldorf/">
                       ReactJS Duesseldorf
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
-                <div className="card">
-                  <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                    <img
-                      className="card-img-top"
-                      src={Reacticon}
-                      alt="Placeholder Sponsor Logo"
-                    />
-                  </a>
-                  <div className="card-body">
-                    <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                      Become a Sponsor
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
-                <div className="card">
-                  <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                    <img
-                      className="card-img-top"
-                      src={Reacticon}
-                      alt="Placeholder Sponsor Logo"
-                    />
-                  </a>
-                  <div className="card-body">
-                    <a href="mailto:info@kitconcept.com?subject=Become a Sponsor for React Barcamp 2019">
-                      Become a Sponsor
                     </a>
                   </div>
                 </div>
