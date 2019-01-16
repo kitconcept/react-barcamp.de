@@ -70,7 +70,7 @@ pipeline {
         deleteDir()
         unstash 'public.tgz'
         sh 'tar xfz public.tgz'
-        sh 'rsync -avz --delete --force ./public /srv/react-barcamp.de/.'
+        sh 'rsync -avz --delete --force ./public/ /srv/react-barcamp.de/'
               }
     }
 
