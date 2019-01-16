@@ -281,20 +281,6 @@ class IndexPage extends React.Component {
             <div className="row">
               <div className="col col-12 col-sm-6 col-md-4">
                 <div className="card">
-                  <a href="https://www.railslove.com/">
-                    <img
-                      className="card-img-top"
-                      src={Railsloveicon}
-                      alt="Railslove GmbH Logo"
-                    />
-                  </a>
-                  <div className="card-body">
-                    <a href="https://www.railslove.com/">Railslove GmbH</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col col-12 col-sm-6 col-md-4">
-                <div className="card">
                   <a href="https://www.bwi.de/">
                     <img
                       className="card-img-top"
@@ -304,6 +290,20 @@ class IndexPage extends React.Component {
                   </a>
                   <div className="card-body">
                     <a href="https://www.bwi.de/">BWI</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-sm-6 col-md-4">
+                <div className="card">
+                  <a href="https://www.railslove.com/">
+                    <img
+                      className="card-img-top"
+                      src={Railsloveicon}
+                      alt="Railslove GmbH Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.railslove.com/">Railslove GmbH</a>
                   </div>
                 </div>
               </div>
