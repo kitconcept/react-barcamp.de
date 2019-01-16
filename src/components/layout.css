@@ -244,6 +244,11 @@ body {
   margin-bottom: 0;
 }
 
+.sponsors h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
 .sponsors .card {
   border: 0;
   margin-top: 1em;
@@ -376,6 +381,16 @@ body {
   .above-the-fold .container h1 {
     font-size: 4em;
   }
+
+  .col-md-show {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-hide {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -399,13 +414,3 @@ body {
     margin-top: 2em;
   }
 }
-
-/* @media (max-height: 768px) {
-  .above-the-fold .container {
-    margin-top: 0;
-  }
-
-  .above-the-fold .container .btn {
-    margin-top: 0.5em;
-  }
-} */
