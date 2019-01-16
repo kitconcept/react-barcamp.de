@@ -6,7 +6,7 @@ import Img from 'gatsby-image';
 // import BarcampSession from '../images/BarcampSession-min.jpg'
 // import Programmer from '../images/programmer-min.jpg'
 import ReacticonMini from '../images/react-icon-mini.png';
-import Reacticon from '../images/react-icon-sm-blue-greyed-min.png';
+//import Reacticon from '../images/react-icon-sm-blue-greyed-min.png';
 import Twitericon from '../images/twitter-bird-white-min.png';
 import Facebookicon from '../images/facebook-logo-white-min.png';
 import Mailicon from '../images/mail-white-min.png';
@@ -18,6 +18,7 @@ import Railsloveicon from '../images/railslove_logo.png';
 import MaTeaIcon from '../images/Ma-Tea-Logo-new.png';
 import Ambienticon from '../images/Ai-Logo-full_400px.png';
 import Codeviseicon from '../images/codevise_logo_512px.png';
+import Brickmakersicon from '../images/Brickmakers_Logo.png';
 import BonnJSicon from '../images/BonnJS_Logo-min.png';
 import FrontEndMuensterIcon from '../images/frontend-freunde-muenster-logo.png';
 import ReactJsDus from '../images/ReactJSDusseldorf.png';
@@ -320,10 +321,69 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
+
+              <div className="col col-12 col-sm-6 col-md-hide">
+                <div className="card">
+                  <a href="https://www.brickmakers.de/">
+                    <img
+                      className="card-img-top"
+                      src={Brickmakersicon}
+                      alt="Brickmakers Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.brickmakers.de/">Brickmakers</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col col-12 col-sm-6 col-md-4">
+            <div className="row">
+              <div className="col col-12 col-sm-6 col-md-4 col-md-show">
+                <div className="card">
+                  <a href="https://www.brickmakers.de/">
+                    <img
+                      className="card-img-top"
+                      src={Brickmakersicon}
+                      alt="Brickmakers Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.brickmakers.de/">Brickmakers</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-sm-6 col-md-4">
+                <div className="card">
+                  <a href="https://ambient-innovation.com/">
+                    <img
+                      className="card-img-top"
+                      src={Ambienticon}
+                      alt="Ambient Innovation Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://ambient-innovation.com/">
+                      Ambient Innovation
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-0 col-sm-6 col-md-4">
+                <div className="card">
+                  <a href="https://codevise.de/de/">
+                    <img
+                      className="card-img-top"
+                      src={Codeviseicon}
+                      alt="Logo of Codevise"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://codevise.de/de/">Codevise Solutions</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col col-12">
               <div className="card">
                 <a href="https://www.ma-tea.de/">
                   <img
@@ -334,36 +394,6 @@ class IndexPage extends React.Component {
                 </a>
                 <div className="card-body">
                   <a href="https://www.ma-tea.de/">Ma-Tea</a>
-                </div>
-              </div>
-            </div>
-            <div className="col col-12 col-sm-6 col-md-4">
-              <div className="card">
-                <a href="https://ambient-innovation.com/">
-                  <img
-                    className="card-img-top"
-                    src={Ambienticon}
-                    alt="Ambient Innovation Logo"
-                  />
-                </a>
-                <div className="card-body">
-                  <a href="https://ambient-innovation.com/">
-                    Ambient Innovation
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col col-12 col-sm-6 col-md-4">
-              <div className="card">
-                <a href="https://codevise.de/de/">
-                  <img
-                    className="card-img-top"
-                    src={Codeviseicon}
-                    alt="Logo of Codevise"
-                  />
-                </a>
-                <div className="card-body">
-                  <a href="https://codevise.de/de/">Codevise Solutions</a>
                 </div>
               </div>
             </div>
@@ -421,8 +451,8 @@ class IndexPage extends React.Component {
           <div className="sp-silver">
             <h2>Media Sponsors</h2>
             <div className="row">
-              <div className="col col-12 col-sm-6 col-md-3" />
-              <div className="col col-12 col-sm-6 col-md-3">
+              <div className="col-0 col-lg-3" />
+              <div className="col col-12 col-sm-6 col-lg-3">
                 <div className="card">
                   <a href="https://www.mitp.de/">
                     <img
@@ -436,7 +466,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-12 col-sm-6 col-md-3">
+              <div className="col col-12 col-sm-6 col-lg-3">
                 <div className="card">
                   <a href="https://www.manning.com/">
                     <img
@@ -457,8 +487,7 @@ class IndexPage extends React.Component {
           <div className="sp-bronze">
             <h2>Community Sponsors</h2>
             <div className="row">
-              <div className="col col-6 col-sm-4 col-md-4 col-lg-2" />
-              <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
+              <div className="col col-12 col-sm-6 col-lg-3">
                 <div className="card">
                   <a href="https://www.meetup.com/BonnJS/">
                     <img
@@ -472,7 +501,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
+              <div className="col col-12 col-sm-6 col-lg-3">
                 <div className="card">
                   <a href="https://www.meetup.com/React-Cologne/">
                     <img
@@ -488,7 +517,8 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
+
+              <div className="col col-12 col-sm-6 col-lg-3">
                 <div className="card">
                   <a href="https://www.meetup.com/frontend-freunde/">
                     <img
@@ -504,7 +534,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-6 col-sm-4 col-md-4 col-lg-2">
+              <div className="col col-12 col-sm-6 col-lg-3">
                 <div className="card">
                   <a href="https://www.meetup.com/ReactJS-Meetup-Dusseldorf/">
                     <img
