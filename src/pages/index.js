@@ -13,6 +13,7 @@ import Mailicon from '../images/mail-white-min.png';
 import Cyrusicon from '../images/sp-cyrus-min.png';
 import Mitpicon from '../images/mitp-logo.png';
 import Manningicon from '../images/Manning_logo.png';
+import Oreilyicon from '../images/ORM_logo.png';
 import Bwiicon from '../images/bwi_logo.png';
 import Railsloveicon from '../images/railslove_logo.png';
 import MaTeaIcon from '../images/Ma-Tea-Logo-new.png';
@@ -375,8 +376,7 @@ class IndexPage extends React.Component {
           <div className="sp-silver">
             <h2>Media Sponsors</h2>
             <div className="row">
-              <div className="col-0 col-lg-3" />
-              <div className="col col-12 col-sm-6 col-lg-3">
+              <div className="col col-12 col-sm-6 col-md-4">
                 <div className="card">
                   <a href="https://www.mitp.de/">
                     <img
@@ -390,7 +390,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-12 col-sm-6 col-lg-3">
+              <div className="col col-12 col-sm-6 col-md-4">
                 <div className="card">
                   <a href="https://www.manning.com/">
                     <img
@@ -403,6 +403,20 @@ class IndexPage extends React.Component {
                     <a href="https://www.manning.com/">
                       Manning Publications Co.
                     </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-md-4">
+                <div className="card">
+                  <a href="https://www.oreilly.de/">
+                    <img
+                      className="card-img-top"
+                      src={Oreilyicon}
+                      alt="Logo of O reiley"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.oreilly.de/">O’Reilly Media</a>
                   </div>
                 </div>
               </div>
