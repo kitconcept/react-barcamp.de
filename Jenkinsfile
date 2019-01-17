@@ -61,7 +61,7 @@ pipeline {
     // Deploy
     stage('Deploy to react-barcamp.de') {
       agent {
-        label 'node'
+        label 'kitconcept.io'
       }
       when {
         branch 'master'
