@@ -550,6 +550,20 @@ class IndexPage extends React.Component {
             />
           </div>
         </div>
+        <div className="container directions">
+          <p>
+            We will be on the 2nd floor and there is plenty of parking. If you
+            will come by public transport the following stations are within
+            walking distance:
+            <ul>
+              <li>Poll Taubenholzweg (Bus 159, 8 min)</li>
+              <li>Humboldt/Gremberg Esserstr. (Bus 153, 8 min) </li>
+              <li>Poll Raiffeisenstr (Tram 7, 11 min) </li>
+              <li>Köln Trimbornstr (S-Bahn, 17 min) </li>
+              <li>Kalk Post (U-Bahn 1 & 9, 19 min)</li>
+            </ul>
+          </p>
+        </div>
         <div className="container-fluid footer">
           <div className="container">
             <div className="row">
