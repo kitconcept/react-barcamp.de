@@ -68,10 +68,13 @@ pipeline {
       }
       steps {
         deleteDir()
-        unstash 'public.tgz'
-        sh 'tar xfz public.tgz'
-        sh 'ls -al'
-        sh 'rsync -avz --delete --force --ignore-existing ./public /srv/react-barcamp/.'
+        checkout scm
+        sh '(cd /srv/react-barcamp.de/ && yarn install)'
+        sh '(cd /srv/react-barcamp.de/ && node_modules/gatsby/dist/bin/gatsby.js build)'
+        // unstash 'public.tgz'
+        // sh 'tar xfz public.tgz'
+        // sh 'ls -al'
+        // sh 'rsync -avz --delete --force --ignore-existing ./public /srv/react-barcamp/.'
       }
     }
 
