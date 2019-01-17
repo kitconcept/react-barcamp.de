@@ -499,7 +499,7 @@ class IndexPage extends React.Component {
                     />
                   </a>
                   <div className="card-body">
-                    <a href="https://reactjs.de/">ReactJS Duesseldorf</a>
+                    <a href="https://reactjs.de/">ReactJS.DE</a>
                   </div>
                 </div>
               </div>
