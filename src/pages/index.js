@@ -22,6 +22,7 @@ import Brickmakersicon from '../images/Brickmakers_Logo.png';
 import BonnJSicon from '../images/BonnJS_Logo-min.png';
 import FrontEndMuensterIcon from '../images/frontend-freunde-muenster-logo.png';
 import ReactJsDus from '../images/ReactJSDusseldorf.png';
+import ReactJsDe from '../images/React_DE.png';
 import Kitconcepticon from '../images/kitconcept-logo.png';
 import ReactCologneicon from '../images/ReactCologneLogo.png';
 import Headroom from 'react-headroom';
@@ -410,7 +411,8 @@ class IndexPage extends React.Component {
           <div className="sp-bronze">
             <h2>Community Sponsors</h2>
             <div className="row">
-              <div className="col col-12 col-sm-6 col-lg-3">
+              <div className="col-0 col-lg-1" />
+              <div className="col col-12 col-sm-6 col-lg-2">
                 <div className="card">
                   <a href="https://www.meetup.com/BonnJS/">
                     <img
@@ -424,7 +426,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-12 col-sm-6 col-lg-3">
+              <div className="col col-12 col-sm-6 col-lg-2">
                 <div className="card">
                   <a href="https://www.meetup.com/React-Cologne/">
                     <img
@@ -441,7 +443,7 @@ class IndexPage extends React.Component {
                 </div>
               </div>
 
-              <div className="col col-12 col-sm-6 col-lg-3">
+              <div className="col col-12 col-sm-6 col-lg-2">
                 <div className="card">
                   <a href="https://www.meetup.com/frontend-freunde/">
                     <img
@@ -457,7 +459,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-12 col-sm-6 col-lg-3">
+              <div className="col col-12 col-sm-6 col-lg-2">
                 <div className="card">
                   <a href="https://www.meetup.com/ReactJS-Meetup-Dusseldorf/">
                     <img
@@ -470,6 +472,20 @@ class IndexPage extends React.Component {
                     <a href="https://www.meetup.com/ReactJS-Meetup-Dusseldorf/">
                       ReactJS Duesseldorf
                     </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-lg-2">
+                <div className="card">
+                  <a href="https://reactjs.de/">
+                    <img
+                      className="card-img-top"
+                      src={ReactJsDe}
+                      alt="Logo of React JS Deutschland"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://reactjs.de/">ReactJS Duesseldorf</a>
                   </div>
                 </div>
               </div>
@@ -508,6 +524,7 @@ class IndexPage extends React.Component {
             Register now
           </a>
         </div>
+
         <div className="container-fluid location" id="location">
           <div className="map">
             <iframe
@@ -518,6 +535,20 @@ class IndexPage extends React.Component {
               frameBorder="0"
             />
           </div>
+        </div>
+        <div className="container directions">
+          <p>
+            We will be on the 2nd floor and there is plenty of parking. If you
+            will come by public transport the following stations are within
+            walking distance:
+            <ul>
+              <li>Poll Taubenholzweg (Bus 159, 8 min)</li>
+              <li>Humboldt/Gremberg Esserstr. (Bus 153, 8 min) </li>
+              <li>Poll Raiffeisenstr (Tram 7, 11 min) </li>
+              <li>Köln Trimbornstr (S-Bahn, 17 min) </li>
+              <li>Kalk Post (U-Bahn 1 & 9, 19 min)</li>
+            </ul>
+          </p>
         </div>
         <div className="container-fluid footer">
           <div className="container">
