@@ -23,7 +23,7 @@ pipeline {
         deleteDir()
         checkout scm
         sh 'yarn install'
-        sh 'node_modules/gatsby/dist/bin/gatsby.js build --prefix-paths'
+        sh 'node_modules/gatsby/dist/bin/gatsby.js build'
         sh 'tar cfz public.tgz public'
         stash includes: 'public.tgz', name: 'public.tgz'
       }
