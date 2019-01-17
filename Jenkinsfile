@@ -71,7 +71,7 @@ pipeline {
         unstash 'public.tgz'
         sh 'tar xfz public.tgz'
         sh 'ls -al'
-        sh 'rsync -avz --delete --force ./public /srv/react-barcamp/.'
+        sh 'rsync -avz --delete --force --ignore-existing ./public /srv/react-barcamp/.'
       }
     }
 
