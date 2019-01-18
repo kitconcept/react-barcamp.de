@@ -13,6 +13,7 @@ import Mailicon from '../images/mail-white-min.png';
 import Cyrusicon from '../images/sp-cyrus-min.png';
 import Mitpicon from '../images/mitp-logo.png';
 import Manningicon from '../images/Manning_logo.png';
+import Oreilyicon from '../images/ORM_logo.png';
 import Bwiicon from '../images/bwi_logo.png';
 import Railsloveicon from '../images/railslove_logo.png';
 import MaTeaIcon from '../images/Ma-Tea-Logo-new.png';
@@ -22,6 +23,7 @@ import Brickmakersicon from '../images/Brickmakers_Logo.png';
 import BonnJSicon from '../images/BonnJS_Logo-min.png';
 import FrontEndMuensterIcon from '../images/frontend-freunde-muenster-logo.png';
 import ReactJsDus from '../images/ReactJSDusseldorf.png';
+import ReactJsDe from '../images/React_DE.png';
 import Kitconcepticon from '../images/kitconcept-logo.png';
 import ReactCologneicon from '../images/ReactCologneLogo.png';
 import Headroom from 'react-headroom';
@@ -374,8 +376,7 @@ class IndexPage extends React.Component {
           <div className="sp-silver">
             <h2>Media Sponsors</h2>
             <div className="row">
-              <div className="col-0 col-lg-3" />
-              <div className="col col-12 col-sm-6 col-lg-3">
+              <div className="col col-12 col-sm-6 col-md-4">
                 <div className="card">
                   <a href="https://www.mitp.de/">
                     <img
@@ -389,7 +390,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-12 col-sm-6 col-lg-3">
+              <div className="col col-12 col-sm-6 col-md-4">
                 <div className="card">
                   <a href="https://www.manning.com/">
                     <img
@@ -405,12 +406,27 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
+              <div className="col col-12 col-md-4">
+                <div className="card">
+                  <a href="https://www.oreilly.de/">
+                    <img
+                      className="card-img-top"
+                      src={Oreilyicon}
+                      alt="Logo of O reiley"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.oreilly.de/">O’Reilly Media</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="sp-bronze">
             <h2>Community Sponsors</h2>
             <div className="row">
-              <div className="col col-12 col-sm-6 col-lg-3">
+              <div className="col-0 col-lg-1" />
+              <div className="col col-12 col-sm-6 col-lg-2">
                 <div className="card">
                   <a href="https://www.meetup.com/BonnJS/">
                     <img
@@ -424,7 +440,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-12 col-sm-6 col-lg-3">
+              <div className="col col-12 col-sm-6 col-lg-2">
                 <div className="card">
                   <a href="https://www.meetup.com/React-Cologne/">
                     <img
@@ -441,7 +457,7 @@ class IndexPage extends React.Component {
                 </div>
               </div>
 
-              <div className="col col-12 col-sm-6 col-lg-3">
+              <div className="col col-12 col-sm-6 col-lg-2">
                 <div className="card">
                   <a href="https://www.meetup.com/frontend-freunde/">
                     <img
@@ -457,7 +473,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-12 col-sm-6 col-lg-3">
+              <div className="col col-12 col-sm-6 col-lg-2">
                 <div className="card">
                   <a href="https://www.meetup.com/ReactJS-Meetup-Dusseldorf/">
                     <img
@@ -470,6 +486,20 @@ class IndexPage extends React.Component {
                     <a href="https://www.meetup.com/ReactJS-Meetup-Dusseldorf/">
                       ReactJS Duesseldorf
                     </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-lg-2">
+                <div className="card">
+                  <a href="https://reactjs.de/">
+                    <img
+                      className="card-img-top"
+                      src={ReactJsDe}
+                      alt="Logo of React JS Deutschland"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://reactjs.de/">ReactJS.DE</a>
                   </div>
                 </div>
               </div>
@@ -508,6 +538,7 @@ class IndexPage extends React.Component {
             Register now
           </a>
         </div>
+
         <div className="container-fluid location" id="location">
           <div className="map">
             <iframe
@@ -555,7 +586,7 @@ class IndexPage extends React.Component {
                   <a href="https://twitter.com/ReactBarcamp?ref_src=twsrc%5Etfw">
                     <img src={Twitericon} alt="Twitter" />
                   </a>
-                  <a href="mailto:barcamp@kitconcept.com?">
+                  <a href="mailto:barcamp@kitconcept.com">
                     <img className="mail" alt="Mail" src={Mailicon} />
                   </a>
                 </div>
