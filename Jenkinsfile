@@ -68,7 +68,7 @@ pipeline {
       }
       steps {
         deleteDir()
-        checkout scm
+        sh '(cd /srv/react-barcamp.de/ && git fetch --all && git reset --hard origin/master)'
         sh '(cd /srv/react-barcamp.de/ && yarn install)'
         sh '(cd /srv/react-barcamp.de/ && node_modules/gatsby/dist/bin/gatsby.js build)'
         // unstash 'public.tgz'
