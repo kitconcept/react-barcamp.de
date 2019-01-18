@@ -600,7 +600,7 @@ class IndexPage extends React.Component {
                   <a href="https://twitter.com/ReactBarcamp?ref_src=twsrc%5Etfw">
                     <img src={Twitericon} alt="Twitter" />
                   </a>
-                  <a href="mailto:barcamp@kitconcept.com?">
+                  <a href="mailto:barcamp@kitconcept.com">
                     <img className="mail" alt="Mail" src={Mailicon} />
                   </a>
                 </div>
