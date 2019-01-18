@@ -316,14 +316,6 @@ body {
   height: 100%;
 }
 
-.directions {
-  margin-top: 2em;
-}
-
-.directions li {
-  margin-top: 0.3em;
-  list-style: none;
-}
 
 .footer {
   padding-bottom: 2em;
