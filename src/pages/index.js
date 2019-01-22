@@ -192,12 +192,12 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container diversity">
           <h1>Diversity at the event</h1>
           <div className="row">
-            <div className="col-0 col-md-3" />
-            <div className="col col-12 col-md-6">
-              <div className="info-text">
+            <div className="col-0 col-md-2" />
+            <div className="col col-12 col-md-8">
+              <div className="info-text diversity-text">
                 <p>
                   As we try to promote more diversity in the open source
                   community, all people belonging to a group that is currently
