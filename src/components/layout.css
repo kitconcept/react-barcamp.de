@@ -3,6 +3,11 @@ body {
   background-repeat: repeat-y;
   background-position: center; */
   background-color: #123244;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
 }
 
 .headroom {
@@ -165,7 +170,7 @@ body {
   background-color: #123244;
 }
 
-.about .info-text {
+.info-text {
   width: 100%;
   padding: 1em;
   margin-top: 1em;
@@ -187,6 +192,10 @@ body {
 .about .row {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.diversity .container {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .schedule {
@@ -315,7 +324,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
 
 .footer {
   padding-bottom: 2em;

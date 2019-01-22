@@ -192,6 +192,26 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </div>
+        <div className="container">
+          <h1>Diversity at the event</h1>
+          <div className="row">
+            <div className="col-0 col-md-3" />
+            <div className="col col-12 col-md-6">
+              <div className="info-text">
+                <p>
+                  As we try to promote more diversity in the open source
+                  community, all people belonging to a group that is currently
+                  underrepresented in tech are most welcome at the event. We
+                  reserved some seats especially for these people. If you are
+                  part of such a group and want to attend the barcamp please
+                  contact us and we will give you a seat even when the event is
+                  booked out.
+                </p>
+                <a href="mailto:barcamp@kitconcept.com">Send Mail</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="container schedule" id="schedule">
           <h1>Schedule</h1>
           <div className="row ">
@@ -624,6 +644,7 @@ export const pageQuery = graphql`
         }
       }
     }
+
     imageReactIcon: file(
       relativePath: { eq: "react-icon-sm-blue-greyed-min.png" }
     ) {
