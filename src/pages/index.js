@@ -124,9 +124,8 @@ class IndexPage extends React.Component {
           />
           <div className="container">
             <h1>React Barcamp 2019</h1>
-            <h3>
-              26th and 27th January 2019 in <a href="#location">Cologne</a>
-            </h3>
+            <h3>Thank you for attending!</h3>
+            <h3>Infos for next year are coming soon.</h3>
           </div>
         </div>
         <div className="container about" id="about">
