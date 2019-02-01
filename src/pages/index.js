@@ -127,15 +127,6 @@ class IndexPage extends React.Component {
             <h3>
               26th and 27th January 2019 in <a href="#location">Cologne</a>
             </h3>
-            <a
-              href="https://barcamptools.eu/react-barcamp-cologne-2019/"
-              className="btn btn-lg btn-outline-secondary button"
-              role="button"
-              aria-pressed="true"
-            >
-              Register now
-            </a>
-            <p className="btn-comment">Barcamp is free of charge</p>
           </div>
         </div>
         <div className="container about" id="about">
@@ -547,16 +538,6 @@ class IndexPage extends React.Component {
               </div>
             </div>
           </div>
-        </div>
-        <div className="container-fuid button reg-now">
-          <a
-            href="https://barcamptools.eu/react-barcamp-cologne-2019/"
-            className="btn btn-lg btn-outline-secondary"
-            role="button"
-            aria-pressed="true"
-          >
-            Register now
-          </a>
         </div>
 
         <div className="container-fluid location" id="location">
