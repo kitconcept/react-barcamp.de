@@ -57,7 +57,7 @@ class IndexPage extends React.Component {
                   About
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#schedule"
                   className="nav-link"
@@ -65,8 +65,8 @@ class IndexPage extends React.Component {
                 >
                   Schedule
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a
                   href="#sponsors"
                   className="nav-link"
@@ -74,7 +74,7 @@ class IndexPage extends React.Component {
                 >
                   Sponsors
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="#location"
@@ -105,12 +105,12 @@ class IndexPage extends React.Component {
               <a href="#about" className="nav-link">
                 About
               </a>
-              <a href="#schedule" className="nav-link">
+              {/* <a href="#schedule" className="nav-link">
                 Schedule
               </a>
               <a href="#sponsors" className="nav-link">
                 Sponsors
-              </a>
+              </a> */}
               <a href="#location" className="nav-link">
                 Location
               </a>
@@ -123,10 +123,9 @@ class IndexPage extends React.Component {
             fluid={this.props.data.imageCologne.childImageSharp.fluid}
           />
           <div className="container">
-            <h1>React Barcamp 2019</h1>
-            <h3>
-              26th and 27th January 2019 in <a href="#location">Cologne</a>
-            </h3>
+            <h1>React Barcamp 2020</h1>
+            <h3>1st and 2nd February 2019 at RTL Media Group in Cologne</h3>
+            <p>Sign up will be available soon</p>
           </div>
         </div>
         <div className="container about" id="about">
@@ -203,7 +202,7 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </div>
-        <div className="container schedule" id="schedule">
+        {/* <div className="container schedule" id="schedule">
           <h1>Schedule</h1>
           <div className="row ">
             <div className="col col-12 col-sm-6">
@@ -260,8 +259,8 @@ class IndexPage extends React.Component {
               Barcamptools Schedule
             </a>
           </p>
-        </div>
-        <div className="container sponsors" id="sponsors">
+        </div> */}
+        {/* <div className="container sponsors" id="sponsors">
           <h1>Sponsors</h1>
           <div className="sp-gold">
             <div className="row">
@@ -538,16 +537,14 @@ class IndexPage extends React.Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="container-fluid location" id="location">
           <div className="map">
             <iframe
-              title="Barcamp location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.9170204473367!2d6.990856315748642!3d50.92525197954363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf242a777a51df%3A0x721311869833f03f!2sGFU+Cyrus+AG!5e0!3m2!1sde!2sde!4v1543320356673"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1056.964418985287!2d6.970210998116978!3d50.944076906923435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf3ae22710d4ff%3A0xe2ebb0d9c2799651!2sMediengruppe%20RTL%20Deutschland!5e0!3m2!1sde!2sde!4v1574354390597!5m2!1sde!2sde"
               width="100%"
               height="100%"
-              frameBorder="0"
             />
           </div>
         </div>
