@@ -464,7 +464,7 @@ class IndexPage extends React.Component {
                 </div>
               </div>
               <div className="col col-12 col-sm-6 col-lg-2">
-                {/* <div className="card">
+                <div className="card">
                   <a href="https://www.meetup.com/React-Cologne/">
                     <img
                       className="card-img-top"
@@ -477,7 +477,7 @@ class IndexPage extends React.Component {
                       React Cologne
                     </a>
                   </div>
-                </div> */}
+                </div>
               </div>
 
               <div className="col col-12 col-sm-6 col-lg-2">
@@ -533,7 +533,7 @@ class IndexPage extends React.Component {
             <div className="row">
               <div className="col col-0 col-sm-2 col-md-3" />
               <div className="col col-12 col-sm-8 col-md-6">
-                <div className="card">
+                {/* <div className="card">
                   <a href="https://www.gfu.net/?network=g&gclid=EAIaIQobChMI4Z-h0IP63gIVBkQYCh29oQoVEAAYASAAEgLg9fD_BwE">
                     <img
                       className="card-img-top"
@@ -547,7 +547,7 @@ class IndexPage extends React.Component {
                       Mediengruppe RTL Deutschland
                     </a>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
