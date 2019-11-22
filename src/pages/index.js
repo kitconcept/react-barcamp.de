@@ -10,7 +10,7 @@ import ReacticonMini from '../images/react-icon-mini.png';
 import Twitericon from '../images/twitter-bird-white-min.png';
 import Facebookicon from '../images/facebook-logo-white-min.png';
 import Mailicon from '../images/mail-white-min.png';
-import Cyrusicon from '../images/sp-cyrus-min.png';
+import RTLIcon from '../images/rtl-media-group.png';
 import Mitpicon from '../images/mitp-logo.png';
 import Manningicon from '../images/Manning_logo.png';
 import Oreilyicon from '../images/ORM_logo.png';
@@ -122,18 +122,13 @@ class IndexPage extends React.Component {
             className="full-width-image-container"
             fluid={this.props.data.imageCologne.childImageSharp.fluid}
           />
-<<<<<<< HEAD
+
           <div className="container header">
-            <h1>React Barcamp 2019</h1>
-            <h3>
-              26th and 27th January 2019 in <a href="#location">Cologne</a>
-            </h3>
-=======
-          <div className="container">
             <h1>React Barcamp 2020</h1>
-            <h3>1st and 2nd February 2020 at RTL Media Group in Cologne</h3>
-            <p>Sign up will be available soon</p>
->>>>>>> eb24e670a97cdf129ea89ab1dfe6a23ce08b6b44
+            <h3 className="headerdescription">
+              1st and 2nd February 2020 at RTL Media Group in Cologne
+            </h3>
+            <p className="headerdescription">Sign up will be available soon</p>
           </div>
         </div>
         <div className="container about" id="about">
@@ -149,8 +144,13 @@ class IndexPage extends React.Component {
                   join. The goal is to share what you know, to learn from
                   others, to ignite discussion, and to connect in an open
                   environment.
+                  <br />
+                  <br />
+                  <a href="https://en.wikipedia.org/wiki/BarCamp">
+                    Read more...
+                  </a>
                 </p>
-                <a href="https://en.wikipedia.org/wiki/BarCamp">Read more...</a>
+                {/* <a href="https://en.wikipedia.org/wiki/BarCamp">Read more...</a> */}
               </div>
             </div>
             <div className="col col-6 d-none d-md-block">
@@ -184,8 +184,11 @@ class IndexPage extends React.Component {
                   It also allows you to create reusable components to reduce
                   repetitive programing and the overall amount of code. This
                   makes not only writing but also reading the code much easier.
+                  <br />
+                  <br />
+                  <a href="https://reactjs.org/">Read more...</a>
                 </p>
-                <a href="https://reactjs.org/">Read more...</a>
+                {/* <a href="https://reactjs.org/">Read more...</a> */}
               </div>
             </div>
           </div>
@@ -204,8 +207,11 @@ class IndexPage extends React.Component {
                   part of such a group and want to attend the barcamp please
                   contact us and we will give you a seat even when the event is
                   booked out.
+                  <br />
+                  <br />
+                  <a href="mailto:barcamp@kitconcept.com">Send Mail</a>
                 </p>
-                <a href="mailto:barcamp@kitconcept.com">Send Mail</a>
+                {/* <a href="mailto:barcamp@kitconcept.com">Send Mail</a> */}
               </div>
             </div>
           </div>
@@ -268,12 +274,12 @@ class IndexPage extends React.Component {
             </a>
           </p>
         </div> */}
-        {/* <div className="container sponsors" id="sponsors">
+        <div className="container sponsors" id="sponsors">
           <h1>Sponsors</h1>
           <div className="sp-gold">
             <div className="row">
               <div className="col col-12 col-sm-6 col-md-4">
-                <div className="card">
+                {/* <div className="card">
                   <a href="https://www.bwi.de/">
                     <img
                       className="card-img-top"
@@ -284,7 +290,7 @@ class IndexPage extends React.Component {
                   <div className="card-body">
                     <a href="https://www.bwi.de/">BWI</a>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="col col-12 col-sm-6 col-md-4">
                 <div className="card">
@@ -316,7 +322,7 @@ class IndexPage extends React.Component {
               </div>
 
               <div className="col col-12 col-sm-6 col-md-hide">
-                <div className="card">
+                {/* <div className="card">
                   <a href="https://www.brickmakers.de/">
                     <img
                       className="card-img-top"
@@ -327,12 +333,12 @@ class IndexPage extends React.Component {
                   <div className="card-body">
                     <a href="https://www.brickmakers.de/">Brickmakers</a>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="row">
               <div className="col col-12 col-sm-6 col-md-4 col-md-show">
-                <div className="card">
+                {/* <div className="card">
                   <a href="https://www.brickmakers.de/">
                     <img
                       className="card-img-top"
@@ -343,10 +349,10 @@ class IndexPage extends React.Component {
                   <div className="card-body">
                     <a href="https://www.brickmakers.de/">Brickmakers</a>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="col col-12 col-sm-6 col-md-4">
-                <div className="card">
+                {/* <div className="card">
                   <a href="https://ambient-innovation.com/">
                     <img
                       className="card-img-top"
@@ -359,10 +365,10 @@ class IndexPage extends React.Component {
                       Ambient Innovation
                     </a>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="col col-0 col-sm-6 col-md-4">
-                <div className="card">
+                {/* <div className="card">
                   <a href="https://codevise.de/de/">
                     <img
                       className="card-img-top"
@@ -373,11 +379,11 @@ class IndexPage extends React.Component {
                   <div className="card-body">
                     <a href="https://codevise.de/de/">Codevise Solutions</a>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col col-12">
-              <div className="card">
+              {/* <div className="card">
                 <a href="https://www.ma-tea.de/">
                   <img
                     className="card-img-top"
@@ -388,10 +394,10 @@ class IndexPage extends React.Component {
                 <div className="card-body">
                   <a href="https://www.ma-tea.de/">Ma-Tea</a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className="sp-silver">
+          <div className="sp-silver" style={{ display: 'none' }}>
             <h2>Media Sponsors</h2>
             <div className="row">
               <div className="col col-12 col-sm-6 col-md-4">
@@ -459,7 +465,7 @@ class IndexPage extends React.Component {
                 </div>
               </div>
               <div className="col col-12 col-sm-6 col-lg-2">
-                <div className="card">
+                {/* <div className="card">
                   <a href="https://www.meetup.com/React-Cologne/">
                     <img
                       className="card-img-top"
@@ -472,11 +478,11 @@ class IndexPage extends React.Component {
                       React Cologne
                     </a>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div className="col col-12 col-sm-6 col-lg-2">
-                <div className="card">
+                {/* <div className="card">
                   <a href="https://www.meetup.com/frontend-freunde/">
                     <img
                       className="card-img-top"
@@ -489,10 +495,10 @@ class IndexPage extends React.Component {
                       Frontend Freunde Muenster
                     </a>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="col col-12 col-sm-6 col-lg-2">
-                <div className="card">
+                {/* <div className="card">
                   <a href="https://www.meetup.com/ReactJS-Meetup-Dusseldorf/">
                     <img
                       className="card-img-top"
@@ -505,10 +511,10 @@ class IndexPage extends React.Component {
                       ReactJS Duesseldorf
                     </a>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="col col-12 col-lg-2">
-                <div className="card">
+                {/* <div className="card">
                   <a href="https://reactjs.de/">
                     <img
                       className="card-img-top"
@@ -519,7 +525,7 @@ class IndexPage extends React.Component {
                   <div className="card-body">
                     <a href="https://reactjs.de/">ReactJS.DE</a>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -532,20 +538,21 @@ class IndexPage extends React.Component {
                   <a href="https://www.gfu.net/?network=g&gclid=EAIaIQobChMI4Z-h0IP63gIVBkQYCh29oQoVEAAYASAAEgLg9fD_BwE">
                     <img
                       className="card-img-top"
-                      src={Cyrusicon}
+                      style={{ width: '240px', height: 'auto' }}
+                      src={RTLIcon}
                       alt="Sponsor Logo"
                     />
                   </a>
                   <div className="card-body">
                     <a href="https://www.gfu.net/?network=g&gclid=EAIaIQobChMI4Z-h0IP63gIVBkQYCh29oQoVEAAYASAAEgLg9fD_BwE">
-                      GFU Cyrus AG
+                      Mediengruppe RTL Deutschland
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div className="container-fluid location" id="location">
           <div className="map">
