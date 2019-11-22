@@ -279,6 +279,18 @@ class IndexPage extends React.Component {
           <div className="sp-gold">
             <div className="row">
               <div className="col col-12 col-sm-6 col-md-4">
+                <div className="card">
+                  <a href="https://kitconcept.com/">
+                    <img
+                      className="card-img-top white-preview"
+                      src={Kitconcepticon}
+                      alt="Logo Kitconcept GmbH"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://kitconcept.com/">kitconcept GmbH</a>
+                  </div>
+                </div>
                 {/* <div className="card">
                   <a href="https://www.bwi.de/">
                     <img
@@ -306,20 +318,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-12 col-sm-6 col-md-4">
-                <div className="card">
-                  <a href="https://kitconcept.com/">
-                    <img
-                      className="card-img-top white-preview"
-                      src={Kitconcepticon}
-                      alt="Logo Kitconcept GmbH"
-                    />
-                  </a>
-                  <div className="card-body">
-                    <a href="https://kitconcept.com/">kitconcept GmbH</a>
-                  </div>
-                </div>
-              </div>
+              <div className="col col-12 col-sm-6 col-md-4" />
 
               <div className="col col-12 col-sm-6 col-md-hide">
                 {/* <div className="card">
