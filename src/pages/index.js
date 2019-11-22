@@ -122,7 +122,7 @@ class IndexPage extends React.Component {
             className="full-width-image-container"
             fluid={this.props.data.imageCologne.childImageSharp.fluid}
           />
-          <div className="container">
+          <div className="container header">
             <h1>React Barcamp 2019</h1>
             <h3>
               26th and 27th January 2019 in <a href="#location">Cologne</a>

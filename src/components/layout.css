@@ -10,6 +10,15 @@ h1 {
   text-align: center;
 }
 
+.container.header h1 {
+  text-align: center;
+}
+
+.container.header h3 {
+  margin-left: 35px;
+  text-align: left;
+}
+
 .headroom {
   z-index: 2;
   top: 0;
@@ -367,6 +376,10 @@ h1 {
   .above-the-fold {
     background-position-x: 70%;
   }
+
+  .container.header h3 {
+    margin-left: 85px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -376,6 +389,10 @@ h1 {
 
   .desktop-nav {
     display: none;
+  }
+
+  .container.header h3 {
+    margin-left: 75px;
   }
 }
 
@@ -392,6 +409,10 @@ h1 {
 
   .col-md-show {
     display: none;
+  }
+
+  .container.header h3 {
+    margin-left: 35px;
   }
 }
 
