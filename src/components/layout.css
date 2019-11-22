@@ -11,12 +11,15 @@ h1 {
 }
 
 .container.header h1 {
-  text-align: center;
+  text-align: start;
 }
 
-.container.header h3 {
-  margin-left: 35px;
-  text-align: left;
+.container.header {
+  margin-left: 25px;
+}
+
+.headerdescription {
+  margin-left: 7px;
 }
 
 .headroom {
@@ -376,10 +379,6 @@ h1 {
   .above-the-fold {
     background-position-x: 70%;
   }
-
-  .container.header h3 {
-    margin-left: 85px;
-  }
 }
 
 @media (max-width: 992px) {
@@ -389,10 +388,6 @@ h1 {
 
   .desktop-nav {
     display: none;
-  }
-
-  .container.header h3 {
-    margin-left: 75px;
   }
 }
 
@@ -411,8 +406,8 @@ h1 {
     display: none;
   }
 
-  .container.header h3 {
-    margin-left: 35px;
+  .headerdescription {
+    margin-left: 0;
   }
 }
 
