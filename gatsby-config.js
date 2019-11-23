@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'React Barcamp Cologne 2019',
+    title: 'React Barcamp Cologne 2020',
   },
 
   plugins: [
