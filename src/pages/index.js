@@ -66,7 +66,7 @@ class IndexPage extends React.Component {
                   Schedule
                 </a>
               </li> */}
-              {/* <li>
+              <li>
                 <a
                   href="#sponsors"
                   className="nav-link"
@@ -74,7 +74,7 @@ class IndexPage extends React.Component {
                 >
                   Sponsors
                 </a>
-              </li> */}
+              </li>
               <li>
                 <a
                   href="#location"
@@ -107,10 +107,10 @@ class IndexPage extends React.Component {
               </a>
               {/* <a href="#schedule" className="nav-link">
                 Schedule
-              </a>
+              </a> */}
               <a href="#sponsors" className="nav-link">
                 Sponsors
-              </a> */}
+              </a>
               <a href="#location" className="nav-link">
                 Location
               </a>
