@@ -10,7 +10,7 @@ import ReacticonMini from '../images/react-icon-mini.png';
 import Twitericon from '../images/twitter-bird-white-min.png';
 import Facebookicon from '../images/facebook-logo-white-min.png';
 import Mailicon from '../images/mail-white-min.png';
-import RTLIcon from '../images/rtl-media-group.png';
+import RTLIcon from '../images/mediengruppeRTL.jpg';
 import Mitpicon from '../images/mitp-logo.png';
 import Manningicon from '../images/Manning_logo.png';
 import Oreilyicon from '../images/ORM_logo.png';
@@ -402,6 +402,29 @@ class IndexPage extends React.Component {
               </div> */}
             </div>
           </div>
+          <div className="sp-diamond">
+            <h2>Location Sponsor</h2>
+            <div className="row">
+              <div className="col col-0 col-sm-2 col-md-3" />
+              <div className="col col-12 col-sm-8 col-md-6">
+                <div className="card">
+                  <a href="https://www.mediengruppe-rtl.de/">
+                    <img
+                      className="card-img-top"
+                      style={{ width: '240px', height: 'auto' }}
+                      src={RTLIcon}
+                      alt="Sponsor Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.mediengruppe-rtl.de/">
+                      Mediengruppe RTL Deutschland
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="sp-silver" style={{ display: 'none' }}>
             <h2>Media Sponsors</h2>
             <div className="row">
@@ -470,7 +493,7 @@ class IndexPage extends React.Component {
                 </div>
               </div>
               <div className="col col-12 col-sm-6 col-lg-2">
-                {/* <div className="card">
+                <div className="card">
                   <a href="https://www.meetup.com/React-Cologne/">
                     <img
                       className="card-img-top"
@@ -483,7 +506,7 @@ class IndexPage extends React.Component {
                       React Cologne
                     </a>
                   </div>
-                </div> */}
+                </div>
               </div>
 
               <div className="col col-12 col-sm-6 col-lg-2">
@@ -531,29 +554,6 @@ class IndexPage extends React.Component {
                     <a href="https://reactjs.de/">ReactJS.DE</a>
                   </div>
                 </div> */}
-              </div>
-            </div>
-          </div>
-          <div className="sp-diamond">
-            <h2>Location Sponsor</h2>
-            <div className="row">
-              <div className="col col-0 col-sm-2 col-md-3" />
-              <div className="col col-12 col-sm-8 col-md-6">
-                <div className="card">
-                  <a href="https://www.gfu.net/?network=g&gclid=EAIaIQobChMI4Z-h0IP63gIVBkQYCh29oQoVEAAYASAAEgLg9fD_BwE">
-                    <img
-                      className="card-img-top"
-                      style={{ width: '240px', height: 'auto' }}
-                      src={RTLIcon}
-                      alt="Sponsor Logo"
-                    />
-                  </a>
-                  <div className="card-body">
-                    <a href="https://www.gfu.net/?network=g&gclid=EAIaIQobChMI4Z-h0IP63gIVBkQYCh29oQoVEAAYASAAEgLg9fD_BwE">
-                      Mediengruppe RTL Deutschland
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
