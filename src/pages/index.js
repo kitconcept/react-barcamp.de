@@ -128,7 +128,13 @@ class IndexPage extends React.Component {
             <h3 className="headerdescription">
               1st and 2nd February 2020 at RTL Media Group in Cologne
             </h3>
-            <p className="headerdescription">Sign up will be available soon</p>
+            <a
+              href="https://barcamptools.eu/react-barcamp-cologne-2020/"
+              className="btn btn-lg btn-outline-secondary button"
+            >
+              Register now
+            </a>
+            <p className="btn-comment">Barcamp is free of charge</p>
           </div>
         </div>
         <div className="container about" id="about">
