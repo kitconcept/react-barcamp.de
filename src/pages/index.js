@@ -286,6 +286,23 @@ class IndexPage extends React.Component {
             <div className="row">
               <div className="col col-12 col-sm-6 col-md-4">
                 <div className="card">
+                  <a href="https://www.mediengruppe-rtl.de/">
+                    <img
+                      className="card-img-top"
+                      style={{ width: '240px', height: 'auto' }}
+                      src={RTLIcon}
+                      alt="Sponsor Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.mediengruppe-rtl.de/">
+                      Mediengruppe RTL Deutschland
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-sm-6 col-md-4">
+                <div className="card">
                   <a href="https://kitconcept.com/">
                     <img
                       className="card-img-top white-preview"
@@ -297,18 +314,6 @@ class IndexPage extends React.Component {
                     <a href="https://kitconcept.com/">kitconcept GmbH</a>
                   </div>
                 </div>
-                {/* <div className="card">
-                  <a href="https://www.bwi.de/">
-                    <img
-                      className="card-img-top"
-                      src={Bwiicon}
-                      alt="BWI Logo"
-                    />
-                  </a>
-                  <div className="card-body">
-                    <a href="https://www.bwi.de/">BWI</a>
-                  </div>
-                </div> */}
               </div>
               <div className="col col-12 col-sm-6 col-md-4">
                 <div className="card">
@@ -326,7 +331,7 @@ class IndexPage extends React.Component {
               </div>
               <div className="col col-12 col-sm-6 col-md-4" />
 
-              <div className="col col-12 col-sm-6 col-md-hide">
+              <div className="col col-12 col-sm-6 col-md-4">
                 {/* <div className="card">
                   <a href="https://www.brickmakers.de/">
                     <img
@@ -402,29 +407,7 @@ class IndexPage extends React.Component {
               </div> */}
             </div>
           </div>
-          <div className="sp-diamond">
-            <h2>Location Sponsor</h2>
-            <div className="row">
-              <div className="col col-0 col-sm-2 col-md-3" />
-              <div className="col col-12 col-sm-8 col-md-6">
-                <div className="card">
-                  <a href="https://www.mediengruppe-rtl.de/">
-                    <img
-                      className="card-img-top"
-                      style={{ width: '240px', height: 'auto' }}
-                      src={RTLIcon}
-                      alt="Sponsor Logo"
-                    />
-                  </a>
-                  <div className="card-body">
-                    <a href="https://www.mediengruppe-rtl.de/">
-                      Mediengruppe RTL Deutschland
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
           <div className="sp-silver" style={{ display: 'none' }}>
             <h2>Media Sponsors</h2>
             <div className="row">
