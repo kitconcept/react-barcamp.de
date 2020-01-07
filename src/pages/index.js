@@ -24,6 +24,8 @@ import BonnJSicon from '../images/BonnJS_Logo-min.png';
 import FrontEndMuensterIcon from '../images/frontend-freunde-muenster-logo.png';
 import ReactJsDus from '../images/ReactJSDusseldorf.png';
 import ReactJsDe from '../images/React_DE.png';
+import ReactDayBerlinLogo from '../images/react-day-berlin.svg';
+import ReactSummitAmsterdam2Logo from '../images/react-summit-amsterdam-2.svg';
 import Kitconcepticon from '../images/kitconcept-logo.png';
 import ReactCologneicon from '../images/ReactCologneLogo.png';
 import Headroom from 'react-headroom';
@@ -504,6 +506,36 @@ class IndexPage extends React.Component {
                   <div className="card-body">
                     <a href="https://www.meetup.com/React-Cologne/">
                       React Cologne
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-sm-6 col-lg-2">
+                <div className="card">
+                  <a href="https://reactday.berlin/">
+                    <img
+                      className="card-img-top"
+                      src={ReactDayBerlinLogo}
+                      alt="React Day Berlin Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://reactday.berlin/">React Day Berlin</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-sm-6 col-lg-2">
+                <div className="card">
+                  <a href="https://www.reactsummit.com/">
+                    <img
+                      className="card-img-top"
+                      src={ReactSummitAmsterdam2Logo}
+                      alt="React Summit Amsterdam 2 Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.reactsummit.com/">
+                      React Summit Amsterdam
                     </a>
                   </div>
                 </div>
