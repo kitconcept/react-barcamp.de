@@ -25,6 +25,7 @@ import FrontEndMuensterIcon from '../images/frontend-freunde-muenster-logo.png';
 import ReactJsDus from '../images/ReactJSDusseldorf.png';
 import ReactJsDe from '../images/React_DE.png';
 import ReactDayBerlinLogo from '../images/react-day-berlin.svg';
+import ReactBonnLogo from '../images/react-bonn-meetup.png';
 import ReactSummitAmsterdam2Logo from '../images/react-summit-amsterdam-2.svg';
 import Kitconcepticon from '../images/kitconcept-logo.png';
 import ReactCologneicon from '../images/ReactCologneLogo.png';
@@ -44,8 +45,7 @@ class IndexPage extends React.Component {
     }));
   };
   render() {
-    return (
-      <Layout>
+    return <Layout>
         <div class={this.state.isOpen ? 'mobile-nav open' : 'mobile-nav'}>
           <button className="navbar-toggler" onClick={this.toggleMenu}>
             <span class="navbar-toggler-icon" />
@@ -69,20 +69,12 @@ class IndexPage extends React.Component {
                 </a>
               </li> */}
               <li>
-                <a
-                  href="#sponsors"
-                  className="nav-link"
-                  onClick={this.toggleMenu}
-                >
+                <a href="#sponsors" className="nav-link" onClick={this.toggleMenu}>
                   Sponsors
                 </a>
               </li>
               <li>
-                <a
-                  href="#location"
-                  className="nav-link"
-                  onClick={this.toggleMenu}
-                >
+                <a href="#location" className="nav-link" onClick={this.toggleMenu}>
                   Location
                 </a>
               </li>
@@ -97,11 +89,7 @@ class IndexPage extends React.Component {
           <div className="container">
             <div className="desktop-nav">
               <a href="#top" className="nav-image">
-                <img
-                  alt="Link to top of the page"
-                  src={ReacticonMini}
-                  className="nav-image"
-                />
+                <img alt="Link to top of the page" src={ReacticonMini} className="nav-image" />
               </a>
 
               <a href="#about" className="nav-link">
@@ -120,20 +108,14 @@ class IndexPage extends React.Component {
           </div>
         </Headroom>
         <div className="above-the-fold" id="top">
-          <Img
-            className="full-width-image-container"
-            fluid={this.props.data.imageCologne.childImageSharp.fluid}
-          />
+          <Img className="full-width-image-container" fluid={this.props.data.imageCologne.childImageSharp.fluid} />
 
           <div className="container header">
             <h1>React Barcamp 2020</h1>
             <h3 className="headerdescription">
               1st and 2nd February 2020 at RTL Media Group in Cologne
             </h3>
-            <a
-              href="https://barcamptools.eu/react-barcamp-cologne-2020/"
-              className="btn btn-lg btn-outline-secondary button"
-            >
+            <a href="https://barcamptools.eu/react-barcamp-cologne-2020/" className="btn btn-lg btn-outline-secondary button">
               Register now
             </a>
             <p className="btn-comment">Barcamp is free of charge</p>
@@ -145,13 +127,7 @@ class IndexPage extends React.Component {
               <div className="info-text">
                 <h3>What is a Barcamp?</h3>
                 <p>
-                  A Barcamp is an event shaped by your contribution. Rather than
-                  having scheduled speakers, you will have the opportunity to
-                  talk about what is important to you. Anyone with something to
-                  contribute in the context of user experience is welcome to
-                  join. The goal is to share what you know, to learn from
-                  others, to ignite discussion, and to connect in an open
-                  environment.
+                  A Barcamp is an event shaped by your contribution. Rather than having scheduled speakers, you will have the opportunity to talk about what is important to you. Anyone with something to contribute in the context of user experience is welcome to join. The goal is to share what you know, to learn from others, to ignite discussion, and to connect in an open environment.
                   <br />
                   <br />
                   <a href="https://en.wikipedia.org/wiki/BarCamp">
@@ -163,35 +139,22 @@ class IndexPage extends React.Component {
             </div>
             <div className="col col-6 d-none d-md-block">
               <div className="image ">
-                <Img
-                  className="info-picture"
-                  fluid={
-                    this.props.data.imageBarcampSession.childImageSharp.fluid
-                  }
-                />
+                <Img className="info-picture" fluid={this.props.data.imageBarcampSession.childImageSharp.fluid} />
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col col-6 d-none d-md-block">
               <div className="image">
-                <Img
-                  className="info-picture"
-                  fluid={this.props.data.imageProgrammer.childImageSharp.fluid}
-                />
+                <Img className="info-picture" fluid={this.props.data.imageProgrammer.childImageSharp.fluid} />
               </div>
             </div>
             <div className="col col-12 col-md-6">
               <div className="info-text">
                 <h3>What is React?</h3>
                 <p>
-                  React is a JavaScript library that makes it incredible easy to
-                  build fast user Interfaces for websites and mobile. Data on
-                  React sites can easily be changed without reloading the page,
-                  improving the overall user expierence. <br />
-                  It also allows you to create reusable components to reduce
-                  repetitive programing and the overall amount of code. This
-                  makes not only writing but also reading the code much easier.
+                  React is a JavaScript library that makes it incredible easy to build fast user Interfaces for websites and mobile. Data on React sites can easily be changed without reloading the page, improving the overall user expierence. <br />
+                  It also allows you to create reusable components to reduce repetitive programing and the overall amount of code. This makes not only writing but also reading the code much easier.
                   <br />
                   <br />
                   <a href="https://reactjs.org/">Read more...</a>
@@ -208,13 +171,7 @@ class IndexPage extends React.Component {
             <div className="col col-12 col-md-8">
               <div className="info-text diversity-text">
                 <p>
-                  As we try to promote more diversity in the open source
-                  community, all people belonging to a group that is currently
-                  underrepresented in tech are most welcome at the event. We
-                  reserved some seats especially for these people. If you are
-                  part of such a group and want to attend the barcamp please
-                  contact us and we will give you a seat even when the event is
-                  booked out.
+                  As we try to promote more diversity in the open source community, all people belonging to a group that is currently underrepresented in tech are most welcome at the event. We reserved some seats especially for these people. If you are part of such a group and want to attend the barcamp please contact us and we will give you a seat even when the event is booked out.
                   <br />
                   <br />
                   <a href="mailto:barcamp@kitconcept.com">Send Mail</a>
@@ -289,11 +246,7 @@ class IndexPage extends React.Component {
               <div className="col col-12 col-sm-6 col-md-4">
                 <div className="card">
                   <a href="https://kitconcept.com/">
-                    <img
-                      className="card-img-top white-preview"
-                      src={Kitconcepticon}
-                      alt="Logo Kitconcept GmbH"
-                    />
+                    <img className="card-img-top white-preview" src={Kitconcepticon} alt="Logo Kitconcept GmbH" />
                   </a>
                   <div className="card-body">
                     <a href="https://kitconcept.com/">kitconcept GmbH</a>
@@ -315,11 +268,7 @@ class IndexPage extends React.Component {
               <div className="col col-12 col-sm-6 col-md-4">
                 <div className="card">
                   <a href="https://www.railslove.com/">
-                    <img
-                      className="card-img-top"
-                      src={Railsloveicon}
-                      alt="Railslove GmbH Logo"
-                    />
+                    <img className="card-img-top" src={Railsloveicon} alt="Railslove GmbH Logo" />
                   </a>
                   <div className="card-body">
                     <a href="https://www.railslove.com/">Railslove GmbH</a>
@@ -411,12 +360,7 @@ class IndexPage extends React.Component {
               <div className="col col-12 col-sm-8 col-md-6">
                 <div className="card">
                   <a href="https://www.mediengruppe-rtl.de/">
-                    <img
-                      className="card-img-top"
-                      style={{ width: '240px', height: 'auto' }}
-                      src={RTLIcon}
-                      alt="Sponsor Logo"
-                    />
+                    <img className="card-img-top" style={{ width: '240px', height: 'auto' }} src={RTLIcon} alt="Sponsor Logo" />
                   </a>
                   <div className="card-body">
                     <a href="https://www.mediengruppe-rtl.de/">
@@ -433,11 +377,7 @@ class IndexPage extends React.Component {
               <div className="col col-12 col-sm-6 col-md-4">
                 <div className="card">
                   <a href="https://www.mitp.de/">
-                    <img
-                      className="card-img-top"
-                      src={Mitpicon}
-                      alt="Sponsor Logo"
-                    />
+                    <img className="card-img-top" src={Mitpicon} alt="Sponsor Logo" />
                   </a>
                   <div className="card-body">
                     <a href="https://www.mitp.de/">mitp Verlags GmbH</a>
@@ -447,11 +387,7 @@ class IndexPage extends React.Component {
               <div className="col col-12 col-sm-6 col-md-4">
                 <div className="card">
                   <a href="https://www.manning.com/">
-                    <img
-                      className="card-img-top"
-                      src={Manningicon}
-                      alt="Placeholder Sponsor Logo"
-                    />
+                    <img className="card-img-top" src={Manningicon} alt="Placeholder Sponsor Logo" />
                   </a>
                   <div className="card-body">
                     <a href="https://www.manning.com/">
@@ -463,11 +399,7 @@ class IndexPage extends React.Component {
               <div className="col col-12 col-md-4">
                 <div className="card">
                   <a href="https://www.oreilly.de/">
-                    <img
-                      className="card-img-top"
-                      src={Oreilyicon}
-                      alt="Logo of O reiley"
-                    />
+                    <img className="card-img-top" src={Oreilyicon} alt="Logo of O reiley" />
                   </a>
                   <div className="card-body">
                     <a href="https://www.oreilly.de/">O’Reilly Media</a>
@@ -483,11 +415,7 @@ class IndexPage extends React.Component {
               <div className="col col-12 col-sm-6 col-lg-2">
                 <div className="card">
                   <a href="https://www.meetup.com/BonnJS/">
-                    <img
-                      className="card-img-top"
-                      src={BonnJSicon}
-                      alt="Sponsor Logo"
-                    />
+                    <img className="card-img-top" src={BonnJSicon} alt="Sponsor Logo" />
                   </a>
                   <div className="card-body">
                     <a href="https://www.meetup.com/BonnJS/">BonnJS</a>
@@ -497,11 +425,7 @@ class IndexPage extends React.Component {
               <div className="col col-12 col-sm-6 col-lg-2">
                 <div className="card">
                   <a href="https://www.meetup.com/React-Cologne/">
-                    <img
-                      className="card-img-top"
-                      src={ReactCologneicon}
-                      alt="Sponsor Logo"
-                    />
+                    <img className="card-img-top" src={ReactCologneicon} alt="Sponsor Logo" />
                   </a>
                   <div className="card-body">
                     <a href="https://www.meetup.com/React-Cologne/">
@@ -513,11 +437,7 @@ class IndexPage extends React.Component {
               <div className="col col-12 col-sm-6 col-lg-2">
                 <div className="card">
                   <a href="https://reactday.berlin/">
-                    <img
-                      className="card-img-top"
-                      src={ReactDayBerlinLogo}
-                      alt="React Day Berlin Logo"
-                    />
+                    <img className="card-img-top" src={ReactDayBerlinLogo} alt="React Day Berlin Logo" />
                   </a>
                   <div className="card-body">
                     <a href="https://reactday.berlin/">React Day Berlin</a>
@@ -527,15 +447,23 @@ class IndexPage extends React.Component {
               <div className="col col-12 col-sm-6 col-lg-2">
                 <div className="card">
                   <a href="https://www.reactsummit.com/">
-                    <img
-                      className="card-img-top"
-                      src={ReactSummitAmsterdam2Logo}
-                      alt="React Summit Amsterdam 2 Logo"
-                    />
+                    <img className="card-img-top" src={ReactSummitAmsterdam2Logo} alt="React Summit Amsterdam 2 Logo" />
                   </a>
                   <div className="card-body">
                     <a href="https://www.reactsummit.com/">
                       React Summit Amsterdam
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-sm-6 col-lg-2">
+                <div className="card">
+                  <a href="https://www.meetup.com/React-JS-React-Native-Bonn-Meetup/">
+                    <img className="card-img-top" src={ReactBonnLogo} alt="React JS & React Native Bonn Meetup Logo" />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.meetup.com/React-JS-React-Native-Bonn-Meetup/">
+                      React JS & React Native Bonn Meetup
                     </a>
                   </div>
                 </div>
@@ -593,11 +521,7 @@ class IndexPage extends React.Component {
 
         <div className="container-fluid location" id="location">
           <div className="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1056.964418985287!2d6.970210998116978!3d50.944076906923435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf3ae22710d4ff%3A0xe2ebb0d9c2799651!2sMediengruppe%20RTL%20Deutschland!5e0!3m2!1sde!2sde!4v1574354390597!5m2!1sde!2sde"
-              width="100%"
-              height="100%"
-            />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1056.964418985287!2d6.970210998116978!3d50.944076906923435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf3ae22710d4ff%3A0xe2ebb0d9c2799651!2sMediengruppe%20RTL%20Deutschland!5e0!3m2!1sde!2sde!4v1574354390597!5m2!1sde!2sde" width="100%" height="100%" />
           </div>
         </div>
         <div className="container-fluid footer">
@@ -621,9 +545,9 @@ class IndexPage extends React.Component {
               <div className="col-12 col-sm-2 col-md-4">
                 <div className="footer-text">
                   <p>
-                    Organized by{' '}
-                    <a href="https://kitconcept.com/">kitconcept</a> and
-                    friends.
+                    Organized by <a href="https://kitconcept.com/">
+                      kitconcept
+                    </a> and friends.
                   </p>
                 </div>
               </div>
@@ -644,8 +568,7 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </div>
-      </Layout>
-    );
+      </Layout>;
   }
 }
 
