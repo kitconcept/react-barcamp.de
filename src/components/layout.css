@@ -10,13 +10,6 @@ h1 {
   text-align: center;
 }
 
-.card-img-top {
-  min-width: 150px;
-  max-width: 150px;
-  min-height: 150px;
-  max-height: 150px;
-}
-
 .container.header h1 {
   text-align: start;
 }
@@ -289,6 +282,7 @@ h1 {
 
 .sponsors .card .card-img-top {
   width: 150px;
+  height: 150px;
   align-self: center;
   -webkit-filter: grayscale(100%);
 }
