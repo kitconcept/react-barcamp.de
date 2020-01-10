@@ -27,6 +27,7 @@ import ReactJsDe from '../images/React_DE.png';
 import ReactDayBerlinLogo from '../images/react-day-berlin.svg';
 import ReactBonnLogo from '../images/react-bonn-meetup.png';
 import ReactSummitAmsterdam2Logo from '../images/react-summit-amsterdam-2.svg';
+import AwesomeSoftwareLogo from '../images/awesome-software.png';
 import Kitconcepticon from '../images/kitconcept-logo.png';
 import ReactCologneicon from '../images/ReactCologneLogo.png';
 import Headroom from 'react-headroom';
@@ -499,6 +500,27 @@ class IndexPage extends React.Component {
                   </a>
                   <div className="card-body">
                     <a href="https://www.oreilly.de/">O’Reilly Media</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="sp-silver">
+            <h2>Workshop Sponsor</h2>
+            <div className="row justify-content-center">
+              <div className="col col-12 col-sm-6 col-lg-3">
+                <div className="card">
+                  <a href="https://www.awesome-software.de/">
+                    <img
+                      className="card-img-top"
+                      src={AwesomeSoftwareLogo}
+                      alt="AWESOME! Software Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.awesome-software.de/">
+                      AWESOME! Software
+                    </a>
                   </div>
                 </div>
               </div>
