@@ -506,9 +506,8 @@ class IndexPage extends React.Component {
           </div>
           <div className="sp-bronze">
             <h2>Community Sponsors</h2>
-            <div className="row">
-              <div className="col-0 col-lg-1" />
-              <div className="col col-12 col-sm-6 col-lg-2">
+            <div className="row justify-content-center">
+              <div className="col col-12 col-sm-6 col-lg-3">
                 <div className="card">
                   <a href="https://www.meetup.com/BonnJS/">
                     <img
@@ -522,7 +521,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-12 col-sm-6 col-lg-2">
+              <div className="col col-12 col-sm-6 col-lg-3">
                 <div className="card">
                   <a href="https://www.meetup.com/React-Cologne/">
                     <img
@@ -539,7 +538,7 @@ class IndexPage extends React.Component {
                 </div>
               </div>
 
-              <div className="col col-12 col-sm-6 col-lg-2">
+              <div className="col col-12 col-sm-6 col-lg-3">
                 <div className="card">
                   <a href="https://reactday.berlin/">
                     <img
@@ -553,7 +552,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-12 col-sm-6 col-lg-2">
+              <div className="col col-12 col-sm-6 col-lg-3">
                 <div className="card">
                   <a href="https://www.reactsummit.com/">
                     <img
@@ -569,7 +568,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-12 col-sm-6 col-lg-2">
+              <div className="col col-12 col-sm-6 col-lg-3">
                 <div className="card">
                   <a href="https://www.meetup.com/React-JS-React-Native-Bonn-Meetup/">
                     <img
@@ -586,7 +585,7 @@ class IndexPage extends React.Component {
                 </div>
               </div>
 
-              <div className="col col-12 col-sm-6 col-lg-2-">
+              <div className="col col-12 col-sm-6 col-lg-3">
                 <div className="card">
                   <a href="https://reactjs.de/">
                     <img
@@ -600,7 +599,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col col-12 col-sm-6 col-lg-2-">
+              <div className="col col-12 col-sm-6 col-lg-3">
                 <div className="card">
                   <a href="https://www.meetup.com/frontend-freunde/">
                     <img
