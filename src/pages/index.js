@@ -600,6 +600,22 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
+              <div className="col col-12 col-sm-6 col-lg-2-">
+                <div className="card">
+                  <a href="https://www.meetup.com/frontend-freunde/">
+                    <img
+                      className="card-img-top"
+                      src={FrontEndMuensterIcon}
+                      alt="Logo of Frontend-Freunde Münster"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.meetup.com/frontend-freunde/">
+                      Frontend-Freunde Muenster
+                    </a>
+                  </div>
+                </div>
+              </div>
               {/* <div className="col col-12 col-sm-6 col-lg-2">
                 <div className="card">
                   <a href="https://www.meetup.com/ReactJS-Meetup-Dusseldorf/">
