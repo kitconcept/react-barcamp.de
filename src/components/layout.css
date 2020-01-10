@@ -281,7 +281,8 @@ h1 {
 }
 
 .sponsors .card .card-img-top {
-  width: 150px;
+  width: auto;
+  max-width: 150px;
   height: 150px;
   align-self: center;
   -webkit-filter: grayscale(100%);
