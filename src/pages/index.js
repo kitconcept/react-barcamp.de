@@ -237,7 +237,7 @@ class IndexPage extends React.Component {
                       className="heading"
                       href="https://barcamptools.eu/react-barcamp-cologne-2020/events/0c3911ce-831d-4bef-aa0f-d964413e10b2#sessions"
                     >
-                      Saturday 01.01.
+                      Saturday 01.02.
                     </a>
                   </div>
                   <ul className="list-group list-group-flush">
@@ -263,7 +263,7 @@ class IndexPage extends React.Component {
                     className="heading"
                     href="https://barcamptools.eu/react-barcamp-cologne-2020/events/fcc5430b-3ea2-4d7b-8651-01073febb5e4#sessions"
                   >
-                    Sunday 02.01.
+                    Sunday 02.02.
                   </a>
                 </div>
                 <ul className="list-group list-group-flush">
