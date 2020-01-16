@@ -109,9 +109,9 @@ class IndexPage extends React.Component {
               <a href="#about" className="nav-link">
                 About
               </a>
-              {/* <a href="#schedule" className="nav-link">
+              <a href="#schedule" className="nav-link">
                 Schedule
-              </a> */}
+              </a>
               <a href="#sponsors" className="nav-link">
                 Sponsors
               </a>
@@ -226,7 +226,7 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </div>
-        {/* <div className="container schedule" id="schedule">
+        <div className="container schedule" id="schedule">
           <h1>Schedule</h1>
           <div className="row ">
             <div className="col col-12 col-sm-6">
@@ -235,20 +235,23 @@ class IndexPage extends React.Component {
                   <div className="card-header">
                     <a
                       className="heading"
-                      href="https://barcamptools.eu/react-barcamp-cologne-2019/events/307d07d7-5709-4445-b7c8-93001034eebe#sessions"
+                      href="https://barcamptools.eu/react-barcamp-cologne-2020/events/0c3911ce-831d-4bef-aa0f-d964413e10b2#sessions"
                     >
-                      Saturday 26.01.
+                      Saturday 01.01.
                     </a>
                   </div>
                   <ul className="list-group list-group-flush">
-                    <li className="list-group-item">09:00 - Arrival</li>
                     <li className="list-group-item">
-                      09:30 - Welcome and Session Planning
+                      09:00 - Arrival and Breakfast
                     </li>
+                    <li className="list-group-item">
+                      10:00 - Welcome and Session Planing
+                    </li>
+                    <li className="list-group-item">11:00 - Sessions</li>
                     <li className="list-group-item">13:00 - Lunch</li>
                     <li className="list-group-item">14:00 - Lightning Talks</li>
-                    <li className="list-group-item">18:00 - Final Session</li>
-                    <li className="list-group-item">19:00 - End</li>
+                    <li className="list-group-item">15:00 - Sessions</li>
+                    <li className="list-group-item">17:00 - End</li>
                   </ul>
                 </ul>
               </div>
@@ -258,18 +261,27 @@ class IndexPage extends React.Component {
                 <div className="card-header">
                   <a
                     className="heading"
-                    href="https://barcamptools.eu/react-barcamp-cologne-2019/events/5796ecb0-7428-4525-bf9d-f4e4e21713b8#location"
+                    href="https://barcamptools.eu/react-barcamp-cologne-2020/events/fcc5430b-3ea2-4d7b-8651-01073febb5e4#sessions"
                   >
-                    Sunday 27.01.
+                    Sunday 02.01.
                   </a>
                 </div>
                 <ul className="list-group list-group-flush">
-                  <li className="list-group-item">09:00 - Arrival</li>
-                  <li className="list-group-item">10:00 - Session Planning</li>
-                  <li className="list-group-item">12:45 - Lunch</li>
-                  <li className="list-group-item">14:30 - Lightning Talks</li>
-                  <li className="list-group-item">15:30 - Final Session</li>
-                  <li className="list-group-item">16:00 - End</li>
+                  <li className="list-group-item">
+                    09:30 - Arrival and Breakfast
+                  </li>
+                  <li className="list-group-item">
+                    10:00 - Session Planing and Workshops
+                  </li>
+                  <li className="list-group-item">
+                    10:15 - Sessions and Workshops
+                  </li>
+                  <li className="list-group-item">13:00 - Lunch</li>
+                  <li className="list-group-item">14:00 - Session Planing</li>
+                  <li className="list-group-item">14:30 - Sessions</li>
+                  <li className="list-group-item">
+                    16:00 - Closing and Feedback
+                  </li>
                 </ul>
               </div>
             </div>
@@ -278,12 +290,12 @@ class IndexPage extends React.Component {
             Further infos:{' '}
             <a
               className="link"
-              href="https://barcamptools.eu/react-barcamp-cologne-2019/events"
+              href="https://barcamptools.eu/react-barcamp-cologne-2020/events"
             >
               Barcamptools Schedule
             </a>
           </p>
-        </div> */}
+        </div>
         <div className="container sponsors" id="sponsors">
           <h1>Sponsors</h1>
           <div className="sp-gold">

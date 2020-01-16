@@ -247,6 +247,7 @@ h1 {
 .schedule .table .list-group-item {
   background-color: #123244;
   border-color: #fff;
+  color: white;
   text-align: left;
 }
 
