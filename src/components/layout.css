@@ -283,9 +283,11 @@ h1 {
 
 .sponsors .card .card-img-top {
   width: auto;
+  height: auto;
   max-width: 150px;
-  height: 150px;
+  max-height: 150px;
   align-self: center;
+  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
 
@@ -295,6 +297,7 @@ h1 {
 
 .sponsors .card .card-img-top:hover {
   cursor: pointer;
+  filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
 }
 

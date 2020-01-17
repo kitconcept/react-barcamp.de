@@ -28,6 +28,9 @@ import ReactDayBerlinLogo from '../images/react-day-berlin.svg';
 import ReactBonnLogo from '../images/react-bonn-meetup.png';
 import ReactSummitAmsterdam2Logo from '../images/react-summit-amsterdam-2.svg';
 import AwesomeSoftwareLogo from '../images/awesome-software.png';
+import AmbientInnovationLogo from '../images/ai-logo-signet-inverse-half.png';
+import ThinkAboutLogo from '../images/Think_About_Logo_Web_File.svg';
+import TidewaysLogo from '../images/TidewaysLogo.jpg';
 import Kitconcepticon from '../images/kitconcept-logo.png';
 import ReactCologneicon from '../images/ReactCologneLogo.png';
 import Headroom from 'react-headroom';
@@ -299,7 +302,7 @@ class IndexPage extends React.Component {
         <div className="container sponsors" id="sponsors">
           <h1>Sponsors</h1>
           <div className="sp-gold">
-            <div className="row">
+            <div className="row justify-content-center">
               <div className="col col-12 col-sm-6 col-md-4">
                 <div className="card">
                   <a href="https://kitconcept.com/">
@@ -330,7 +333,7 @@ class IndexPage extends React.Component {
                 <div className="card">
                   <a href="https://www.railslove.com/">
                     <img
-                      className="card-img-top"
+                      className="card-img-top white-preview"
                       src={Railsloveicon}
                       alt="Railslove GmbH Logo"
                     />
@@ -368,6 +371,53 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
+              <div className="col col-12 col-sm-6 col-md-4">
+                <div className="card">
+                  <a
+                    href="https://ambient-innovation.com/"
+                    style={{ height: 150 }}
+                  >
+                    <img
+                      className="card-img-top"
+                      src={AmbientInnovationLogo}
+                      alt="Ambient Innovation Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://ambient-innovation.com/">
+                      Ambient Innovation
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-sm-6 col-md-4">
+                <div className="card white">
+                  <a href="https://think-about.io/">
+                    <img
+                      className="card-img-top white-preview"
+                      src={ThinkAboutLogo}
+                      alt="Think About Conference Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://think-about.io/">Think About Conference</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-sm-6 col-md-4">
+                <div className="card white">
+                  <a href="https://tideways.com/">
+                    <img
+                      className="card-img-top"
+                      src={TidewaysLogo}
+                      alt="Tideways Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://tideways.com/">Tideways</a>
+                  </div>
+                </div>
+              </div>
 
               <div className="col col-12 col-sm-6 col-md-hide">
                 {/* <div className="card">
@@ -396,22 +446,6 @@ class IndexPage extends React.Component {
                   </a>
                   <div className="card-body">
                     <a href="https://www.brickmakers.de/">Brickmakers</a>
-                  </div>
-                </div> */}
-              </div>
-              <div className="col col-12 col-sm-6 col-md-4">
-                {/* <div className="card">
-                  <a href="https://ambient-innovation.com/">
-                    <img
-                      className="card-img-top"
-                      src={Ambienticon}
-                      alt="Ambient Innovation Logo"
-                    />
-                  </a>
-                  <div className="card-body">
-                    <a href="https://ambient-innovation.com/">
-                      Ambient Innovation
-                    </a>
                   </div>
                 </div> */}
               </div>
@@ -468,55 +502,6 @@ class IndexPage extends React.Component {
               </div>
             </div>
           </div> */}
-          <div className="sp-silver" style={{ display: 'none' }}>
-            <h2>Media Sponsors</h2>
-            <div className="row">
-              <div className="col col-12 col-sm-6 col-md-4">
-                <div className="card">
-                  <a href="https://www.mitp.de/">
-                    <img
-                      className="card-img-top"
-                      src={Mitpicon}
-                      alt="Sponsor Logo"
-                    />
-                  </a>
-                  <div className="card-body">
-                    <a href="https://www.mitp.de/">mitp Verlags GmbH</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col col-12 col-sm-6 col-md-4">
-                <div className="card">
-                  <a href="https://www.manning.com/">
-                    <img
-                      className="card-img-top"
-                      src={Manningicon}
-                      alt="Placeholder Sponsor Logo"
-                    />
-                  </a>
-                  <div className="card-body">
-                    <a href="https://www.manning.com/">
-                      Manning Publications Co.
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col col-12 col-md-4">
-                <div className="card">
-                  <a href="https://www.oreilly.de/">
-                    <img
-                      className="card-img-top"
-                      src={Oreilyicon}
-                      alt="Logo of O reiley"
-                    />
-                  </a>
-                  <div className="card-body">
-                    <a href="https://www.oreilly.de/">O’Reilly Media</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div className="sp-silver">
             <h2>Workshop Sponsor</h2>
             <div className="row justify-content-center">
@@ -536,6 +521,56 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="sp-silver">
+            <h2>Media Sponsor</h2>
+            <div className="row justify-content-center">
+              {/* <div className="col col-12 col-sm-6 col-md-4">
+                <div className="card">
+                  <a href="https://www.mitp.de/">
+                    <img
+                      className="card-img-top"
+                      src={Mitpicon}
+                      alt="Sponsor Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.mitp.de/">mitp Verlags GmbH</a>
+                  </div>
+                </div>
+              </div> */}
+              <div className="col col-12 col-sm-6 col-md-4">
+                <div className="card">
+                  <a href="https://www.manning.com/">
+                    <img
+                      className="card-img-top"
+                      src={Manningicon}
+                      alt="Manning Publications Logo"
+                      style={{ padding: 8, backgroundColor: 'white' }}
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.manning.com/">
+                      Manning Publications Co.
+                    </a>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="col col-12 col-md-4">
+                <div className="card">
+                  <a href="https://www.oreilly.de/">
+                    <img
+                      className="card-img-top"
+                      src={Oreilyicon}
+                      alt="Logo of O reiley"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.oreilly.de/">O’Reilly Media</a>
+                  </div>
+                </div>
+              </div> */}
             </div>
           </div>
           <div className="sp-bronze">
