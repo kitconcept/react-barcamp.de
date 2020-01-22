@@ -145,6 +145,32 @@ class IndexPage extends React.Component {
           </div>
         </div>
         <div className="container about" id="about">
+          <div style={{ marginBottom: '40px' }} className="row">
+            <div className="col col-6 d-none d-md-block">
+              <div className="video">
+                <iframe
+                  src="https://www.youtube.com/embed/PC-OAA_fE_g"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div className="col col-12 col-md-6">
+              <div className="info-text">
+                <h3>React Barcamp 2019 Recap</h3>
+                <p>
+                  Last year the first React Barcamp in Cologne took place at the
+                  GfU Cyrus AG. People gathered to share their passion and
+                  knowledge about React, to discuss about various topics or just
+                  to meet people sharing the same interests. Combining fun with
+                  learning new things about React is what the Barcamp is all
+                  about. We had a blast and we managed to capture some moments
+                  and put them together in a short video.
+                </p>
+              </div>
+            </div>
+          </div>
           <div className="row">
             <div className="col col-12 col-md-6">
               <div className="info-text">
