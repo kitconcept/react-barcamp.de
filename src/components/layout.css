@@ -390,9 +390,7 @@ h1 {
   .above-the-fold {
     background-position-x: 70%;
   }
-}
 
-@media (max-width: 1080px) {
   .video iframe {
     width: 418px;
     height: 235px;
@@ -406,6 +404,11 @@ h1 {
 
   .desktop-nav {
     display: none;
+  }
+
+  .video iframe {
+    width: 298px;
+    height: 167px;
   }
 }
 
