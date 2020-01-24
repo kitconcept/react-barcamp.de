@@ -424,7 +424,7 @@ class IndexPage extends React.Component {
                 <div className="card">
                   <a style={{ height: '150px' }} href="https://www.gfu.net/">
                     <img
-                      style={{ verticalAlign: 'middle', marginTop: '25px' }}
+                      style={{ marginTop: '25px' }}
                       className="card-img-top white-preview"
                       src={GFULogo}
                       alt="GFU Cyrus AG Logo"
