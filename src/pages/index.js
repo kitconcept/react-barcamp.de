@@ -18,6 +18,7 @@ import Bwiicon from '../images/bwi_logo.png';
 import Railsloveicon from '../images/railslove_logo.png';
 import MaTeaIcon from '../images/Ma-Tea-Logo-new.png';
 import Ambienticon from '../images/Ai-Logo-full_400px.png';
+import GFULogo from '../images/GFU-Logo-NEU.png';
 import Codeviseicon from '../images/codevise_logo_512px.png';
 import Brickmakersicon from '../images/Brickmakers_Logo.png';
 import BonnJSicon from '../images/BonnJS_Logo-min.png';
@@ -445,6 +446,38 @@ class IndexPage extends React.Component {
                 </div>
               </div>
 
+              <div className="col col-12 col-sm-6 col-md-4">
+                <div className="card">
+                  <a style={{ height: '150px' }} href="https://www.gfu.net/">
+                    <img
+                      style={{ marginTop: '25px' }}
+                      className="card-img-top white-preview"
+                      src={GFULogo}
+                      alt="GFU Cyrus AG Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.gfu.net/">GFU Cyrus AG</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-sm-6 col-md-4">
+                <div className="card">
+                  <a href="https://www.awesome-software.de/">
+                    <img
+                      className="card-img-top"
+                      src={AwesomeSoftwareLogo}
+                      alt="AWESOME! Software Logo"
+                    />
+                  </a>
+                  <div className="card-body">
+                    <a href="https://www.awesome-software.de/">
+                      AWESOME! Software
+                    </a>
+                  </div>
+                </div>
+              </div>
+
               <div className="col col-12 col-sm-6 col-md-hide">
                 {/* <div className="card">
                   <a href="https://www.brickmakers.de/">
@@ -529,7 +562,7 @@ class IndexPage extends React.Component {
             </div>
           </div> */}
           <div className="sp-silver">
-            <h2>Workshop Sponsor</h2>
+            {/* <h2>Workshop Sponsor</h2>
             <div className="row justify-content-center">
               <div className="col col-12 col-sm-6 col-lg-3">
                 <div className="card">
@@ -547,7 +580,7 @@ class IndexPage extends React.Component {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="sp-silver">
             <h2>Media Sponsor</h2>
