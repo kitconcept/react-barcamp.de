@@ -301,7 +301,7 @@ class IndexPage extends React.Component {
                     09:30 - Arrival and Breakfast
                   </li>
                   <li className="list-group-item">
-                    10:00 - Session Planing and Workshops
+                    10:00 - Session Planning and Workshops
                   </li>
                   <li className="list-group-item">
                     10:15 - Sessions and Workshops
