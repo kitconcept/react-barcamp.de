@@ -275,7 +275,7 @@ class IndexPage extends React.Component {
                       09:00 - Arrival and Breakfast
                     </li>
                     <li className="list-group-item">
-                      10:00 - Welcome and Session Planing
+                      10:00 - Welcome and Session Planning
                     </li>
                     <li className="list-group-item">11:00 - Sessions</li>
                     <li className="list-group-item">13:00 - Lunch</li>
@@ -307,7 +307,7 @@ class IndexPage extends React.Component {
                     10:15 - Sessions and Workshops
                   </li>
                   <li className="list-group-item">13:00 - Lunch</li>
-                  <li className="list-group-item">14:00 - Session Planing</li>
+                  <li className="list-group-item">14:00 - Session Planning</li>
                   <li className="list-group-item">14:30 - Sessions</li>
                   <li className="list-group-item">
                     16:00 - Closing and Feedback
