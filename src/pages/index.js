@@ -320,7 +320,7 @@ class IndexPage extends React.Component {
             Further infos:{' '}
             <a
               className="link"
-              href="https://barcamptools.eu/react-barcamp-cologne-2020/events"
+              href="https://barcamptools.eu/react-barcamp-cologne-2020/events/0c3911ce-831d-4bef-aa0f-d964413e10b2#sessions"
             >
               Barcamptools Schedule
             </a>
