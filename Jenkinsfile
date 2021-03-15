@@ -3,7 +3,7 @@
 pipeline {
 
   agent {
-    label 'node'
+    label 'node10'
   }
 
   options {
@@ -17,7 +17,7 @@ pipeline {
     // Build
     stage('Build') {
       agent {
-        label 'node'
+        label 'node10'
       }
       steps {
         deleteDir()
@@ -58,25 +58,25 @@ pipeline {
     }
 
 
-    // Deploy
-    stage('Deploy to react-barcamp.de') {
-      agent {
-        label 'kitconcept.io'
-      }
-      when {
-        branch 'master'
-      }
-      steps {
-        deleteDir()
-        sh '(cd /srv/react-barcamp.de/ && git fetch --all && git reset --hard origin/master)'
-        sh '(cd /srv/react-barcamp.de/ && yarn install)'
-        sh '(cd /srv/react-barcamp.de/ && node_modules/gatsby/dist/bin/gatsby.js build)'
-        // unstash 'public.tgz'
-        // sh 'tar xfz public.tgz'
-        // sh 'ls -al'
-        // sh 'rsync -avz --delete --force --ignore-existing ./public /srv/react-barcamp/.'
-      }
-    }
+    // // Deploy
+    // stage('Deploy to react-barcamp.de') {
+    //   agent {
+    //     label 'kitconcept.io'
+    //   }
+    //   when {
+    //     branch 'master'
+    //   }
+    //   steps {
+    //     deleteDir()
+    //     sh '(cd /srv/react-barcamp.de/ && git fetch --all && git reset --hard origin/master)'
+    //     sh '(cd /srv/react-barcamp.de/ && yarn install)'
+    //     sh '(cd /srv/react-barcamp.de/ && node_modules/gatsby/dist/bin/gatsby.js build)'
+    //     // unstash 'public.tgz'
+    //     // sh 'tar xfz public.tgz'
+    //     // sh 'ls -al'
+    //     // sh 'rsync -avz --delete --force --ignore-existing ./public /srv/react-barcamp/.'
+    //   }
+    // }
 
     // Performance Tests
     stage('Performance Tests') {
