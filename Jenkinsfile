@@ -3,8 +3,10 @@
 pipeline {
 
   agent {
-    label 'node10'
+    label 'node'
   }
+
+  tools {nodejs "nodejs-10"}
 
   options {
     disableConcurrentBuilds()
@@ -17,7 +19,7 @@ pipeline {
     // Build
     stage('Build') {
       agent {
-        label 'node10'
+        label 'node'
       }
       steps {
         deleteDir()
@@ -59,24 +61,22 @@ pipeline {
 
 
     // // Deploy
-    // stage('Deploy to react-barcamp.de') {
-    //   agent {
-    //     label 'kitconcept.io'
-    //   }
-    //   when {
-    //     branch 'master'
-    //   }
-    //   steps {
-    //     deleteDir()
-    //     sh '(cd /srv/react-barcamp.de/ && git fetch --all && git reset --hard origin/master)'
-    //     sh '(cd /srv/react-barcamp.de/ && yarn install)'
-    //     sh '(cd /srv/react-barcamp.de/ && node_modules/gatsby/dist/bin/gatsby.js build)'
-    //     // unstash 'public.tgz'
-    //     // sh 'tar xfz public.tgz'
-    //     // sh 'ls -al'
-    //     // sh 'rsync -avz --delete --force --ignore-existing ./public /srv/react-barcamp/.'
-    //   }
-    // }
+    stage('Deploy to react-barcamp.de') {
+      agent {
+        label 'kitconcept.io'
+      }
+      when {
+        branch 'master'
+      }
+      steps {
+        deleteDir()
+        sh 'ssh cloud1.kitconcept.com (cd /srv/react-barcamp.de/ && git clean -fd)'
+        sh 'ssh cloud1.kitconcept.com (cd /srv/react-barcamp.de/ && git fetch --all && git reset --hard origin/master)'
+        unstash 'public.tgz'
+        sh 'scp public.tgz cloud1.kitconcept.com:/srv/react-barcamp.de/'
+        sh 'ssh cloud1.kitconcept.com "(cd /srv/react-barcamp.de/ && tar xfz public.tgz)"'
+      }
+    }
 
     // Performance Tests
     stage('Performance Tests') {
