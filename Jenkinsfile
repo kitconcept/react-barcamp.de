@@ -72,8 +72,7 @@ pipeline {
       }
       steps {
         deleteDir()
-        sh 'ssh cloud1.kitconcept.com "(cd /srv/react-barcamp.de/ && git clean -fd)"'
-        sh 'ssh cloud1.kitconcept.com "(cd /srv/react-barcamp.de/ && git fetch --all && git reset --hard origin/main && git pull)"'
+        sh 'ssh cloud1.kitconcept.com "(cd /srv/react-barcamp.de/ && git clean -fd && git fetch --all && git reset --hard origin/main && git pull)"'
         unstash 'public.tgz'
         sh 'scp public.tgz cloud1.kitconcept.com:/srv/react-barcamp.de/'
         sh 'ssh cloud1.kitconcept.com "(cd /srv/react-barcamp.de/ && tar xfz public.tgz)"'
