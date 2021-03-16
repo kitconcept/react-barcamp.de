@@ -6,7 +6,9 @@ pipeline {
     label 'node'
   }
 
-  tools {nodejs "nodejs-10"}
+  tools {
+    nodejs "nodejs-10"
+  }
 
   options {
     disableConcurrentBuilds()
@@ -66,12 +68,12 @@ pipeline {
         label 'kitconcept.io'
       }
       when {
-        branch 'master'
+        branch 'main'
       }
       steps {
         deleteDir()
         sh 'ssh cloud1.kitconcept.com "(cd /srv/react-barcamp.de/ && git clean -fd)"'
-        sh 'ssh cloud1.kitconcept.com "(cd /srv/react-barcamp.de/ && git fetch --all && git reset --hard origin/master)"'
+        sh 'ssh cloud1.kitconcept.com "(cd /srv/react-barcamp.de/ && git fetch --all && git reset --hard origin/main)"'
         unstash 'public.tgz'
         sh 'scp public.tgz cloud1.kitconcept.com:/srv/react-barcamp.de/'
         sh 'ssh cloud1.kitconcept.com "(cd /srv/react-barcamp.de/ && tar xfz public.tgz)"'
@@ -86,7 +88,7 @@ pipeline {
             label 'node'
           }
           when {
-            branch 'master'
+            branch 'main'
           }
           steps {
             deleteDir()
@@ -108,7 +110,7 @@ pipeline {
             label 'node'
           }
           when {
-            branch 'master'
+            branch 'main'
           }
           steps {
             deleteDir()
